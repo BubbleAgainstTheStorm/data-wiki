@@ -1,21 +1,45 @@
 <html> <body>
 <h2>_Meta Machinery</h2>
 <h4>Rainpunk technology ripped from the past. Repurposed with skill and labor. Can be used to buy upgrades in the Smoldering City.</h4>
+<h3>Produced By</h3>
+<h3>Ingredient Of</h3>
 </body>
 
         <style>
+           h4 {
+                margin: 0;
+            }
             .recipe {
                 display: flex;
                 padding-left: 40;
                 align-items: center;
                 gap: 16px;
-
-
+            }
+            .recipe-title {
+                display: inline-block;
+                margin: 0;
+                margin-top: 8px;
+            }
+            .recipe-hidden {
+                display: none;
             }
 
             .recipe>div {
                 display: inline-block;
                 font-size: 24;
             }
+
+            .recipe-block {
+                margin-left: 40px;
+            };
+
         </style>
+        <script>
+            function toggleRecipe(showButton) {
+                if (showButton.nextElementSibling.classList.toggle("recipe-hidden"))
+                    showButton.innerText = "show";
+                else
+                    showButton.innerText = "hide";
+            }
+        </script>
         </html>

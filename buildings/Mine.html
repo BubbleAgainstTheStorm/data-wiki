@@ -1,35 +1,43 @@
 <html> <body>
 <h2>Mine</h2>
 <h4>Can only be placed on Coal and Ore Veins. Digs up <sprite name="[metal] copper ore"> Copper Ore and <sprite name="[crafting] coal"> Coal.</h4>
-<div>
-<a href="/data-wiki/goods/[Crafting]_Coal.html"><h3>Coal [☆☆☆]</h3>
-</a><div class="recipe">
-<div class="result">60 seconds</div>
-<div class="result">[Crafting] Coal</div>
-</div>
-</div>
-<div>
-<a href="/data-wiki/goods/[Metal]_Copper_Ore.html"><h3>Copper [☆☆☆]</h3>
-</a><div class="recipe">
-<div class="result">40 seconds</div>
-<div class="result">[Metal] Copper Ore</div>
-</div>
-</div>
 </body>
 
         <style>
+           h4 {
+                margin: 0;
+            }
             .recipe {
                 display: flex;
                 padding-left: 40;
                 align-items: center;
                 gap: 16px;
-
-
+            }
+            .recipe-title {
+                display: inline-block;
+                margin: 0;
+                margin-top: 8px;
+            }
+            .recipe-hidden {
+                display: none;
             }
 
             .recipe>div {
                 display: inline-block;
                 font-size: 24;
             }
+
+            .recipe-block {
+                margin-left: 40px;
+            };
+
         </style>
+        <script>
+            function toggleRecipe(showButton) {
+                if (showButton.nextElementSibling.classList.toggle("recipe-hidden"))
+                    showButton.innerText = "show";
+                else
+                    showButton.innerText = "hide";
+            }
+        </script>
         </html>

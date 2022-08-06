@@ -1,62 +1,43 @@
 <html> <body>
 <h2>Smithy</h2>
 <h4>Can produce:  <sprite name=[tools] simple tools> Simple Tools (<sprite name=grade2>), <sprite name=[needs] coats> Coats (<sprite name=grade2>), <sprite name=[packs] pack of trade goods> Pack of Trade Goods (<sprite name=grade2>).</h4>
-<div>
-<a href="/data-wiki/goods/[Tools]_Simple_Tools.html"><h3>Tools Simple [★★☆]</h3>
-</a><div class="recipe">
-<div class="ingredient">
-<div>[Mat Raw] Wood 8</div>
-<div>[Mat Processed] Planks 2</div>
-</div>
-<div class="recipe-add">+</div>
-<div class="ingredient">
-<div>[Metal] Copper Bar 3</div>
-<div>[Metal] Crystalized Dew 3</div>
-</div>
-<div class="result">70 seconds</div>
-<div class="result">[Tools] Simple Tools</div>
-</div>
-</div>
-<div>
-<a href="/data-wiki/goods/[Needs]_Coats.html"><h3>[Needs Fullfilment] Coats [★★☆]</h3>
-</a><div class="recipe">
-<div class="ingredient">
-<div>[Mat Processed] Fabric 2</div>
-</div>
-<div class="result">120 seconds</div>
-<div class="result">[Needs] Coats</div>
-</div>
-</div>
-<div>
-<a href="/data-wiki/goods/[Packs]_Pack_of_Trade_Goods.html"><h3>Pack of Trade Goods [★★☆]</h3>
-</a><div class="recipe">
-<div class="ingredient">
-<div>[Crafting] Pigment 6</div>
-<div>[Crafting] Oil 6</div>
-<div>[Crafting] Flour 4</div>
-<div>[Vessel] Pottery 4</div>
-<div>[Vessel] Barrels 4</div>
-<div>[Vessel] Waterskin 4</div>
-</div>
-<div class="result">30 seconds</div>
-<div class="result">[Packs] Pack of Trade Goods</div>
-</div>
-</div>
 </body>
 
         <style>
+           h4 {
+                margin: 0;
+            }
             .recipe {
                 display: flex;
                 padding-left: 40;
                 align-items: center;
                 gap: 16px;
-
-
+            }
+            .recipe-title {
+                display: inline-block;
+                margin: 0;
+                margin-top: 8px;
+            }
+            .recipe-hidden {
+                display: none;
             }
 
             .recipe>div {
                 display: inline-block;
                 font-size: 24;
             }
+
+            .recipe-block {
+                margin-left: 40px;
+            };
+
         </style>
+        <script>
+            function toggleRecipe(showButton) {
+                if (showButton.nextElementSibling.classList.toggle("recipe-hidden"))
+                    showButton.innerText = "show";
+                else
+                    showButton.innerText = "hide";
+            }
+        </script>
         </html>

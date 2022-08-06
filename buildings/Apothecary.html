@@ -1,74 +1,43 @@
 <html> <body>
 <h2>Apothecary</h2>
 <h4>Can produce:  <sprite name=[needs] cosmetics> Cosmetics (<sprite name=grade2>), <sprite name=[needs] incense> Incense (<sprite name=grade2>), <sprite name=[food processed] biscuits> Biscuits (<sprite name=grade2>).</h4>
-<div>
-<a href="/data-wiki/goods/[Needs]_Cosmetics.html"><h3>[Needs Fullfilment] Balm [★★☆]</h3>
-</a><div class="recipe">
-<div class="ingredient">
-<div>[Crafting] Oil 3</div>
-<div>[Food Raw] Eggs 3</div>
-</div>
-<div class="recipe-add">+</div>
-<div class="ingredient">
-<div>[Crafting] Pigment 3</div>
-<div>[Food Raw] Herbs 3</div>
-<div>[Mat Raw] Resin 3</div>
-</div>
-<div class="result">90 seconds</div>
-<div class="result">[Needs] Cosmetics</div>
-</div>
-</div>
-<div>
-<a href="/data-wiki/goods/[Needs]_Incense.html"><h3>[Needs Fullfilment] Incense [★★☆]</h3>
-</a><div class="recipe">
-<div class="ingredient">
-<div>[Food Raw] Herbs 5</div>
-<div>[Food Raw] Roots 5</div>
-<div>[Food Raw] Insects 5</div>
-<div>[Mat Raw] Resin 7</div>
-</div>
-<div class="recipe-add">+</div>
-<div class="ingredient">
-<div>[Mat Raw] Wood 6</div>
-<div>[Crafting] Oil 3</div>
-<div>[Crafting] Coal 2</div>
-<div>[Crafting] Sea Marrow 2</div>
-</div>
-<div class="result">90 seconds</div>
-<div class="result">[Needs] Incense</div>
-</div>
-</div>
-<div>
-<a href="/data-wiki/goods/[Food_Processed]_Biscuits.html"><h3>[Needs Fullfilment] Biscuits [★★☆]</h3>
-</a><div class="recipe">
-<div class="ingredient">
-<div>[Crafting] Flour 8</div>
-</div>
-<div class="recipe-add">+</div>
-<div class="ingredient">
-<div>[Food Raw] Herbs 3</div>
-<div>[Food Raw] Berries 3</div>
-<div>[Food Raw] Roots 3</div>
-</div>
-<div class="result">90 seconds</div>
-<div class="result">[Food Processed] Biscuits</div>
-</div>
-</div>
 </body>
 
         <style>
+           h4 {
+                margin: 0;
+            }
             .recipe {
                 display: flex;
                 padding-left: 40;
                 align-items: center;
                 gap: 16px;
-
-
+            }
+            .recipe-title {
+                display: inline-block;
+                margin: 0;
+                margin-top: 8px;
+            }
+            .recipe-hidden {
+                display: none;
             }
 
             .recipe>div {
                 display: inline-block;
                 font-size: 24;
             }
+
+            .recipe-block {
+                margin-left: 40px;
+            };
+
         </style>
+        <script>
+            function toggleRecipe(showButton) {
+                if (showButton.nextElementSibling.classList.toggle("recipe-hidden"))
+                    showButton.innerText = "show";
+                else
+                    showButton.innerText = "hide";
+            }
+        </script>
         </html>

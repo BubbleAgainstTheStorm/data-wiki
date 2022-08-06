@@ -1,56 +1,43 @@
 <html> <body>
 <h2>Finesmith</h2>
 <h4>Can produce:  <sprite name=[valuable] amber> Amber (<sprite name=grade3>), <sprite name=[tools] infused tools> Infused Tools (<sprite name=grade3>).</h4>
-<div>
-<a href="/data-wiki/goods/[Valuable]_Amber.html"><h3>[R] Amber [☆☆☆]</h3>
-</a><div class="recipe">
-<div class="ingredient">
-<div>[Mat Raw] Resin 3</div>
-</div>
-<div class="recipe-add">+</div>
-<div class="ingredient">
-<div>[Mat Raw] Sparkdew 3</div>
-<div>[Crafting] Oil 1</div>
-</div>
-<div class="result">30 seconds</div>
-<div class="result">[Valuable] Amber</div>
-</div>
-</div>
-<div>
-<a href="/data-wiki/goods/[Tools]_Infused_Tools.html"><h3>Tools Infused [★★★]</h3>
-</a><div class="recipe">
-<div class="ingredient">
-<div>[Mat Raw] Wood 6</div>
-<div>[Mat Processed] Planks 1</div>
-</div>
-<div class="recipe-add">+</div>
-<div class="ingredient">
-<div>[Metal] Copper Bar 2</div>
-<div>[Metal] Crystalized Dew 2</div>
-</div>
-<div class="recipe-add">+</div>
-<div class="ingredient">
-<div>[Mat Raw] Sparkdew 4</div>
-</div>
-<div class="result">60 seconds</div>
-<div class="result">[Tools] Infused Tools</div>
-</div>
-</div>
 </body>
 
         <style>
+           h4 {
+                margin: 0;
+            }
             .recipe {
                 display: flex;
                 padding-left: 40;
                 align-items: center;
                 gap: 16px;
-
-
+            }
+            .recipe-title {
+                display: inline-block;
+                margin: 0;
+                margin-top: 8px;
+            }
+            .recipe-hidden {
+                display: none;
             }
 
             .recipe>div {
                 display: inline-block;
                 font-size: 24;
             }
+
+            .recipe-block {
+                margin-left: 40px;
+            };
+
         </style>
+        <script>
+            function toggleRecipe(showButton) {
+                if (showButton.nextElementSibling.classList.toggle("recipe-hidden"))
+                    showButton.innerText = "show";
+                else
+                    showButton.innerText = "hide";
+            }
+        </script>
         </html>

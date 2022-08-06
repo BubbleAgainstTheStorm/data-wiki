@@ -1,71 +1,43 @@
 <html> <body>
 <h2>Scribe</h2>
 <h4>Can produce:  <sprite name=[needs] scrolls> Scrolls (<sprite name=grade3>), <sprite name=[needs] ale> Ale (<sprite name=grade1>), <sprite name=[tools] simple tools> Simple Tools (<sprite name=grade1>).</h4>
-<div>
-<a href="/data-wiki/goods/[Needs]_Scrolls.html"><h3>[Needs Fullfilment] Scrolls [★★★]</h3>
-</a><div class="recipe">
-<div class="ingredient">
-<div>[Mat Raw] Leather 2</div>
-<div>[Mat Raw] Plant Fibre 2</div>
-<div>[Mat Raw] Wood 6</div>
-</div>
-<div class="recipe-add">+</div>
-<div class="ingredient">
-<div>[Crafting] Pigment 1</div>
-<div>[Needs] Wine 1</div>
-</div>
-<div class="result">45 seconds</div>
-<div class="result">[Needs] Scrolls</div>
-</div>
-</div>
-<div>
-<a href="/data-wiki/goods/[Needs]_Ale.html"><h3>[Needs Fullfilment] Ale [★☆☆]</h3>
-</a><div class="recipe">
-<div class="ingredient">
-<div>[Food Raw] Grain 6</div>
-<div>[Food Raw] Roots 6</div>
-</div>
-<div class="recipe-add">+</div>
-<div class="ingredient">
-<div>[Vessel] Pottery 3</div>
-<div>[Vessel] Barrels 2</div>
-<div>[Vessel] Waterskin 3</div>
-</div>
-<div class="result">90 seconds</div>
-<div class="result">[Needs] Ale</div>
-</div>
-</div>
-<div>
-<a href="/data-wiki/goods/[Tools]_Simple_Tools.html"><h3>Tools Simple [★☆☆]</h3>
-</a><div class="recipe">
-<div class="ingredient">
-<div>[Mat Raw] Wood 10</div>
-<div>[Mat Processed] Planks 3</div>
-</div>
-<div class="recipe-add">+</div>
-<div class="ingredient">
-<div>[Metal] Copper Bar 4</div>
-<div>[Metal] Crystalized Dew 4</div>
-</div>
-<div class="result">80 seconds</div>
-<div class="result">[Tools] Simple Tools</div>
-</div>
-</div>
 </body>
 
         <style>
+           h4 {
+                margin: 0;
+            }
             .recipe {
                 display: flex;
                 padding-left: 40;
                 align-items: center;
                 gap: 16px;
-
-
+            }
+            .recipe-title {
+                display: inline-block;
+                margin: 0;
+                margin-top: 8px;
+            }
+            .recipe-hidden {
+                display: none;
             }
 
             .recipe>div {
                 display: inline-block;
                 font-size: 24;
             }
+
+            .recipe-block {
+                margin-left: 40px;
+            };
+
         </style>
+        <script>
+            function toggleRecipe(showButton) {
+                if (showButton.nextElementSibling.classList.toggle("recipe-hidden"))
+                    showButton.innerText = "show";
+                else
+                    showButton.innerText = "hide";
+            }
+        </script>
         </html>

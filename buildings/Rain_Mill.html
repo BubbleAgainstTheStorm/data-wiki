@@ -1,62 +1,43 @@
 <html> <body>
 <h2>Rain Mill</h2>
 <h4>Can produce:  <sprite name=[crafting] flour> Flour (<sprite name=grade3>), <sprite name=[needs] scrolls> Scrolls (<sprite name=grade1>), <sprite name=[packs] pack of building materials> Pack of Building Materials (<sprite name=grade1>).</h4>
-<div>
-<a href="/data-wiki/goods/[Crafting]_Flour.html"><h3>Flour [★★★]</h3>
-</a><div class="recipe">
-<div class="ingredient">
-<div>[Food Raw] Grain 6</div>
-<div>[Food Raw] Mushrooms 6</div>
-<div>[Food Raw] Roots 6</div>
-</div>
-<div class="result">45 seconds</div>
-<div class="result">[Crafting] Flour</div>
-</div>
-</div>
-<div>
-<a href="/data-wiki/goods/[Needs]_Scrolls.html"><h3>[Needs Fullfilment] Scrolls [★☆☆]</h3>
-</a><div class="recipe">
-<div class="ingredient">
-<div>[Mat Raw] Leather 4</div>
-<div>[Mat Raw] Plant Fibre 4</div>
-<div>[Mat Raw] Wood 10</div>
-</div>
-<div class="recipe-add">+</div>
-<div class="ingredient">
-<div>[Crafting] Pigment 3</div>
-<div>[Needs] Wine 3</div>
-</div>
-<div class="result">60 seconds</div>
-<div class="result">[Needs] Scrolls</div>
-</div>
-</div>
-<div>
-<a href="/data-wiki/goods/[Packs]_Pack_of_Building_Materials.html"><h3>Pack of Building Materials [★☆☆]</h3>
-</a><div class="recipe">
-<div class="ingredient">
-<div>[Mat Processed] Planks 8</div>
-<div>[Mat Processed] Fabric 5</div>
-<div>[Mat Processed] Bricks 5</div>
-</div>
-<div class="result">30 seconds</div>
-<div class="result">[Packs] Pack of Building Materials</div>
-</div>
-</div>
 </body>
 
         <style>
+           h4 {
+                margin: 0;
+            }
             .recipe {
                 display: flex;
                 padding-left: 40;
                 align-items: center;
                 gap: 16px;
-
-
+            }
+            .recipe-title {
+                display: inline-block;
+                margin: 0;
+                margin-top: 8px;
+            }
+            .recipe-hidden {
+                display: none;
             }
 
             .recipe>div {
                 display: inline-block;
                 font-size: 24;
             }
+
+            .recipe-block {
+                margin-left: 40px;
+            };
+
         </style>
+        <script>
+            function toggleRecipe(showButton) {
+                if (showButton.nextElementSibling.classList.toggle("recipe-hidden"))
+                    showButton.innerText = "show";
+                else
+                    showButton.innerText = "hide";
+            }
+        </script>
         </html>

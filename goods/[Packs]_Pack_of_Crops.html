@@ -1,57 +1,84 @@
 <html> <body>
 <h2>[Packs] Pack of Crops</h2>
 <h4>Goods packed for delivery, used for fulfilling Orders or trading. Produced in: Makeshift Post, Granary, Brewery.</h4>
+<h3>Produced By</h3>
 <div>
-<a href="/data-wiki/buildings/Makeshift_Post.html"><h3>Makeshift Post [☆☆☆]</h3>
-</a><div class="recipe">
+<h4 class="recipe-title"><a href="/data-wiki/buildings/Makeshift_Post.html">Makeshift Post [☆☆☆]</h4></a>
+<button class="toggle-recipe" onclick="toggleRecipe(this);">hide</button><div class="recipe ">
 <div class="ingredient">
-<div>[Food Raw] Roots 6</div>
-<div>[Food Raw] Grain 6</div>
-<div>[Food Raw] Vegetables 6</div>
-<div>[Food Raw] Mushrooms 6</div>
+<div><a href="/data-wiki/goods/[Food_Raw]_Roots.html">6× Roots</a></div>
+<div><a href="/data-wiki/goods/[Food_Raw]_Grain.html">6× Grain</a></div>
+<div><a href="/data-wiki/goods/[Food_Raw]_Vegetables.html">6× Vegetables</a></div>
+<div><a href="/data-wiki/goods/[Food_Raw]_Mushrooms.html">6× Mushrooms</a></div>
 </div>
+<div class="recipe-add">+</div>
 <div class="result">40 seconds</div>
 </div>
 </div>
 <div>
-<a href="/data-wiki/buildings/Granary.html"><h3>Granary [★★☆]</h3>
-</a><div class="recipe">
+<h4 class="recipe-title"><a href="/data-wiki/buildings/Brewery.html">Brewery [★☆☆]</h4></a>
+<button class="toggle-recipe" onclick="toggleRecipe(this);">hide</button><div class="recipe ">
 <div class="ingredient">
-<div>[Food Raw] Roots 4</div>
-<div>[Food Raw] Grain 4</div>
-<div>[Food Raw] Vegetables 4</div>
-<div>[Food Raw] Mushrooms 4</div>
+<div><a href="/data-wiki/goods/[Food_Raw]_Roots.html">5× Roots</a></div>
+<div><a href="/data-wiki/goods/[Food_Raw]_Grain.html">5× Grain</a></div>
+<div><a href="/data-wiki/goods/[Food_Raw]_Vegetables.html">5× Vegetables</a></div>
+<div><a href="/data-wiki/goods/[Food_Raw]_Mushrooms.html">5× Mushrooms</a></div>
 </div>
+<div class="recipe-add">+</div>
 <div class="result">30 seconds</div>
 </div>
 </div>
 <div>
-<a href="/data-wiki/buildings/Brewery.html"><h3>Brewery [★☆☆]</h3>
-</a><div class="recipe">
+<h4 class="recipe-title"><a href="/data-wiki/buildings/Granary.html">Granary [★★☆]</h4></a>
+<button class="toggle-recipe" onclick="toggleRecipe(this);">hide</button><div class="recipe ">
 <div class="ingredient">
-<div>[Food Raw] Roots 5</div>
-<div>[Food Raw] Grain 5</div>
-<div>[Food Raw] Vegetables 5</div>
-<div>[Food Raw] Mushrooms 5</div>
+<div><a href="/data-wiki/goods/[Food_Raw]_Roots.html">4× Roots</a></div>
+<div><a href="/data-wiki/goods/[Food_Raw]_Grain.html">4× Grain</a></div>
+<div><a href="/data-wiki/goods/[Food_Raw]_Vegetables.html">4× Vegetables</a></div>
+<div><a href="/data-wiki/goods/[Food_Raw]_Mushrooms.html">4× Mushrooms</a></div>
 </div>
+<div class="recipe-add">+</div>
 <div class="result">30 seconds</div>
 </div>
 </div>
+<h3>Ingredient Of</h3>
 </body>
 
         <style>
+           h4 {
+                margin: 0;
+            }
             .recipe {
                 display: flex;
                 padding-left: 40;
                 align-items: center;
                 gap: 16px;
-
-
+            }
+            .recipe-title {
+                display: inline-block;
+                margin: 0;
+                margin-top: 8px;
+            }
+            .recipe-hidden {
+                display: none;
             }
 
             .recipe>div {
                 display: inline-block;
                 font-size: 24;
             }
+
+            .recipe-block {
+                margin-left: 40px;
+            };
+
         </style>
+        <script>
+            function toggleRecipe(showButton) {
+                if (showButton.nextElementSibling.classList.toggle("recipe-hidden"))
+                    showButton.innerText = "show";
+                else
+                    showButton.innerText = "hide";
+            }
+        </script>
         </html>

@@ -1,61 +1,43 @@
 <html> <body>
 <h2>Press</h2>
 <h4>Can produce:  <sprite name=[crafting] oil> Oil (<sprite name=grade3>), <sprite name=[crafting] flour> Flour (<sprite name=grade1>), <sprite name=[packs] pack of luxury goods> Pack of Luxury Goods (<sprite name=grade1>).</h4>
-<div>
-<a href="/data-wiki/goods/[Crafting]_Oil.html"><h3>Oil [★★★]</h3>
-</a><div class="recipe">
-<div class="ingredient">
-<div>[Food Raw] Grain 2</div>
-<div>[Food Raw] Meat 2</div>
-<div>[Food Raw] Vegetables 2</div>
-<div>[Mat Raw] Plant Fibre 2</div>
-</div>
-<div class="result">45 seconds</div>
-<div class="result">[Crafting] Oil</div>
-</div>
-</div>
-<div>
-<a href="/data-wiki/goods/[Crafting]_Flour.html"><h3>Flour [★☆☆]</h3>
-</a><div class="recipe">
-<div class="ingredient">
-<div>[Food Raw] Grain 10</div>
-<div>[Food Raw] Mushrooms 10</div>
-<div>[Food Raw] Roots 10</div>
-</div>
-<div class="result">60 seconds</div>
-<div class="result">[Crafting] Flour</div>
-</div>
-</div>
-<div>
-<a href="/data-wiki/goods/[Packs]_Pack_of_Luxury_Goods.html"><h3>Pack of Luxury Goods [★☆☆]</h3>
-</a><div class="recipe">
-<div class="ingredient">
-<div>[Needs] Wine 5</div>
-<div>[Needs] Training Gear 5</div>
-<div>[Needs] Incense 5</div>
-<div>[Needs] Scrolls 5</div>
-<div>[Needs] Ale 5</div>
-<div>[Needs] Cosmetics 5</div>
-</div>
-<div class="result">30 seconds</div>
-<div class="result">[Packs] Pack of Luxury Goods</div>
-</div>
-</div>
 </body>
 
         <style>
+           h4 {
+                margin: 0;
+            }
             .recipe {
                 display: flex;
                 padding-left: 40;
                 align-items: center;
                 gap: 16px;
-
-
+            }
+            .recipe-title {
+                display: inline-block;
+                margin: 0;
+                margin-top: 8px;
+            }
+            .recipe-hidden {
+                display: none;
             }
 
             .recipe>div {
                 display: inline-block;
                 font-size: 24;
             }
+
+            .recipe-block {
+                margin-left: 40px;
+            };
+
         </style>
+        <script>
+            function toggleRecipe(showButton) {
+                if (showButton.nextElementSibling.classList.toggle("recipe-hidden"))
+                    showButton.innerText = "show";
+                else
+                    showButton.innerText = "hide";
+            }
+        </script>
         </html>

@@ -1,37 +1,43 @@
 <html> <body>
 <h2>Plantation</h2>
 <h4>Can produce  <sprite name=[food raw] berries> Berries (<sprite name=grade2>), <sprite name=[mat raw] plant fibre> Plant Fiber (<sprite name=grade2>) from nearby farm fields.</h4>
-<div>
-<a href="/data-wiki/goods/[Food_Raw]_Berries.html"><h3>Berries Plantation [☆☆☆]</h3>
-</a><div class="recipe">
-<div class="result">plant: 20 seconds</div>
-<div class="result">harvest: 20 seconds</div>
-<div class="result">[Food Raw] Berries</div>
-</div>
-</div>
-<div>
-<a href="/data-wiki/goods/[Mat_Raw]_Plant_Fibre.html"><h3>Fibre Plantation [☆☆☆]</h3>
-</a><div class="recipe">
-<div class="result">plant: 20 seconds</div>
-<div class="result">harvest: 20 seconds</div>
-<div class="result">[Mat Raw] Plant Fibre</div>
-</div>
-</div>
 </body>
 
         <style>
+           h4 {
+                margin: 0;
+            }
             .recipe {
                 display: flex;
                 padding-left: 40;
                 align-items: center;
                 gap: 16px;
-
-
+            }
+            .recipe-title {
+                display: inline-block;
+                margin: 0;
+                margin-top: 8px;
+            }
+            .recipe-hidden {
+                display: none;
             }
 
             .recipe>div {
                 display: inline-block;
                 font-size: 24;
             }
+
+            .recipe-block {
+                margin-left: 40px;
+            };
+
         </style>
+        <script>
+            function toggleRecipe(showButton) {
+                if (showButton.nextElementSibling.classList.toggle("recipe-hidden"))
+                    showButton.innerText = "show";
+                else
+                    showButton.innerText = "hide";
+            }
+        </script>
         </html>

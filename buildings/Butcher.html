@@ -1,72 +1,43 @@
 <html> <body>
 <h2>Butcher</h2>
 <h4>Can produce:  <sprite name=[food processed] skewers> Skewers (<sprite name=grade2>), <sprite name=[food processed] jerky> Jerky (<sprite name=grade2>), <sprite name=[crafting] oil> Oil (<sprite name=grade2>).</h4>
-<div>
-<a href="/data-wiki/goods/[Food_Processed]_Skewers.html"><h3>[Food Processed] Skewers [★★☆]</h3>
-</a><div class="recipe">
-<div class="ingredient">
-<div>[Food Raw] Insects 4</div>
-<div>[Food Raw] Meat 4</div>
-<div>[Food Raw] Mushrooms 4</div>
-<div>[Food Processed] Jerky 3</div>
-</div>
-<div class="recipe-add">+</div>
-<div class="ingredient">
-<div>[Food Raw] Vegetables 4</div>
-<div>[Food Raw] Roots 4</div>
-<div>[Food Raw] Berries 4</div>
-<div>[Food Raw] Eggs 4</div>
-</div>
-<div class="result">90 seconds</div>
-<div class="result">[Food Processed] Skewers</div>
-</div>
-</div>
-<div>
-<a href="/data-wiki/goods/[Food_Processed]_Jerky.html"><h3>[Food Processed] Jerky [★★☆]</h3>
-</a><div class="recipe">
-<div class="ingredient">
-<div>[Food Raw] Insects 5</div>
-<div>[Food Raw] Meat 5</div>
-</div>
-<div class="recipe-add">+</div>
-<div class="ingredient">
-<div>[Mat Raw] Wood 5</div>
-<div>[Crafting] Oil 2</div>
-<div>[Crafting] Coal 1</div>
-<div>[Crafting] Sea Marrow 1</div>
-</div>
-<div class="result">90 seconds</div>
-<div class="result">[Food Processed] Jerky</div>
-</div>
-</div>
-<div>
-<a href="/data-wiki/goods/[Crafting]_Oil.html"><h3>Oil [★★☆]</h3>
-</a><div class="recipe">
-<div class="ingredient">
-<div>[Food Raw] Grain 3</div>
-<div>[Food Raw] Meat 3</div>
-<div>[Food Raw] Vegetables 3</div>
-<div>[Mat Raw] Plant Fibre 3</div>
-</div>
-<div class="result">60 seconds</div>
-<div class="result">[Crafting] Oil</div>
-</div>
-</div>
 </body>
 
         <style>
+           h4 {
+                margin: 0;
+            }
             .recipe {
                 display: flex;
                 padding-left: 40;
                 align-items: center;
                 gap: 16px;
-
-
+            }
+            .recipe-title {
+                display: inline-block;
+                margin: 0;
+                margin-top: 8px;
+            }
+            .recipe-hidden {
+                display: none;
             }
 
             .recipe>div {
                 display: inline-block;
                 font-size: 24;
             }
+
+            .recipe-block {
+                margin-left: 40px;
+            };
+
         </style>
+        <script>
+            function toggleRecipe(showButton) {
+                if (showButton.nextElementSibling.classList.toggle("recipe-hidden"))
+                    showButton.innerText = "show";
+                else
+                    showButton.innerText = "hide";
+            }
+        </script>
         </html>

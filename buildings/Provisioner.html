@@ -1,62 +1,43 @@
 <html> <body>
 <h2>Provisioner</h2>
 <h4>Can produce:  <sprite name=[packs] pack of provisions> Pack of Provisions (<sprite name=grade2>), <sprite name=[crafting] flour> Flour (<sprite name=grade2>), <sprite name=[vessel] barrels> Barrels (<sprite name=grade2>).</h4>
-<div>
-<a href="/data-wiki/goods/[Packs]_Pack_of_Provisions.html"><h3>Pack of Provisions [★★☆]</h3>
-</a><div class="recipe">
-<div class="ingredient">
-<div>[Food Raw] Herbs 4</div>
-<div>[Food Raw] Berries 4</div>
-<div>[Food Raw] Insects 4</div>
-<div>[Food Raw] Meat 4</div>
-<div>[Food Raw] Eggs 4</div>
-</div>
-<div class="result">30 seconds</div>
-<div class="result">[Packs] Pack of Provisions</div>
-</div>
-</div>
-<div>
-<a href="/data-wiki/goods/[Crafting]_Flour.html"><h3>Flour [★★☆]</h3>
-</a><div class="recipe">
-<div class="ingredient">
-<div>[Food Raw] Grain 8</div>
-<div>[Food Raw] Mushrooms 8</div>
-<div>[Food Raw] Roots 8</div>
-</div>
-<div class="result">60 seconds</div>
-<div class="result">[Crafting] Flour</div>
-</div>
-</div>
-<div>
-<a href="/data-wiki/goods/[Vessel]_Barrels.html"><h3>[Vessel] Barrels [★★☆]</h3>
-</a><div class="recipe">
-<div class="ingredient">
-<div>[Metal] Copper Bar 2</div>
-<div>[Metal] Crystalized Dew 2</div>
-</div>
-<div class="recipe-add">+</div>
-<div class="ingredient">
-<div>[Mat Processed] Planks 2</div>
-</div>
-<div class="result">90 seconds</div>
-<div class="result">[Vessel] Barrels</div>
-</div>
-</div>
 </body>
 
         <style>
+           h4 {
+                margin: 0;
+            }
             .recipe {
                 display: flex;
                 padding-left: 40;
                 align-items: center;
                 gap: 16px;
-
-
+            }
+            .recipe-title {
+                display: inline-block;
+                margin: 0;
+                margin-top: 8px;
+            }
+            .recipe-hidden {
+                display: none;
             }
 
             .recipe>div {
                 display: inline-block;
                 font-size: 24;
             }
+
+            .recipe-block {
+                margin-left: 40px;
+            };
+
         </style>
+        <script>
+            function toggleRecipe(showButton) {
+                if (showButton.nextElementSibling.classList.toggle("recipe-hidden"))
+                    showButton.innerText = "show";
+                else
+                    showButton.innerText = "hide";
+            }
+        </script>
         </html>

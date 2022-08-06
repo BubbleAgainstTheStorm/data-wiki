@@ -1,67 +1,43 @@
 <html> <body>
 <h2>Stamping Mill</h2>
 <h4>Can produce:  <sprite name=[vessel] pottery> Pottery (<sprite name=grade3>), <sprite name=[crafting] flour> Flour (<sprite name=grade2>), <sprite name=[metal] copper bar> Copper Bars (<sprite name=grade1>).</h4>
-<div>
-<a href="/data-wiki/goods/[Vessel]_Pottery.html"><h3>[Vessel] Pottery [★★★]</h3>
-</a><div class="recipe">
-<div class="ingredient">
-<div>[Mat Raw] Clay 2</div>
-</div>
-<div class="recipe-add">+</div>
-<div class="ingredient">
-<div>[Mat Raw] Wood 5</div>
-<div>[Crafting] Oil 2</div>
-<div>[Crafting] Coal 1</div>
-<div>[Crafting] Sea Marrow 1</div>
-</div>
-<div class="result">45 seconds</div>
-<div class="result">[Vessel] Pottery</div>
-</div>
-</div>
-<div>
-<a href="/data-wiki/goods/[Crafting]_Flour.html"><h3>Flour [★★☆]</h3>
-</a><div class="recipe">
-<div class="ingredient">
-<div>[Food Raw] Grain 8</div>
-<div>[Food Raw] Mushrooms 8</div>
-<div>[Food Raw] Roots 8</div>
-</div>
-<div class="result">60 seconds</div>
-<div class="result">[Crafting] Flour</div>
-</div>
-</div>
-<div>
-<a href="/data-wiki/goods/[Metal]_Copper_Bar.html"><h3>Copper Bar [★☆☆]</h3>
-</a><div class="recipe">
-<div class="ingredient">
-<div>[Metal] Copper Ore 6</div>
-</div>
-<div class="recipe-add">+</div>
-<div class="ingredient">
-<div>[Mat Raw] Wood 5</div>
-<div>[Crafting] Oil 2</div>
-<div>[Crafting] Coal 1</div>
-<div>[Crafting] Sea Marrow 1</div>
-</div>
-<div class="result">30 seconds</div>
-<div class="result">[Metal] Copper Bar</div>
-</div>
-</div>
 </body>
 
         <style>
+           h4 {
+                margin: 0;
+            }
             .recipe {
                 display: flex;
                 padding-left: 40;
                 align-items: center;
                 gap: 16px;
-
-
+            }
+            .recipe-title {
+                display: inline-block;
+                margin: 0;
+                margin-top: 8px;
+            }
+            .recipe-hidden {
+                display: none;
             }
 
             .recipe>div {
                 display: inline-block;
                 font-size: 24;
             }
+
+            .recipe-block {
+                margin-left: 40px;
+            };
+
         </style>
+        <script>
+            function toggleRecipe(showButton) {
+                if (showButton.nextElementSibling.classList.toggle("recipe-hidden"))
+                    showButton.innerText = "show";
+                else
+                    showButton.innerText = "hide";
+            }
+        </script>
         </html>
