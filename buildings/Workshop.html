@@ -9,87 +9,191 @@
         </header>
 <h2><img src="../img/1x1.png" width=128 height=128 style="background: url(../img/Workshop_icon.png); background-position: -0px -0px; background-size: 128px 128px;"/>Workshop</h2>
 <h4>Can produce:  <sprite name=[mat processed] planks> Planks (<sprite name=grade2>), <sprite name=[mat processed] fabric> Fabric (<sprite name=grade2>), <sprite name=[mat processed] bricks> Bricks (<sprite name=grade2>).</h4>
-<div>
+<div class="recipe-container">
+<div class="recipe-header">
 <img src="../img/1x1.png" width=32 height=32 style="background: url(../img/sactx-0-2048x2048-BC7-Game\ UI\ Icons\ Atlas-8f612054.png); background-position: -330px -186.5px; background-size: 512px 512px;"/>
 <h4 class="recipe-title"><a href="../goods/[Mat_Processed]_Planks.html">Planks [★★☆]</h4></a>
-<button class="toggle-recipe" onclick="toggleRecipe(this);">hide</button><div class="recipe ">
+<span width=100 style="display:inline-block; width: 100px;"/></span>
+<span class="recipe-controls">
+<h4 class="recipe-title recipe-time">00:30</h4>
+<span class="toggle-recipe" onclick="toggleRecipe(this);">hide</button>
+</span>
+</div>
+<div class="recipe ">
 <div class="ingredient">
 <div>5× <img src="../img/1x1.png" width=32 height=32 style="background: url(../img/sactx-0-2048x2048-BC7-Game\ UI\ Icons\ Atlas-8f612054.png); background-position: -453.25px -344.25px; background-size: 512px 512px;"/><a href="../goods/[Mat_Raw]_Wood.html">Wood</a></div>
 </div>
-<div class="recipe-add">+</div>
-<div class="result">30 seconds</div>
 </div>
 </div>
-<div>
+<div class="recipe-container">
+<div class="recipe-header">
 <img src="../img/1x1.png" width=32 height=32 style="background: url(../img/sactx-0-2048x2048-BC7-Game\ UI\ Icons\ Atlas-8f612054.png); background-position: -99px -170.25px; background-size: 512px 512px;"/>
 <h4 class="recipe-title"><a href="../goods/[Mat_Processed]_Fabric.html">Fabric [★★☆]</h4></a>
-<button class="toggle-recipe" onclick="toggleRecipe(this);">hide</button><div class="recipe ">
+<span width=100 style="display:inline-block; width: 100px;"/></span>
+<span class="recipe-controls">
+<h4 class="recipe-title recipe-time">00:30</h4>
+<span class="toggle-recipe" onclick="toggleRecipe(this);">hide</button>
+</span>
+</div>
+<div class="recipe ">
 <div class="ingredient">
 <div>3× <img src="../img/1x1.png" width=32 height=32 style="background: url(../img/sactx-0-2048x2048-BC7-Game\ UI\ Icons\ Atlas-8f612054.png); background-position: -33px -242px; background-size: 512px 512px;"/><a href="../goods/[Mat_Raw]_Plant_Fibre.html">Plant Fibre</a></div>
 <div>3× <img src="../img/1x1.png" width=32 height=32 style="background: url(../img/sactx-0-2048x2048-BC7-Game\ UI\ Icons\ Atlas-8f612054.png); background-position: -330px -219.5px; background-size: 512px 512px;"/><a href="../goods/[Mat_Raw]_Reeds.html">Reeds</a></div>
 <div>3× <img src="../img/1x1.png" width=32 height=32 style="background: url(../img/sactx-0-2048x2048-BC7-Game\ UI\ Icons\ Atlas-8f612054.png); background-position: -165px -232px; background-size: 512px 512px;"/><a href="../goods/[Mat_Raw]_Leather.html">Leather</a></div>
 </div>
-<div class="recipe-add">+</div>
-<div class="result">30 seconds</div>
 </div>
 </div>
-<div>
+<div class="recipe-container">
+<div class="recipe-header">
 <img src="../img/1x1.png" width=32 height=32 style="background: url(../img/sactx-0-2048x2048-BC7-Game\ UI\ Icons\ Atlas-8f612054.png); background-position: -231px -177px; background-size: 512px 512px;"/>
 <h4 class="recipe-title"><a href="../goods/[Mat_Processed]_Bricks.html">Bricks [★★☆]</h4></a>
-<button class="toggle-recipe" onclick="toggleRecipe(this);">hide</button><div class="recipe ">
+<span width=100 style="display:inline-block; width: 100px;"/></span>
+<span class="recipe-controls">
+<h4 class="recipe-title recipe-time">00:30</h4>
+<span class="toggle-recipe" onclick="toggleRecipe(this);">hide</button>
+</span>
+</div>
+<div class="recipe ">
 <div class="ingredient">
 <div>3× <img src="../img/1x1.png" width=32 height=32 style="background: url(../img/sactx-0-2048x2048-BC7-Game\ UI\ Icons\ Atlas-8f612054.png); background-position: -378.75px -285.5px; background-size: 512px 512px;"/><a href="../goods/[Mat_Raw]_Clay.html">Clay</a></div>
 <div>3× <img src="../img/1x1.png" width=32 height=32 style="background: url(../img/sactx-0-2048x2048-BC7-Game\ UI\ Icons\ Atlas-8f612054.png); background-position: -198px -210px; background-size: 512px 512px;"/><a href="../goods/[Mat_Raw]_Stone.html">Stone</a></div>
 </div>
-<div class="recipe-add">+</div>
-<div class="result">30 seconds</div>
 </div>
 </div>
 </body>
+
+
 
         <style>
             body {
                 display: block;
                 padding-left: 100px;
             }
-           h4 {
+        
+            h4 {
                 margin: 0;
             }
+        
             .recipe {
                 display: flex;
                 padding-left: 40;
                 align-items: center;
                 gap: 16px;
             }
+        
             .recipe-title {
                 display: inline-block;
                 margin: 0;
                 margin-top: 8px;
             }
+        
             .recipe-hidden {
                 display: none;
             }
-
+        
             .recipe>div {
                 display: inline-block;
                 font-size: 24;
             }
-
+        
             .recipe-block {
                 margin-left: 40px;
-            };
+            }
+        
+            .ingredient,
+            .result {
+                background-color: transparent;
+                padding: 4px 10px 4px 10px;
+                border-radius: 14px;
+                border: 2px solid darkslategrey;
+                box-shadow: 0px 0px 3px darkslategray;
+            }
 
-            h2 { margin: 0px; }
-            img { vertical-align: middle; }
-            a { padding-left:4px; }
+            .recipe-container {
+                margin-top: 16px;
+                margin-bottom: 16px;
+                width: 900px;
+            }
+        
+            .recipe-header {
+                /* background: url(../recipe_bg_header.png); */
+                height: 50px;
+                /* background-size: 100% 100%; */
+                border-image-source: url(../recipe_bg_header.png);
+                border-image-slice: 20 26 9 12 fill;
+                border-image-width: 20px 20px 20px 20px;
+                border-image-outset: 0px 0px 0px 0px;
+                border-image-repeat: stretch repeat;
+                padding: 0px 0px 0px 22px;
+            }
+        
+          .recipe {
+                background: url(../recipe_bg_main.png);
+                padding: 10px 0px 30px 30px;
+                background-size: 100%;
+                background-repeat: repeat-y;
+            }
+        
+        
+            h2 {
+                margin: 0px;
+            }
+        
+            img {
+                vertical-align: middle;
+            }
+        
+            a {
+                padding-left: 4px;
+            }
+        
+            .recipe-title>a, .recipe-title {
+                color: lightgray;
+            }
 
+            .recipe-controls {
+                position: relative;
+                float: right;
+                margin-right: 30px;
+            }
+        
+            .toggle-recipe {
+                height: 0px;
+                width: 64px;
+                display: inline-flex;
+                align-items: center;
+                border-image-source: url(../button_bg.png);
+                border-image-slice: 10 9 13 9 fill;
+                border-image-width: 13px 13px 13px 13px;
+                border-image-outset: 6px 13px 6px 13px;
+                border-image-repeat: stretch stretch;
+                cursor: pointer;
+                user-select: none;
+                font-size: smaller;
+                padding: 10px;
+                margin-left: 40px;;
+            }
+
+            .recipe-time {
+                margin-right: 100px;
+            }
+        
+            .toggle-recipe:hover {
+                filter: brightness(150%);
+            }
+
+        
+            .recipe-container,
+            .recipe a {
+                color: lightgray;
+            }
         </style>
         <script>
             function toggleRecipe(showButton) {
-                if (showButton.nextElementSibling.classList.toggle("recipe-hidden"))
-                    showButton.innerText = "show";
+                if (showButton.parentElement.parentElement.parentElement.getElementsByClassName(`recipe`)[0].classList.toggle(`recipe-hidden`))
+                    showButton.innerText = `show`;
                 else
-                    showButton.innerText = "hide";
+                    showButton.innerText = `hide`;
             }
         </script>
         </html>
