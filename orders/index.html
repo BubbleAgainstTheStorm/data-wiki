@@ -1,4 +1,4 @@
-<html><head> <link rel="stylesheet" href="https://cdn.simplecss.org/simple.min.css"> </head><body><main>
+<html><head> <link rel="stylesheet" href="/simple.min.css"> <link rel="stylesheet" href="/data-wiki/simple.min.css"> <link rel="stylesheet" href="/data-wiki/common.css"> <link rel="stylesheet" href="/common.css"></head><body><main>
             <header>
                 <nav>
                     <a href="../buildings">Buildings</a>
@@ -6,6 +6,12 @@
                     <a href="../orders">Orders</a>
                     <a href="../relics">Relics</a>
                 </nav>
+                <nav>
+                    <button onclick="filterDifficulty(this);" class="button-28 button-selected">Easy</button>
+                    <button onclick="filterDifficulty(this);" class="button-28">Medium</button>
+                    <button onclick="filterDifficulty(this);" class="button-28">Hard</button>
+                </nav>
+
             </header>
 <div class="orders-container">
 <div class="order">
@@ -5884,11 +5890,7 @@
 <div><h5>Queen's Grace 1</h5></div>
 </div>
 </div>
-</div><div class="filter">
-                <button onclick="filterDifficulty(this);" class="button-28 button-selected">Easy</button>
-                <button onclick="filterDifficulty(this);" class="button-28">Medium</button>
-                <button onclick="filterDifficulty(this);" class="button-28">Hard</button>
-            </div><main></body>
+</div></main></body>
 
 <style>
     .orders-content {
@@ -5914,18 +5916,6 @@
         font-size: 16px;
         font-weight: 600;
         will-change: transform;
-    }
-
-
-    body {
-        display: block;
-        margin: 100px;
-    }
-
-
-    main {
-        width: 100%;
-        display: block;
     }
 
     .button-selected {
