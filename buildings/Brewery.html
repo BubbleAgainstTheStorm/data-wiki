@@ -1,4 +1,12 @@
-<html> <body>
+<html> <head> <link rel="stylesheet" href="https://cdn.simplecss.org/simple.min.css"> </head> <body><main>
+<header>
+            <nav>
+                <a href="../buildings">Buildings</a>
+                <a href="../goods">Goods</a>
+                <a href="../orders">Orders</a>
+                <a href="../relics">Relics</a>
+            </nav>
+        </header>
 <h2><img src="../img/1x1.png" width=128 height=128 style="background: url(../img/Brewery_icon.png); background-position: -0px -0px; background-size: 128px 128px;"/>Brewery</h2>
 <h4>Can produce:  <sprite name=[needs] ale> Ale (<sprite name=grade3>), <sprite name=[food processed] pickled goods> Pickled Goods (<sprite name=grade1>), <sprite name=[packs] pack of crops> Pack of Crops (<sprite name=grade1>).</h4>
 <div>
@@ -6,14 +14,14 @@
 <h4 class="recipe-title"><a href="../goods/[Needs]_Ale.html">Ale [★★★]</h4></a>
 <button class="toggle-recipe" onclick="toggleRecipe(this);">hide</button><div class="recipe ">
 <div class="ingredient">
-<div><img src="../img/1x1.png" width=32 height=32 style="background: url(../img/sactx-0-2048x2048-BC7-Game\ UI\ Icons\ Atlas-8f612054.png); background-position: -66px -242px; background-size: 512px 512px;"/><a href="../goods/[Food_Raw]_Grain.html">4× Grain</a></div>
-<div><img src="../img/1x1.png" width=32 height=32 style="background: url(../img/sactx-0-2048x2048-BC7-Game\ UI\ Icons\ Atlas-8f612054.png); background-position: -33px -209px; background-size: 512px 512px;"/><a href="../goods/[Food_Raw]_Roots.html">4× Roots</a></div>
+<div>4× <img src="../img/1x1.png" width=32 height=32 style="background: url(../img/sactx-0-2048x2048-BC7-Game\ UI\ Icons\ Atlas-8f612054.png); background-position: -66px -242px; background-size: 512px 512px;"/><a href="../goods/[Food_Raw]_Grain.html">Grain</a></div>
+<div>4× <img src="../img/1x1.png" width=32 height=32 style="background: url(../img/sactx-0-2048x2048-BC7-Game\ UI\ Icons\ Atlas-8f612054.png); background-position: -33px -209px; background-size: 512px 512px;"/><a href="../goods/[Food_Raw]_Roots.html">Roots</a></div>
 </div>
 <div class="recipe-add">+</div>
 <div class="ingredient">
-<div><img src="../img/1x1.png" width=32 height=32 style="background: url(../img/sactx-0-2048x2048-BC7-Game\ UI\ Icons\ Atlas-8f612054.png); background-position: -396px -219.5px; background-size: 512px 512px;"/><a href="../goods/[Vessel]_Pottery.html">2× Pottery</a></div>
-<div><img src="../img/1x1.png" width=32 height=32 style="background: url(../img/sactx-0-2048x2048-BC7-Game\ UI\ Icons\ Atlas-8f612054.png); background-position: -0px -275px; background-size: 512px 512px;"/><a href="../goods/[Vessel]_Barrels.html">1× Barrels</a></div>
-<div><img src="../img/1x1.png" width=32 height=32 style="background: url(../img/sactx-0-2048x2048-BC7-Game\ UI\ Icons\ Atlas-8f612054.png); background-position: -132px -137.25px; background-size: 512px 512px;"/><a href="../goods/[Vessel]_Waterskin.html">2× Waterskin</a></div>
+<div>2× <img src="../img/1x1.png" width=32 height=32 style="background: url(../img/sactx-0-2048x2048-BC7-Game\ UI\ Icons\ Atlas-8f612054.png); background-position: -396px -219.5px; background-size: 512px 512px;"/><a href="../goods/[Vessel]_Pottery.html">Pottery</a></div>
+<div>1× <img src="../img/1x1.png" width=32 height=32 style="background: url(../img/sactx-0-2048x2048-BC7-Game\ UI\ Icons\ Atlas-8f612054.png); background-position: -0px -275px; background-size: 512px 512px;"/><a href="../goods/[Vessel]_Barrels.html">Barrels</a></div>
+<div>2× <img src="../img/1x1.png" width=32 height=32 style="background: url(../img/sactx-0-2048x2048-BC7-Game\ UI\ Icons\ Atlas-8f612054.png); background-position: -132px -137.25px; background-size: 512px 512px;"/><a href="../goods/[Vessel]_Waterskin.html">Waterskin</a></div>
 </div>
 <div class="recipe-add">+</div>
 <div class="result">75 seconds</div>
@@ -24,16 +32,16 @@
 <h4 class="recipe-title"><a href="../goods/[Food_Processed]_Pickled_Goods.html">Pickled Goods [★☆☆]</h4></a>
 <button class="toggle-recipe" onclick="toggleRecipe(this);">hide</button><div class="recipe ">
 <div class="ingredient">
-<div><img src="../img/1x1.png" width=32 height=32 style="background: url(../img/sactx-0-2048x2048-BC7-Game\ UI\ Icons\ Atlas-8f612054.png); background-position: -99px -71.25px; background-size: 512px 512px;"/><a href="../goods/[Food_Raw]_Vegetables.html">7× Vegetables</a></div>
-<div><img src="../img/1x1.png" width=32 height=32 style="background: url(../img/sactx-0-2048x2048-BC7-Game\ UI\ Icons\ Atlas-8f612054.png); background-position: -0px -209px; background-size: 512px 512px;"/><a href="../goods/[Food_Raw]_Mushrooms.html">7× Mushrooms</a></div>
-<div><img src="../img/1x1.png" width=32 height=32 style="background: url(../img/sactx-0-2048x2048-BC7-Game\ UI\ Icons\ Atlas-8f612054.png); background-position: -33px -209px; background-size: 512px 512px;"/><a href="../goods/[Food_Raw]_Roots.html">7× Roots</a></div>
-<div><img src="../img/1x1.png" width=32 height=32 style="background: url(../img/sactx-0-2048x2048-BC7-Game\ UI\ Icons\ Atlas-8f612054.png); background-position: -198px -111px; background-size: 512px 512px;"/><a href="../goods/[Food_Raw]_Berries.html">7× Berries</a></div>
+<div>7× <img src="../img/1x1.png" width=32 height=32 style="background: url(../img/sactx-0-2048x2048-BC7-Game\ UI\ Icons\ Atlas-8f612054.png); background-position: -99px -71.25px; background-size: 512px 512px;"/><a href="../goods/[Food_Raw]_Vegetables.html">Vegetables</a></div>
+<div>7× <img src="../img/1x1.png" width=32 height=32 style="background: url(../img/sactx-0-2048x2048-BC7-Game\ UI\ Icons\ Atlas-8f612054.png); background-position: -0px -209px; background-size: 512px 512px;"/><a href="../goods/[Food_Raw]_Mushrooms.html">Mushrooms</a></div>
+<div>7× <img src="../img/1x1.png" width=32 height=32 style="background: url(../img/sactx-0-2048x2048-BC7-Game\ UI\ Icons\ Atlas-8f612054.png); background-position: -33px -209px; background-size: 512px 512px;"/><a href="../goods/[Food_Raw]_Roots.html">Roots</a></div>
+<div>7× <img src="../img/1x1.png" width=32 height=32 style="background: url(../img/sactx-0-2048x2048-BC7-Game\ UI\ Icons\ Atlas-8f612054.png); background-position: -198px -111px; background-size: 512px 512px;"/><a href="../goods/[Food_Raw]_Berries.html">Berries</a></div>
 </div>
 <div class="recipe-add">+</div>
 <div class="ingredient">
-<div><img src="../img/1x1.png" width=32 height=32 style="background: url(../img/sactx-0-2048x2048-BC7-Game\ UI\ Icons\ Atlas-8f612054.png); background-position: -396px -219.5px; background-size: 512px 512px;"/><a href="../goods/[Vessel]_Pottery.html">3× Pottery</a></div>
-<div><img src="../img/1x1.png" width=32 height=32 style="background: url(../img/sactx-0-2048x2048-BC7-Game\ UI\ Icons\ Atlas-8f612054.png); background-position: -0px -275px; background-size: 512px 512px;"/><a href="../goods/[Vessel]_Barrels.html">3× Barrels</a></div>
-<div><img src="../img/1x1.png" width=32 height=32 style="background: url(../img/sactx-0-2048x2048-BC7-Game\ UI\ Icons\ Atlas-8f612054.png); background-position: -132px -137.25px; background-size: 512px 512px;"/><a href="../goods/[Vessel]_Waterskin.html">3× Waterskin</a></div>
+<div>3× <img src="../img/1x1.png" width=32 height=32 style="background: url(../img/sactx-0-2048x2048-BC7-Game\ UI\ Icons\ Atlas-8f612054.png); background-position: -396px -219.5px; background-size: 512px 512px;"/><a href="../goods/[Vessel]_Pottery.html">Pottery</a></div>
+<div>3× <img src="../img/1x1.png" width=32 height=32 style="background: url(../img/sactx-0-2048x2048-BC7-Game\ UI\ Icons\ Atlas-8f612054.png); background-position: -0px -275px; background-size: 512px 512px;"/><a href="../goods/[Vessel]_Barrels.html">Barrels</a></div>
+<div>3× <img src="../img/1x1.png" width=32 height=32 style="background: url(../img/sactx-0-2048x2048-BC7-Game\ UI\ Icons\ Atlas-8f612054.png); background-position: -132px -137.25px; background-size: 512px 512px;"/><a href="../goods/[Vessel]_Waterskin.html">Waterskin</a></div>
 </div>
 <div class="recipe-add">+</div>
 <div class="result">90 seconds</div>
@@ -44,10 +52,10 @@
 <h4 class="recipe-title"><a href="../goods/[Packs]_Pack_of_Crops.html">Pack of Crops [★☆☆]</h4></a>
 <button class="toggle-recipe" onclick="toggleRecipe(this);">hide</button><div class="recipe ">
 <div class="ingredient">
-<div><img src="../img/1x1.png" width=32 height=32 style="background: url(../img/sactx-0-2048x2048-BC7-Game\ UI\ Icons\ Atlas-8f612054.png); background-position: -33px -209px; background-size: 512px 512px;"/><a href="../goods/[Food_Raw]_Roots.html">5× Roots</a></div>
-<div><img src="../img/1x1.png" width=32 height=32 style="background: url(../img/sactx-0-2048x2048-BC7-Game\ UI\ Icons\ Atlas-8f612054.png); background-position: -66px -242px; background-size: 512px 512px;"/><a href="../goods/[Food_Raw]_Grain.html">5× Grain</a></div>
-<div><img src="../img/1x1.png" width=32 height=32 style="background: url(../img/sactx-0-2048x2048-BC7-Game\ UI\ Icons\ Atlas-8f612054.png); background-position: -99px -71.25px; background-size: 512px 512px;"/><a href="../goods/[Food_Raw]_Vegetables.html">5× Vegetables</a></div>
-<div><img src="../img/1x1.png" width=32 height=32 style="background: url(../img/sactx-0-2048x2048-BC7-Game\ UI\ Icons\ Atlas-8f612054.png); background-position: -0px -209px; background-size: 512px 512px;"/><a href="../goods/[Food_Raw]_Mushrooms.html">5× Mushrooms</a></div>
+<div>5× <img src="../img/1x1.png" width=32 height=32 style="background: url(../img/sactx-0-2048x2048-BC7-Game\ UI\ Icons\ Atlas-8f612054.png); background-position: -33px -209px; background-size: 512px 512px;"/><a href="../goods/[Food_Raw]_Roots.html">Roots</a></div>
+<div>5× <img src="../img/1x1.png" width=32 height=32 style="background: url(../img/sactx-0-2048x2048-BC7-Game\ UI\ Icons\ Atlas-8f612054.png); background-position: -66px -242px; background-size: 512px 512px;"/><a href="../goods/[Food_Raw]_Grain.html">Grain</a></div>
+<div>5× <img src="../img/1x1.png" width=32 height=32 style="background: url(../img/sactx-0-2048x2048-BC7-Game\ UI\ Icons\ Atlas-8f612054.png); background-position: -99px -71.25px; background-size: 512px 512px;"/><a href="../goods/[Food_Raw]_Vegetables.html">Vegetables</a></div>
+<div>5× <img src="../img/1x1.png" width=32 height=32 style="background: url(../img/sactx-0-2048x2048-BC7-Game\ UI\ Icons\ Atlas-8f612054.png); background-position: -0px -209px; background-size: 512px 512px;"/><a href="../goods/[Food_Raw]_Mushrooms.html">Mushrooms</a></div>
 </div>
 <div class="recipe-add">+</div>
 <div class="result">30 seconds</div>
@@ -56,6 +64,10 @@
 </body>
 
         <style>
+            body {
+                display: block;
+                padding-left: 100px;
+            }
            h4 {
                 margin: 0;
             }
@@ -82,6 +94,10 @@
             .recipe-block {
                 margin-left: 40px;
             };
+
+            h2 { margin: 0px; }
+            img { vertical-align: middle; }
+            a { padding-left:4px; }
 
         </style>
         <script>

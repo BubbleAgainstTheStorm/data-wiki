@@ -1,11 +1,19 @@
-<html> <body>
+<html> <head> <link rel="stylesheet" href="https://cdn.simplecss.org/simple.min.css"> </head> <body><main>
+<header>
+            <nav>
+                <a href="../buildings">Buildings</a>
+                <a href="../goods">Goods</a>
+                <a href="../orders">Orders</a>
+                <a href="../relics">Relics</a>
+            </nav>
+        </header>
 <h2><img src="../img/1x1.png" width=128 height=128 style="background: url(../img/Explorers\ Lodge_icon.png); background-position: -0px -0px; background-size: 128px 128px;"/>Explorers Lodge</h2>
 <h4>A place where villagers can fulfill needs:  Bloodthirst,  Education. Passive effects:  The Crown Chronicles.</h4>
 <div>
 <h4 class="recipe-title">Bloodthirst [-]</h4>
 <button class="toggle-recipe" onclick="toggleRecipe(this);">hide</button><div class="recipe ">
 <div class="ingredient">
-<div><img src="../img/1x1.png" width=32 height=32 style="background: url(../img/sactx-0-2048x2048-BC7-Game\ UI\ Icons\ Atlas-8f612054.png); background-position: -297px -219.5px; background-size: 512px 512px;"/><a href="../goods/[Needs]_Training_Gear.html">1× Training Gear</a></div>
+<div>1× <img src="../img/1x1.png" width=32 height=32 style="background: url(../img/sactx-0-2048x2048-BC7-Game\ UI\ Icons\ Atlas-8f612054.png); background-position: -297px -219.5px; background-size: 512px 512px;"/><a href="../goods/[Needs]_Training_Gear.html">Training Gear</a></div>
 </div>
 <div class="recipe-add">+</div>
 <div class="result">1 seconds</div>
@@ -15,7 +23,7 @@
 <h4 class="recipe-title">Education [-]</h4>
 <button class="toggle-recipe" onclick="toggleRecipe(this);">hide</button><div class="recipe ">
 <div class="ingredient">
-<div><img src="../img/1x1.png" width=32 height=32 style="background: url(../img/sactx-0-2048x2048-BC7-Game\ UI\ Icons\ Atlas-8f612054.png); background-position: -66px -275px; background-size: 512px 512px;"/><a href="../goods/[Needs]_Scrolls.html">1× Scrolls</a></div>
+<div>1× <img src="../img/1x1.png" width=32 height=32 style="background: url(../img/sactx-0-2048x2048-BC7-Game\ UI\ Icons\ Atlas-8f612054.png); background-position: -66px -275px; background-size: 512px 512px;"/><a href="../goods/[Needs]_Scrolls.html">Scrolls</a></div>
 </div>
 <div class="recipe-add">+</div>
 <div class="result">1 seconds</div>
@@ -24,6 +32,10 @@
 </body>
 
         <style>
+            body {
+                display: block;
+                padding-left: 100px;
+            }
            h4 {
                 margin: 0;
             }
@@ -50,6 +62,10 @@
             .recipe-block {
                 margin-left: 40px;
             };
+
+            h2 { margin: 0px; }
+            img { vertical-align: middle; }
+            a { padding-left:4px; }
 
         </style>
         <script>

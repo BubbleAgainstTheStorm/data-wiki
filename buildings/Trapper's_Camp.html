@@ -1,4 +1,12 @@
-<html> <body>
+<html> <head> <link rel="stylesheet" href="https://cdn.simplecss.org/simple.min.css"> </head> <body><main>
+<header>
+            <nav>
+                <a href="../buildings">Buildings</a>
+                <a href="../goods">Goods</a>
+                <a href="../orders">Orders</a>
+                <a href="../relics">Relics</a>
+            </nav>
+        </header>
 <h2><img src="../img/1x1.png" width=128 height=128 style="background: url(../img/Trapper's\ Camp_icon.png); background-position: -0px -0px; background-size: 128px 128px;"/>Trapper's Camp</h2>
 <h4>Starting point for Trappers going out into wild to collect  <sprite name=[food raw] meat> Meat (<sprite name=grade1>), <sprite name=[food raw] insects> Insects (<sprite name=grade1>), <sprite name=[food raw] eggs> Eggs (<sprite name=grade1>).</h4>
 <div>
@@ -28,6 +36,10 @@
 </body>
 
         <style>
+            body {
+                display: block;
+                padding-left: 100px;
+            }
            h4 {
                 margin: 0;
             }
@@ -54,6 +66,10 @@
             .recipe-block {
                 margin-left: 40px;
             };
+
+            h2 { margin: 0px; }
+            img { vertical-align: middle; }
+            a { padding-left:4px; }
 
         </style>
         <script>

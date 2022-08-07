@@ -1,4 +1,12 @@
-<html> <body>
+<html> <head> <link rel="stylesheet" href="https://cdn.simplecss.org/simple.min.css"> </head> <body><main>
+<header>
+            <nav>
+                <a href="../buildings">Buildings</a>
+                <a href="../goods">Goods</a>
+                <a href="../orders">Orders</a>
+                <a href="../relics">Relics</a>
+            </nav>
+        </header>
 <h2><img src="../img/1x1.png" width=128 height=128 style="background: url(../img/sactx-0-2048x2048-BC7-Game\ UI\ Icons\ Atlas-8f612054.png); background-position: -660px -532px; background-size: 2048px 2048px;"/>[Needs] Coats</h2>
 <h4>Used as clothing by some villagers. Produced in: Clothier, Smithy, Artisan, Druid's Hut.</h4>
 <h3>Produced By</h3>
@@ -7,7 +15,7 @@
 <h4 class="recipe-title"><a href="../buildings/Druid.html">Druid [★☆☆]</h4></a>
 <button class="toggle-recipe" onclick="toggleRecipe(this);">hide</button><div class="recipe ">
 <div class="ingredient">
-<div><img src="../img/1x1.png" width=32 height=32 style="background: url(../img/sactx-0-2048x2048-BC7-Game\ UI\ Icons\ Atlas-8f612054.png); background-position: -99px -170.25px; background-size: 512px 512px;"/><a href="../goods/[Mat_Processed]_Fabric.html">3× Fabric</a></div>
+<div>3× <img src="../img/1x1.png" width=32 height=32 style="background: url(../img/sactx-0-2048x2048-BC7-Game\ UI\ Icons\ Atlas-8f612054.png); background-position: -99px -170.25px; background-size: 512px 512px;"/><a href="../goods/[Mat_Processed]_Fabric.html">Fabric</a></div>
 </div>
 <div class="recipe-add">+</div>
 <div class="result">120 seconds</div>
@@ -18,7 +26,7 @@
 <h4 class="recipe-title"><a href="../buildings/Smithy.html">Smithy [★★☆]</h4></a>
 <button class="toggle-recipe" onclick="toggleRecipe(this);">hide</button><div class="recipe ">
 <div class="ingredient">
-<div><img src="../img/1x1.png" width=32 height=32 style="background: url(../img/sactx-0-2048x2048-BC7-Game\ UI\ Icons\ Atlas-8f612054.png); background-position: -99px -170.25px; background-size: 512px 512px;"/><a href="../goods/[Mat_Processed]_Fabric.html">2× Fabric</a></div>
+<div>2× <img src="../img/1x1.png" width=32 height=32 style="background: url(../img/sactx-0-2048x2048-BC7-Game\ UI\ Icons\ Atlas-8f612054.png); background-position: -99px -170.25px; background-size: 512px 512px;"/><a href="../goods/[Mat_Processed]_Fabric.html">Fabric</a></div>
 </div>
 <div class="recipe-add">+</div>
 <div class="result">120 seconds</div>
@@ -29,7 +37,7 @@
 <h4 class="recipe-title"><a href="../buildings/Artisan.html">Artisan [★★☆]</h4></a>
 <button class="toggle-recipe" onclick="toggleRecipe(this);">hide</button><div class="recipe ">
 <div class="ingredient">
-<div><img src="../img/1x1.png" width=32 height=32 style="background: url(../img/sactx-0-2048x2048-BC7-Game\ UI\ Icons\ Atlas-8f612054.png); background-position: -99px -170.25px; background-size: 512px 512px;"/><a href="../goods/[Mat_Processed]_Fabric.html">2× Fabric</a></div>
+<div>2× <img src="../img/1x1.png" width=32 height=32 style="background: url(../img/sactx-0-2048x2048-BC7-Game\ UI\ Icons\ Atlas-8f612054.png); background-position: -99px -170.25px; background-size: 512px 512px;"/><a href="../goods/[Mat_Processed]_Fabric.html">Fabric</a></div>
 </div>
 <div class="recipe-add">+</div>
 <div class="result">120 seconds</div>
@@ -40,7 +48,7 @@
 <h4 class="recipe-title"><a href="../buildings/Clothier.html">Clothier [★★★]</h4></a>
 <button class="toggle-recipe" onclick="toggleRecipe(this);">hide</button><div class="recipe ">
 <div class="ingredient">
-<div><img src="../img/1x1.png" width=32 height=32 style="background: url(../img/sactx-0-2048x2048-BC7-Game\ UI\ Icons\ Atlas-8f612054.png); background-position: -99px -170.25px; background-size: 512px 512px;"/><a href="../goods/[Mat_Processed]_Fabric.html">1× Fabric</a></div>
+<div>1× <img src="../img/1x1.png" width=32 height=32 style="background: url(../img/sactx-0-2048x2048-BC7-Game\ UI\ Icons\ Atlas-8f612054.png); background-position: -99px -170.25px; background-size: 512px 512px;"/><a href="../goods/[Mat_Processed]_Fabric.html">Fabric</a></div>
 </div>
 <div class="recipe-add">+</div>
 <div class="result">90 seconds</div>
@@ -50,6 +58,10 @@
 </body>
 
         <style>
+            body {
+                display: block;
+                padding-left: 100px;
+            }
            h4 {
                 margin: 0;
             }
@@ -76,6 +88,10 @@
             .recipe-block {
                 margin-left: 40px;
             };
+
+            h2 { margin: 0px; }
+            img { vertical-align: middle; }
+            a { padding-left:4px; }
 
         </style>
         <script>

@@ -1,4 +1,12 @@
-<html> <body>
+<html> <head> <link rel="stylesheet" href="https://cdn.simplecss.org/simple.min.css"> </head> <body><main>
+<header>
+            <nav>
+                <a href="../buildings">Buildings</a>
+                <a href="../goods">Goods</a>
+                <a href="../orders">Orders</a>
+                <a href="../relics">Relics</a>
+            </nav>
+        </header>
 <h2><img src="../img/1x1.png" width=128 height=128 style="background: url(../img/Homestead_icon.png); background-position: -0px -0px; background-size: 128px 128px;"/>Homestead</h2>
 <h4>Can produce  <sprite name=[food raw] grain> Grain (<sprite name=grade3>), <sprite name=[food raw] vegetables> Vegetables (<sprite name=grade2>), <sprite name=[food raw] mushrooms> Mushrooms (<sprite name=grade2>), <sprite name=[mat raw] plant fibre> Plant Fiber (<sprite name=grade3>) from a large area of farm fields nearby.</h4>
 <div>
@@ -44,6 +52,10 @@
 </body>
 
         <style>
+            body {
+                display: block;
+                padding-left: 100px;
+            }
            h4 {
                 margin: 0;
             }
@@ -70,6 +82,10 @@
             .recipe-block {
                 margin-left: 40px;
             };
+
+            h2 { margin: 0px; }
+            img { vertical-align: middle; }
+            a { padding-left:4px; }
 
         </style>
         <script>

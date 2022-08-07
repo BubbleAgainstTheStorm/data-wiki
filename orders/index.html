@@ -1,4 +1,13 @@
-<html><body><div class="content"><div class="orders-container">
+<html><head> <link rel="stylesheet" href="https://cdn.simplecss.org/simple.min.css"> </head><body><main>
+            <header>
+                <nav>
+                    <a href="../buildings">Buildings</a>
+                    <a href="../goods">Goods</a>
+                    <a href="../orders">Orders</a>
+                    <a href="../relics">Relics</a>
+                </nav>
+            </header>
+<div class="orders-container">
 <div class="order">
 <h3>I Amber</h3>
 <div class="order-logic for-difficulty-Easy">
@@ -5879,88 +5888,130 @@
                 <button onclick="filterDifficulty(this);" class="button-28 button-selected">Easy</button>
                 <button onclick="filterDifficulty(this);" class="button-28">Medium</button>
                 <button onclick="filterDifficulty(this);" class="button-28">Hard</button>
-            </div></div></body>
+            </div><main></body>
 
 <style>
-            .orders-content {
-                justify-content: space-between;
-            }
-            .rad-selected {
-                border-style: inset;;
-                border: 3px solid red;
-            }
+    .orders-content {
+        justify-content: space-between;
+    }
 
-/* CSS */
-.button-28 {
-    float:left;
-  appearance: none;
-  border: 1px solid #1A1A1A;
-  box-sizing: border-box;
-  /* color: #3B3B3B; */
-  background-color: lightgray;
-  cursor: pointer;
-  display: inline;
-  font-size: 16px;
-  font-weight: 600;
-  will-change: transform;
-}
-.button-selected {
-    background-color: darkgreen;
-    color: white;
-}
+    .rad-selected {
+        border-style: inset;
+        ;
+        border: 3px solid red;
+    }
 
-.button-28:disabled {
-  pointer-events: none;
-}
-
-.button-28:hover {
-  color: #fff;
-  background-color: #1A1A1A;
-  box-shadow: rgba(0, 0, 0, 0.25) 0 8px 15px;
-}
-.button-28:active {
-  box-shadow: none;
-  transform: translateY(0);
-}
-.button-selected:hover {
-  background-color: #003000;
-}
-            .filter {
-                top: 0;
-                position: fixed;
-                background-color: #444444;
-                color: lightgray;
-                padding: 4px;
-                width: 100%;
-            }
-            .orders-container {
-                padding-top: 50px;
-                display: flex;
-                flex-wrap: wrap;
-                gap: 20px;
-                width: 85%;
-            }
-
-            .order {
-                box-sizing: border-box;
-                padding: 16px;;
-                border: 1px solid black;
-                width:240px;
-                height: 360px;
-            }
-
-            .order-hidden {
-                display: none;
-            }
-
-            h3 { margin: 0px; }
-            h5 { margin: 0px; }
-            h5 { margin: 0px; }
-            ul { margin: 4px; padding-left: 12px }
+    /* CSS */
+    .button-28 {
+        float: left;
+        appearance: none;
+        border: 1px solid #1A1A1A;
+        box-sizing: border-box;
+        /* color: #3B3B3B; */
+        background-color: lightgray;
+        cursor: pointer;
+        display: inline;
+        font-size: 16px;
+        font-weight: 600;
+        will-change: transform;
+    }
 
 
+    body {
+        display: block;
+        margin: 100px;
+    }
 
-            </style>
+
+    main {
+        width: 100%;
+        display: block;
+    }
+
+    .button-selected {
+        background-color: darkgreen;
+        color: white;
+    }
+
+    .button-28:disabled {
+        pointer-events: none;
+    }
+
+    .button-28:hover {
+        color: #fff;
+        background-color: #1A1A1A;
+        box-shadow: rgba(0, 0, 0, 0.25) 0 8px 15px;
+    }
+
+    .button-28:active {
+        box-shadow: none;
+        transform: translateY(0);
+    }
+
+    .button-selected:hover {
+        background-color: #003000;
+    }
+
+    .filter-parent {
+        position: relative;
+        width: 100%;
+    }
+
+    .filter {
+        top: 0;
+        left: 0;
+        position: fixed;
+        background-color: #444444;
+        color: lightgray;
+        padding: 4px;
+        padding-left: 100px;
+        width: 100%;
+    }
+
+    .orders-container {
+        padding-top: 50px;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 20px;
+        width: 100%;
+    }
+
+    .content {
+        width: 100%;
+    }
+
+    .order {
+        box-sizing: border-box;
+        padding: 4px;
+        ;
+        border: 1px solid black;
+        width: 320px;
+        /* height: 400px; */
+    }
+
+    .order-hidden {
+        display: none;
+    }
+
+    h3 {
+        margin: 0px;
+    }
+
+    h4 {
+        margin: 8px;
+    }
+
+    h5 {
+        margin: 0px;
+        padding-left: 32px;
+        line-height: 1;
+    }
+
+    ul {
+        margin: 4px;
+        padding-left: 32px
+    }
+</style>
             <script>
                 var difficulty = `Easy`;
                 function doFilter() {

@@ -1,4 +1,12 @@
-<html> <body>
+<html> <head> <link rel="stylesheet" href="https://cdn.simplecss.org/simple.min.css"> </head> <body><main>
+<header>
+            <nav>
+                <a href="../buildings">Buildings</a>
+                <a href="../goods">Goods</a>
+                <a href="../orders">Orders</a>
+                <a href="../relics">Relics</a>
+            </nav>
+        </header>
 <h2><img src="../img/1x1.png" width=128 height=128 style="background: url(../img/sactx-0-2048x2048-BC7-Game\ UI\ Icons\ Atlas-8f612054.png); background-position: -1056px -746px; background-size: 2048px 2048px;"/>[Valuable] Amber</h2>
 <h4>A widely accepted currency in the kingdom. Crystalized tree blood... fitting.</h4>
 <h3>Produced By</h3>
@@ -7,12 +15,12 @@
 <h4 class="recipe-title"><a href="../buildings/Finesmith.html">Finesmith [☆☆☆]</h4></a>
 <button class="toggle-recipe" onclick="toggleRecipe(this);">hide</button><div class="recipe ">
 <div class="ingredient">
-<div><img src="../img/1x1.png" width=32 height=32 style="background: url(../img/sactx-0-2048x2048-BC7-Game\ UI\ Icons\ Atlas-8f612054.png); background-position: -66px -77px; background-size: 512px 512px;"/><a href="../goods/[Mat_Raw]_Resin.html">3× Resin</a></div>
+<div>3× <img src="../img/1x1.png" width=32 height=32 style="background: url(../img/sactx-0-2048x2048-BC7-Game\ UI\ Icons\ Atlas-8f612054.png); background-position: -66px -77px; background-size: 512px 512px;"/><a href="../goods/[Mat_Raw]_Resin.html">Resin</a></div>
 </div>
 <div class="recipe-add">+</div>
 <div class="ingredient">
-<div><img src="../img/1x1.png" width=32 height=32 style="background: url(../img/sactx-0-2048x2048-BC7-Game\ UI\ Icons\ Atlas-8f612054.png); background-position: -312.75px -252.5px; background-size: 512px 512px;"/><a href="../goods/[Mat_Raw]_Sparkdew.html">3× Sparkdew</a></div>
-<div><img src="../img/1x1.png" width=32 height=32 style="background: url(../img/sactx-0-2048x2048-BC7-Game\ UI\ Icons\ Atlas-8f612054.png); background-position: -227.75px -243px; background-size: 512px 512px;"/><a href="../goods/[Crafting]_Oil.html">1× Oil</a></div>
+<div>3× <img src="../img/1x1.png" width=32 height=32 style="background: url(../img/sactx-0-2048x2048-BC7-Game\ UI\ Icons\ Atlas-8f612054.png); background-position: -312.75px -252.5px; background-size: 512px 512px;"/><a href="../goods/[Mat_Raw]_Sparkdew.html">Sparkdew</a></div>
+<div>1× <img src="../img/1x1.png" width=32 height=32 style="background: url(../img/sactx-0-2048x2048-BC7-Game\ UI\ Icons\ Atlas-8f612054.png); background-position: -227.75px -243px; background-size: 512px 512px;"/><a href="../goods/[Crafting]_Oil.html">Oil</a></div>
 </div>
 <div class="recipe-add">+</div>
 <div class="result">30 seconds</div>
@@ -22,6 +30,10 @@
 </body>
 
         <style>
+            body {
+                display: block;
+                padding-left: 100px;
+            }
            h4 {
                 margin: 0;
             }
@@ -48,6 +60,10 @@
             .recipe-block {
                 margin-left: 40px;
             };
+
+            h2 { margin: 0px; }
+            img { vertical-align: middle; }
+            a { padding-left:4px; }
 
         </style>
         <script>
