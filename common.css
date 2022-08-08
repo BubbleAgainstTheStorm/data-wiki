@@ -99,7 +99,7 @@ span + select {
 
 .upgrade-level {
     text-align: center;
-    background: url(../WMap_LevelBadge.png);
+    background: url(WMap_LevelBadge.png);
     width: 50%;
     left: 25%;
     position: relative;
@@ -110,8 +110,8 @@ span + select {
 
 
 img {
-    -webkit-mask-image: url(../hex.png);
-    mask-image: url(../hex.png);
+    -webkit-mask-image: url(hex.png);
+    mask-image: url(hex.png);
 
     -webkit-mask-size: 100%;
     mask-size: 100%;
@@ -121,14 +121,14 @@ img {
 .hex-frame {
     width: 64px;
     height: 64px;
-    background: url(../WMap_HexFrame_Completed.png);
+    background: url(WMap_HexFrame_Completed.png);
     background-size: 100% 100%;
 }
 
 .hex-frame:hover {
     width: 64px;
     height: 64px;
-    background: url(../WMap_HexFrame.png);
+    background: url(WMap_HexFrame.png);
     background-size: 100% 100%;
 }
 
