@@ -2,4 +2,56 @@
     --accent: #9090a0;
     --text: lightgray;
     --bg: #444751;
+    --accent-bg: #444051;
+}
+
+img {
+    vertical-align: middle;
+}
+
+
+img + a {
+    margin-left: 4px;;
+}
+
+.weighted-table {
+    display: grid;
+}
+
+b {
+    display: inline-block;
+    margin-bottom: 8px;
+}
+
+details {
+    background-color: transparent;
+}
+
+header {
+    position: sticky;
+    top: 0;
+    background-color: var(--bg);
+}
+
+header>nav select {
+    margin: 0 .5rem 1rem .5rem;
+    border: 1px solid var(--border);
+    border-radius: 5px;
+    color: var(--text);
+    display: inline-block;
+    padding: .1rem 1rem;
+    text-decoration: none;
+}
+
+header>nav span {
+    margin: 0 .5rem 1rem .5rem;
+    color: var(--text);
+    display: inline-block;
+    padding: .1rem 1rem;
+    text-decoration: none;
+}
+
+td {
+    padding-top: 2px;
+    padding-bottom: 2px;
 }
