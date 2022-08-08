@@ -109,7 +109,7 @@ span + select {
 }
 
 
-img {
+.capital-upgrade-tree img {
     -webkit-mask-image: url(hex.png);
     mask-image: url(hex.png);
 
