@@ -31,6 +31,8 @@ header {
     position: sticky;
     top: 0;
     background-color: var(--bg);
+    z-index: 100;
+    box-shadow: 0px 3px 8px black;
 }
 
 header>nav select {
@@ -41,6 +43,12 @@ header>nav select {
     display: inline-block;
     padding: .1rem 1rem;
     text-decoration: none;
+}
+
+header>nav a {
+    margin: 0;
+    margin-bottom: 12px;
+
 }
 
 header>nav span {
@@ -54,4 +62,112 @@ header>nav span {
 td {
     padding-top: 2px;
     padding-bottom: 2px;
+}
+
+html {
+  overflow-y: scroll;
+}
+
+span + select { 
+    margin-left: 12px;
+}
+
+.hidden {
+    display: none;
+}
+
+.blueprint-list {
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 20px;
+    row-gap: 4px;
+}
+
+.blueprint-set {
+    border: 2px solid lightgray;
+    border-radius: 8px;
+    padding: 4px;
+    margin-bottom: 16px;
+}
+
+.capital-upgrade-tree {
+    display: grid;
+    column-gap: 10px;
+    row-gap: 8px;
+    grid-template-columns: repeat(7, 64px) 400px;
+}
+
+.upgrade-level {
+    text-align: center;
+    background: url(../WMap_LevelBadge.png);
+    width: 50%;
+    left: 25%;
+    position: relative;
+    color: gray;
+    background-repeat: no-repeat;
+    background-size: 100% 26px;
+}
+
+
+img {
+    -webkit-mask-image: url(../hex.png);
+    mask-image: url(../hex.png);
+
+    -webkit-mask-size: 100%;
+    mask-size: 100%;
+}
+
+
+.hex-frame {
+    width: 64px;
+    height: 64px;
+    background: url(../WMap_HexFrame_Completed.png);
+    background-size: 100% 100%;
+}
+
+.hex-frame:hover {
+    width: 64px;
+    height: 64px;
+    background: url(../WMap_HexFrame.png);
+    background-size: 100% 100%;
+}
+
+.upgrade-track {
+    background-color: lightgray;
+    width: 4px;
+    height: 100%;
+    opacity: 50%;;
+
+    left: 30px;
+    position: relative;
+
+    box-sizing: content-box;
+    
+}
+
+#upgrade-panel {
+    position: fixed;;
+    border: 2px solid black;
+    padding: 10px;
+    width: 400px;
+    height: 800px;
+    display: none;
+}
+
+#upgrade-cost {
+    margin-bottom: 30px;
+}
+
+#upgrade-panel h5 {
+    margin: 4px;
+}
+
+#upgrade-cost {
+    display: grid;
+    padding: 0 30px;;
+}
+
+header {
+    max-height: 80px;
+
 }
