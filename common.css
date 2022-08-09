@@ -177,3 +177,28 @@ header {
     user-select: none;
 }
 
+.building-categories {
+    display: initial;
+    border-collapse: collapse;
+}
+
+tr.header-row {
+    background-color: var(--bg);
+}
+
+td {
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+th {
+    position: sticky;
+    top: 128px;
+    background-color: black;
+}
+
+th.category-name {
+    position: sticky;
+    top: 80px;;
+    font-size: xx-large
+}
