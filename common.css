@@ -121,13 +121,6 @@ span + select {
 .hex-frame {
     width: 64px;
     height: 64px;
-    background: url(WMap_HexFrame_Completed.png);
-    background-size: 100% 100%;
-}
-
-.hex-frame:hover {
-    width: 64px;
-    height: 64px;
     background: url(WMap_HexFrame.png);
     background-size: 100% 100%;
 }
@@ -152,6 +145,7 @@ span + select {
     width: 400px;
     height: 800px;
     display: none;
+    overflow-y: scroll;
 }
 
 #upgrade-cost {
@@ -169,5 +163,17 @@ span + select {
 
 header {
     max-height: 80px;
-
 }
+
+.upgrade-level:hover, .hex-frame:hover {
+    filter: drop-shadow(0px 0px 8px blue) brightness(120%);
+}
+
+.selected, .selected:hover {
+    filter: drop-shadow(0px 0px 12px orange) brightness(200%);
+}
+
+.upgrade-level {
+    user-select: none;
+}
+

@@ -29,16 +29,20 @@ document.addEventListener('DOMContentLoaded', function() {
     const upgradeCost = document.getElementById("upgrade-cost");
     const upgradeRewards = document.getElementById("upgrade-rewards");
 
-    for (const upgrade of document.getElementsByClassName("hex-frame")) {
-        upgrade.addEventListener('mouseenter', function() {
+    let selectedUpgrade = null;
+
+    for (const upgrade of document.getElementsByClassName("reward-provider")) {
+        upgrade.addEventListener('click', function() {
             infoPanel.style.display = 'initial';
-            const info = JSON.parse(upgrade.getAttribute("data-upgrade"));
+            const info = JSON.parse(upgrade.getAttribute("data-rewards"));
             upgradeName.innerText = info.name;
             upgradeCost.innerHTML = '';
-            for (const cost of info.cost) {
-                var span = document.createElement('span');
-                span.innerText = cost;
-                upgradeCost.appendChild(span);
+            if ('cost' in info) {
+                for (const cost of info.cost) {
+                    var span = document.createElement('span');
+                    span.innerText = cost;
+                    upgradeCost.appendChild(span);
+                }
             }
 
             upgradeRewards.innerHTML = '';
@@ -47,7 +51,7 @@ document.addEventListener('DOMContentLoaded', function() {
                 var nom = document.createElement('h5');
                 nom.innerText = reward.name;
                 var desc = document.createElement('p');
-                desc.innerText = reward.description;
+                desc.innerText = reward.description.replace(/\<.*?\>/gm, '');
 
                 div.appendChild(nom);
                 div.appendChild(desc);
@@ -55,10 +59,16 @@ document.addEventListener('DOMContentLoaded', function() {
                 upgradeRewards.appendChild(div);
             }
 
+            infoPanel.scrollTop = 0;
+
+            if (selectedUpgrade != null)
+                selectedUpgrade.classList.remove('selected');
+            selectedUpgrade = upgrade;
+            selectedUpgrade.classList.add('selected');
 
         });
         upgrade.addEventListener('mouseleave', function() {
-            infoPanel.style.display = 'none';
+            // infoPanel.style.display = 'none';
         });
     }
 }, false);
