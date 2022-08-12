@@ -45,12 +45,6 @@ header>nav select {
     text-decoration: none;
 }
 
-header>nav a {
-    margin: 0;
-    margin-bottom: 12px;
-
-}
-
 header>nav span {
     margin: 0 .5rem 1rem .5rem;
     color: var(--text);
@@ -191,7 +185,7 @@ td {
     padding-bottom: 20px;
 }
 
-th {
+th.sticky-first, th.sticky-second {
     position: sticky;
     top: 128px;
     background-color: black;
@@ -202,3 +196,20 @@ th.category-name {
     top: 80px;;
     font-size: xx-large
 }
+
+.recipe-result {
+    margin-left: auto;
+    margin-right: 32px;
+}
+
+.recipe-result>span {
+    text-align: center;
+    vertical-align: middle;
+    background-color: transparent;
+    padding: 4px 10px 4px 10px;
+    border-radius: 14px;
+    border: 2px solid darkorange;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+

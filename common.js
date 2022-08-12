@@ -4,23 +4,37 @@ document.addEventListener('DOMContentLoaded', function() {
     const difficultySelect = document.getElementById("difficulty-select");
 
     const filterableByDifficulty = document.getElementsByClassName("filter-difficulty");
+    const constructionCosts = document.getElementsByClassName("cost-construction");
+
+    function setDifficulty(difficulty) {
+        window.sessionStorage.setItem("difficulty", difficulty);
+        const clazz = `difficulty-${difficulty}`;
+
+        for (let el of filterableByDifficulty) {
+            if (el.classList.contains(clazz))
+                el.classList.remove(`hidden`);
+            else
+                el.classList.add(`hidden`);
+        }
+
+        const multiplier = 1.0 + (constructionRates.get(difficulty) ?? 0.0);
+        for (let c of constructionCosts) {
+            c.innerText = Math.round(parseFloat(c.getAttribute("data-base-cost")) * multiplier);
+        }
+        console.log(multiplier);
+
+    }
+
 
     if (difficultySelect !== null) {
         const currentDifficulty = window.sessionStorage.getItem("difficulty");
         if (currentDifficulty !== null) {
             difficultySelect.value = currentDifficulty;
+            setDifficulty(currentDifficulty);
         }
 
         difficultySelect.addEventListener('change', function() {
-            window.sessionStorage.setItem("difficulty", difficultySelect.value);
-            const clazz = `difficulty-${difficultySelect.value}`;
-
-            for (let el of filterableByDifficulty) {
-                if (el.classList.contains(clazz))
-                    el.classList.remove(`hidden`);
-                else
-                    el.classList.add(`hidden`);
-            }
+            setDifficulty(difficultySelect.value);
         }, false);
     }
 

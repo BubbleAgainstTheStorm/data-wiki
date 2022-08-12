@@ -1,7 +1,25 @@
 <html> <head> 
-                <link rel="stylesheet" href="/simple.min.css"><link rel="stylesheet" href="/data-wiki/simple.min.css">
-                <link rel="stylesheet" href="/data-wiki/common.css"> <link rel="stylesheet" href="/common.css">
-                <script src="/data-wiki/common.js"></script> <script src="/common.js"></script>
+                <link rel="stylesheet" href="/data-wiki/simple.min.css">
+                <link rel="stylesheet" href="/data-wiki/common.css">
+                <script>
+                    var constructionRates = new Map([["8_Ascension_V", 0.5],
+["9_Ascension_VI", 0.5],
+["10_Ascension_VII", 0.5],
+["11_Ascension_VIII", 0.5],
+["12_Ascension_IX", 0.5],
+["13_Ascension_X", 0.5],
+["14_Ascension_XI", 0.5],
+["15_Ascension_XII", 0.5],
+["16_Ascension_XIII", 0.5],
+["17_Ascension_XIV", 0.5],
+["18_Ascension_XV", 0.5],
+["19_Ascension_XVI", 0.5],
+["20_Ascension_XVII", 0.5],
+["21_Ascension_XVIII", 0.5],
+["22_Ascension_XIX", 0.5],
+["23_Ascension_XX", 0.5]]);
+                </script>
+                <script src="/data-wiki/common.js"></script>
             </head> <body>
 <header>
                 <nav>
@@ -12,7 +30,34 @@
                     <a href="../cornerstones">Cornerstones</a>
                     <a href="../biomes">Biomes</a>
                     <a href="../upgrades">Upgrades</a>
-                </nav></header><main>
+                </nav>
+                 <nav>
+                    <span>Scale costs for difficulty:</span>
+                    <select id="difficulty-select">
+                        <option>Normal - Very Hard</option>
+                        <option value="4_Ascension_I">Prestige 1</option>
+<option value="5_Ascension_II">Prestige 2</option>
+<option value="6_Ascension_III">Prestige 3</option>
+<option value="7_Ascension_IV">Prestige 4</option>
+<option value="8_Ascension_V">Prestige 5</option>
+<option value="9_Ascension_VI">Prestige 6</option>
+<option value="10_Ascension_VII">Prestige 7</option>
+<option value="11_Ascension_VIII">Prestige 8</option>
+<option value="12_Ascension_IX">Prestige 9</option>
+<option value="13_Ascension_X">Prestige 10</option>
+<option value="14_Ascension_XI">Prestige 11</option>
+<option value="15_Ascension_XII">Prestige 12</option>
+<option value="16_Ascension_XIII">Prestige 13</option>
+<option value="17_Ascension_XIV">Prestige 14</option>
+<option value="18_Ascension_XV">Prestige 15</option>
+<option value="19_Ascension_XVI">Prestige 16</option>
+<option value="20_Ascension_XVII">Prestige 17</option>
+<option value="21_Ascension_XVIII">Prestige 18</option>
+<option value="22_Ascension_XIX">Prestige 19</option>
+<option value="23_Ascension_XX">Prestige 20</option>
+                    </select>
+                </nav>
+                </header><main>
 <h2><img  src="../img/1x1.png" width=128 height=128 style="background: url(../img/Rain%20Mill_icon.png); background-position: -0px -0px; background-size: 128px 128px;"/>Rain Mill</h2>
 <h4>Can produce:  <sprite name=[crafting] flour> Flour (<sprite name=grade3>), <sprite name=[needs] scrolls> Scrolls (<sprite name=grade1>), <sprite name=[packs] pack of building materials> Pack of Building Materials (<sprite name=grade1>).</h4>
 <div class="recipe-container">
@@ -27,9 +72,12 @@
 </div>
 <div class="recipe ">
 <div class="ingredient">
-<div>6× <img  src="../img/1x1.png" width=32 height=32 style="background: url(../img/sactx-0-2048x2048-BC7-Game%20UI%20Icons%20Atlas-8f612054.png); background-position: -66px -242px; background-size: 512px 512px;"/><a href="../goods/[Food_Raw]_Grain.html">Grain</a></div>
-<div>6× <img  src="../img/1x1.png" width=32 height=32 style="background: url(../img/sactx-0-2048x2048-BC7-Game%20UI%20Icons%20Atlas-8f612054.png); background-position: -0px -209px; background-size: 512px 512px;"/><a href="../goods/[Food_Raw]_Mushrooms.html">Mushrooms</a></div>
-<div>6× <img  src="../img/1x1.png" width=32 height=32 style="background: url(../img/sactx-0-2048x2048-BC7-Game%20UI%20Icons%20Atlas-8f612054.png); background-position: -33px -209px; background-size: 512px 512px;"/><a href="../goods/[Food_Raw]_Roots.html">Roots</a></div>
+<div><span class="cost-recipe-ingredient" data-base-cost="6">6</span>× <img  src="../img/1x1.png" width=32 height=32 style="background: url(../img/sactx-0-2048x2048-BC7-Game%20UI%20Icons%20Atlas-8f612054.png); background-position: -66px -242px; background-size: 512px 512px;"/> <a href="../goods/[Food_Raw]_Grain.html"> Grain</a></div>
+<div><span class="cost-recipe-ingredient" data-base-cost="6">6</span>× <img  src="../img/1x1.png" width=32 height=32 style="background: url(../img/sactx-0-2048x2048-BC7-Game%20UI%20Icons%20Atlas-8f612054.png); background-position: -0px -209px; background-size: 512px 512px;"/> <a href="../goods/[Food_Raw]_Mushrooms.html"> Mushrooms</a></div>
+<div><span class="cost-recipe-ingredient" data-base-cost="6">6</span>× <img  src="../img/1x1.png" width=32 height=32 style="background: url(../img/sactx-0-2048x2048-BC7-Game%20UI%20Icons%20Atlas-8f612054.png); background-position: -33px -209px; background-size: 512px 512px;"/> <a href="../goods/[Food_Raw]_Roots.html"> Roots</a></div>
+</div>
+<div class="recipe-result">
+🢂 <span><span class="cost-recipe-ingredient" data-base-cost="10">10</span>× <img  src="../img/1x1.png" width=32 height=32 style="background: url(../img/sactx-0-2048x2048-BC7-Game%20UI%20Icons%20Atlas-8f612054.png); background-position: -0px -242px; background-size: 512px 512px;"/> <a href="../goods/[Crafting]_Flour.html"> Flour</a></span>
 </div>
 </div>
 </div>
@@ -45,14 +93,17 @@
 </div>
 <div class="recipe ">
 <div class="ingredient">
-<div>4× <img  src="../img/1x1.png" width=32 height=32 style="background: url(../img/sactx-0-2048x2048-BC7-Game%20UI%20Icons%20Atlas-8f612054.png); background-position: -165px -232px; background-size: 512px 512px;"/><a href="../goods/[Mat_Raw]_Leather.html">Leather</a></div>
-<div>4× <img  src="../img/1x1.png" width=32 height=32 style="background: url(../img/sactx-0-2048x2048-BC7-Game%20UI%20Icons%20Atlas-8f612054.png); background-position: -33px -242px; background-size: 512px 512px;"/><a href="../goods/[Mat_Raw]_Plant_Fibre.html">Plant Fibre</a></div>
-<div>10× <img  src="../img/1x1.png" width=32 height=32 style="background: url(../img/sactx-0-2048x2048-BC7-Game%20UI%20Icons%20Atlas-8f612054.png); background-position: -453.25px -344.25px; background-size: 512px 512px;"/><a href="../goods/[Mat_Raw]_Wood.html">Wood</a></div>
+<div><span class="cost-recipe-ingredient" data-base-cost="4">4</span>× <img  src="../img/1x1.png" width=32 height=32 style="background: url(../img/sactx-0-2048x2048-BC7-Game%20UI%20Icons%20Atlas-8f612054.png); background-position: -165px -232px; background-size: 512px 512px;"/> <a href="../goods/[Mat_Raw]_Leather.html"> Leather</a></div>
+<div><span class="cost-recipe-ingredient" data-base-cost="4">4</span>× <img  src="../img/1x1.png" width=32 height=32 style="background: url(../img/sactx-0-2048x2048-BC7-Game%20UI%20Icons%20Atlas-8f612054.png); background-position: -33px -242px; background-size: 512px 512px;"/> <a href="../goods/[Mat_Raw]_Plant_Fibre.html"> Plant Fiber</a></div>
+<div><span class="cost-recipe-ingredient" data-base-cost="10">10</span>× <img  src="../img/1x1.png" width=32 height=32 style="background: url(../img/sactx-0-2048x2048-BC7-Game%20UI%20Icons%20Atlas-8f612054.png); background-position: -453.25px -344.25px; background-size: 512px 512px;"/> <a href="../goods/[Mat_Raw]_Wood.html"> Wood</a></div>
 </div>
 <div class="recipe-add">+</div>
 <div class="ingredient">
-<div>3× <img  src="../img/1x1.png" width=32 height=32 style="background: url(../img/sactx-0-2048x2048-BC7-Game%20UI%20Icons%20Atlas-8f612054.png); background-position: -66px -110px; background-size: 512px 512px;"/><a href="../goods/[Crafting]_Pigment.html">Pigment</a></div>
-<div>3× <img  src="../img/1x1.png" width=32 height=32 style="background: url(../img/sactx-0-2048x2048-BC7-Game%20UI%20Icons%20Atlas-8f612054.png); background-position: -297px -186.5px; background-size: 512px 512px;"/><a href="../goods/[Needs]_Wine.html">Wine</a></div>
+<div><span class="cost-recipe-ingredient" data-base-cost="3">3</span>× <img  src="../img/1x1.png" width=32 height=32 style="background: url(../img/sactx-0-2048x2048-BC7-Game%20UI%20Icons%20Atlas-8f612054.png); background-position: -66px -110px; background-size: 512px 512px;"/> <a href="../goods/[Crafting]_Pigment.html"> Pigment</a></div>
+<div><span class="cost-recipe-ingredient" data-base-cost="3">3</span>× <img  src="../img/1x1.png" width=32 height=32 style="background: url(../img/sactx-0-2048x2048-BC7-Game%20UI%20Icons%20Atlas-8f612054.png); background-position: -297px -186.5px; background-size: 512px 512px;"/> <a href="../goods/[Needs]_Wine.html"> Wine</a></div>
+</div>
+<div class="recipe-result">
+🢂 <span><span class="cost-recipe-ingredient" data-base-cost="8">8</span>× <img  src="../img/1x1.png" width=32 height=32 style="background: url(../img/sactx-0-2048x2048-BC7-Game%20UI%20Icons%20Atlas-8f612054.png); background-position: -66px -275px; background-size: 512px 512px;"/> <a href="../goods/[Needs]_Scrolls.html"> Scrolls</a></span>
 </div>
 </div>
 </div>
@@ -68,9 +119,12 @@
 </div>
 <div class="recipe ">
 <div class="ingredient">
-<div>8× <img  src="../img/1x1.png" width=32 height=32 style="background: url(../img/sactx-0-2048x2048-BC7-Game%20UI%20Icons%20Atlas-8f612054.png); background-position: -330px -186.5px; background-size: 512px 512px;"/><a href="../goods/[Mat_Processed]_Planks.html">Planks</a></div>
-<div>5× <img  src="../img/1x1.png" width=32 height=32 style="background: url(../img/sactx-0-2048x2048-BC7-Game%20UI%20Icons%20Atlas-8f612054.png); background-position: -99px -170.25px; background-size: 512px 512px;"/><a href="../goods/[Mat_Processed]_Fabric.html">Fabric</a></div>
-<div>5× <img  src="../img/1x1.png" width=32 height=32 style="background: url(../img/sactx-0-2048x2048-BC7-Game%20UI%20Icons%20Atlas-8f612054.png); background-position: -231px -177px; background-size: 512px 512px;"/><a href="../goods/[Mat_Processed]_Bricks.html">Bricks</a></div>
+<div><span class="cost-recipe-ingredient" data-base-cost="8">8</span>× <img  src="../img/1x1.png" width=32 height=32 style="background: url(../img/sactx-0-2048x2048-BC7-Game%20UI%20Icons%20Atlas-8f612054.png); background-position: -330px -186.5px; background-size: 512px 512px;"/> <a href="../goods/[Mat_Processed]_Planks.html"> Planks</a></div>
+<div><span class="cost-recipe-ingredient" data-base-cost="5">5</span>× <img  src="../img/1x1.png" width=32 height=32 style="background: url(../img/sactx-0-2048x2048-BC7-Game%20UI%20Icons%20Atlas-8f612054.png); background-position: -99px -170.25px; background-size: 512px 512px;"/> <a href="../goods/[Mat_Processed]_Fabric.html"> Fabric</a></div>
+<div><span class="cost-recipe-ingredient" data-base-cost="5">5</span>× <img  src="../img/1x1.png" width=32 height=32 style="background: url(../img/sactx-0-2048x2048-BC7-Game%20UI%20Icons%20Atlas-8f612054.png); background-position: -231px -177px; background-size: 512px 512px;"/> <a href="../goods/[Mat_Processed]_Bricks.html"> Bricks</a></div>
+</div>
+<div class="recipe-result">
+🢂 <span><span class="cost-recipe-ingredient" data-base-cost="2">2</span>× <img  src="../img/1x1.png" width=32 height=32 style="background: url(../img/sactx-0-2048x2048-BC7-Game%20UI%20Icons%20Atlas-8f612054.png); background-position: -132px -203.25px; background-size: 512px 512px;"/> <a href="../goods/[Packs]_Pack_of_Building_Materials.html"> Pack of Building Materials</a></span>
 </div>
 </div>
 </div>

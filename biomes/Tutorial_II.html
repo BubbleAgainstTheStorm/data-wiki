@@ -1,7 +1,25 @@
 <html><head> 
-                <link rel="stylesheet" href="/simple.min.css"><link rel="stylesheet" href="/data-wiki/simple.min.css">
-                <link rel="stylesheet" href="/data-wiki/common.css"> <link rel="stylesheet" href="/common.css">
-                <script src="/data-wiki/common.js"></script> <script src="/common.js"></script>
+                <link rel="stylesheet" href="/data-wiki/simple.min.css">
+                <link rel="stylesheet" href="/data-wiki/common.css">
+                <script>
+                    var constructionRates = new Map([["8_Ascension_V", 0.5],
+["9_Ascension_VI", 0.5],
+["10_Ascension_VII", 0.5],
+["11_Ascension_VIII", 0.5],
+["12_Ascension_IX", 0.5],
+["13_Ascension_X", 0.5],
+["14_Ascension_XI", 0.5],
+["15_Ascension_XII", 0.5],
+["16_Ascension_XIII", 0.5],
+["17_Ascension_XIV", 0.5],
+["18_Ascension_XV", 0.5],
+["19_Ascension_XVI", 0.5],
+["20_Ascension_XVII", 0.5],
+["21_Ascension_XVIII", 0.5],
+["22_Ascension_XIX", 0.5],
+["23_Ascension_XX", 0.5]]);
+                </script>
+                <script src="/data-wiki/common.js"></script>
             </head><body>
                                     <header>
                 <nav>
@@ -13,8 +31,35 @@
                     <a href="../biomes">Biomes</a>
                     <a href="../upgrades">Upgrades</a>
                 </nav>
+                 <nav>
+                    <span>Scale costs for difficulty:</span>
+                    <select id="difficulty-select">
+                        <option>Normal - Very Hard</option>
+                        <option value="4_Ascension_I">Prestige 1</option>
+<option value="5_Ascension_II">Prestige 2</option>
+<option value="6_Ascension_III">Prestige 3</option>
+<option value="7_Ascension_IV">Prestige 4</option>
+<option value="8_Ascension_V">Prestige 5</option>
+<option value="9_Ascension_VI">Prestige 6</option>
+<option value="10_Ascension_VII">Prestige 7</option>
+<option value="11_Ascension_VIII">Prestige 8</option>
+<option value="12_Ascension_IX">Prestige 9</option>
+<option value="13_Ascension_X">Prestige 10</option>
+<option value="14_Ascension_XI">Prestige 11</option>
+<option value="15_Ascension_XII">Prestige 12</option>
+<option value="16_Ascension_XIII">Prestige 13</option>
+<option value="17_Ascension_XIV">Prestige 14</option>
+<option value="18_Ascension_XV">Prestige 15</option>
+<option value="19_Ascension_XVI">Prestige 16</option>
+<option value="20_Ascension_XVII">Prestige 17</option>
+<option value="21_Ascension_XVIII">Prestige 18</option>
+<option value="22_Ascension_XIX">Prestige 19</option>
+<option value="23_Ascension_XX">Prestige 20</option>
+                    </select>
+                </nav>
+                
 </header> <main><div>
-<img  src="../img/1x1.png" width=128 height=128 style="background: url(../img/sactx-2-2048x1024-BC7-Big%20Windows%20Atlas-fde774cf.png); background-position: -820px -536px; background-size: 2048px 1024px;"/> <h2>Tutorial II</h2>
+<img  src="../img/1x1.png" width=128 height=128 style="background: url(../img/sactx-2-2048x1024-BC7-Big%20Windows%20Atlas-fde774cf.png); background-position: -820px -536px; background-size: 2048px 1024px;"/> <h2>>Missing key<</h2>
 <p>>Missing key<</p>
 <details>
 <summary>Newcomers</summary>
@@ -64,61 +109,11 @@
 <div>
 <table>
 <tr><th>Difficulty</th><th>Easy Orders</th><th>Medium Orders</th><th>Hard Orders</th></tr>
-<tr><td>Tutorial II Difficulty</td><td>8</td><td>0</td><td>0</td></tr>
+<tr><td><div>Tutorial</div></td><td>8</td><td>0</td><td>0</td></tr>
 </table>
 <h5>Excluded orders:</h5><ul>
 
 </ul>
-</div>
-</details>
-<details open="true">
-<summary>Blueprints</summary>
-<nav><span>Difficulty:</span><select id="difficulty-select">
-<option value="Tutorial_II_Difficulty">Tutorial II Difficulty</span>
-</select></nav>
-<div class="filter-difficulty  difficulty-Tutorial_II_Difficulty">
-<details class="blueprint-range"> <summary>When rep is between: -1 to 0</summary>
-<div class="blueprint-set"><div>TUT II Small Farm</div><div class="blueprint-list">
-<div class="blueprint"><img  src="../img/1x1.png" width=32 height=32 style="background: url(../img/SmallFarm_icon.png); background-position: -0px -0px; background-size: 32px 32px;"/> SmallFarm</div>
-</div> </div>
-</details>
-<details class="blueprint-range"> <summary>When rep is between: 1 to 1</summary>
-<div class="blueprint-set"><div>TUT II Shelter</div><div class="blueprint-list">
-<div class="blueprint"><img  src="../img/1x1.png" width=32 height=32 style="background: url(../img/Shelter_icon.png); background-position: -0px -0px; background-size: 32px 32px;"/> Shelter</div>
-</div> </div>
-</details>
-<details class="blueprint-range"> <summary>When rep is between: 2 to 2</summary>
-<div class="blueprint-set"><div>TUT II Trapper Camp</div><div class="blueprint-list">
-<div class="blueprint"><img  src="../img/1x1.png" width=32 height=32 style="background: url(../img/Trapper\'s%20Camp_icon.png); background-position: -0px -0px; background-size: 32px 32px;"/> Trapper's Camp</div>
-</div> </div>
-</details>
-<details class="blueprint-range"> <summary>When rep is between: 3 to 3</summary>
-<div class="blueprint-set"><div>TUT II Jerky</div><div class="blueprint-list">
-<div class="blueprint"><img  src="../img/1x1.png" width=32 height=32 style="background: url(../img/Smokehouse_icon.png); background-position: -0px -0px; background-size: 32px 32px;"/> Smokehouse</div>
-</div> </div>
-</details>
-<details class="blueprint-range"> <summary>When rep is between: 4 to 4</summary>
-<div class="blueprint-set"><div>TUT II Brewery</div><div class="blueprint-list">
-<div class="blueprint"><img  src="../img/1x1.png" width=32 height=32 style="background: url(../img/Brewery_icon.png); background-position: -0px -0px; background-size: 32px 32px;"/> Brewery</div>
-</div> </div>
-</details>
-<details class="blueprint-range"> <summary>When rep is between: 5 to 5</summary>
-<div class="blueprint-set"><div>TUT II Tavern</div><div class="blueprint-list">
-<div class="blueprint"><img  src="../img/1x1.png" width=32 height=32 style="background: url(../img/Tavern_icon.png); background-position: -0px -0px; background-size: 32px 32px;"/> Tavern</div>
-</div> </div>
-</details>
-<details class="blueprint-range"> <summary>When rep is between: 6 to 6</summary>
-<div class="blueprint-set"><div>TUT II Houses</div><div class="blueprint-list">
-<div class="blueprint"><img  src="../img/1x1.png" width=32 height=32 style="background: url(../img/Human%20House_icon.png); background-position: -0px -0px; background-size: 32px 32px;"/> Human House</div>
-<div class="blueprint"><img  src="../img/1x1.png" width=32 height=32 style="background: url(../img/Beaver%20House_icon.png); background-position: -0px -0px; background-size: 32px 32px;"/> Beaver House</div>
-<div class="blueprint"><img  src="../img/1x1.png" width=32 height=32 style="background: url(../img/Lizard%20House_icon.png); background-position: -0px -0px; background-size: 32px 32px;"/> Lizard House</div>
-</div> </div>
-</details>
-<details class="blueprint-range"> <summary>When rep is between: 7 to 7</summary>
-<div class="blueprint-set"><div>TUT II Makeshift Post</div><div class="blueprint-list">
-<div class="blueprint"><img  src="../img/1x1.png" width=32 height=32 style="background: url(../img/Makeshift%20Post_icon.png); background-position: -0px -0px; background-size: 32px 32px;"/> Makeshift Post</div>
-</div> </div>
-</details>
 </div>
 </details>
 </div></main></body></html>
