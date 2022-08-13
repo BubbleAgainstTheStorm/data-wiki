@@ -252,4 +252,18 @@ footer {
 .to-solve-sets {
     display: grid;
     grid-template-columns: auto auto;
+    min-width: 200px;
+}
+
+
+.relic-effect-category {
+    margin-top: 10px;;
+    margin-bottom: 10px;;
+    color: lightskyblue;
+}
+
+.relic-effect {
+    margin-top: 8px;
+    margin-bottom: 8px;
+
 }
