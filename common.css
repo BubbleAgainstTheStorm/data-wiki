@@ -213,3 +213,11 @@ th.category-name {
     padding-bottom: 10px;
 }
 
+.section-anchor::before { 
+  display: block; 
+  content: " "; 
+  margin-top: -105px; 
+  height: 105px; 
+  visibility: hidden; 
+  pointer-events: none;
+}
