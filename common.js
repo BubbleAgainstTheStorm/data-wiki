@@ -5,6 +5,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
     const filterableByDifficulty = document.getElementsByClassName("filter-difficulty");
     const constructionCosts = document.getElementsByClassName("cost-construction");
+    const relicTimes = document.getElementsByClassName("relic-time");
 
     function setDifficulty(difficulty) {
         window.sessionStorage.setItem("difficulty", difficulty);
@@ -17,12 +18,18 @@ document.addEventListener('DOMContentLoaded', function() {
                 el.classList.add(`hidden`);
         }
 
-        const multiplier = 1.0 + (constructionRates.get(difficulty) ?? 0.0);
+        const constructionMultiplier = 1.0 + (constructionRates.get(difficulty) ?? 0.0);
         for (let c of constructionCosts) {
-            c.innerText = Math.round(parseFloat(c.getAttribute("data-base-cost")) * multiplier);
+            c.innerText = Math.round(parseFloat(c.getAttribute("data-base-cost")) * constructionMultiplier);
         }
-        console.log(multiplier);
 
+        const relicMultiplier = 1.0 + (relicWorkRates.get(difficulty) ?? 0.0);
+        for (let c of relicTimes) {
+            const totalSeconds = Math.round(parseFloat(c.getAttribute("data-base-time")) * relicMultiplier);
+            const inMins = Math.floor(totalSeconds / 60);
+            const inSecs = Math.floor(totalSeconds % 60);
+            c.innerText = inMins.toString().padStart(2, "0") + ":" + inSecs.toString().padStart(2, "0");
+        }
     }
 
 

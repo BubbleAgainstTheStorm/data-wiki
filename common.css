@@ -228,3 +228,28 @@ footer {
     bottom: 0;
     text-align: center;
 }
+
+.dropdown {
+    display:inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    min-width: 160px;
+    background-color: var(--accent-bg);
+}
+
+.dropdown-content > a {
+    display: block;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.to-solve-sets {
+    display: grid;
+    grid-template-columns: auto auto;
+}
