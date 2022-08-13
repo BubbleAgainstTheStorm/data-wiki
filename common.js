@@ -34,11 +34,9 @@ document.addEventListener('DOMContentLoaded', function() {
 
 
     if (difficultySelect !== null) {
-        const currentDifficulty = window.sessionStorage.getItem("difficulty");
-        if (currentDifficulty !== null) {
-            difficultySelect.value = currentDifficulty;
-            setDifficulty(currentDifficulty);
-        }
+        const currentDifficulty = window.sessionStorage.getItem("difficulty") ?? "0_Normal";
+        difficultySelect.value = currentDifficulty;
+        setDifficulty(currentDifficulty);
 
         difficultySelect.addEventListener('change', function() {
             setDifficulty(difficultySelect.value);
