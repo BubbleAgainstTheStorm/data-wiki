@@ -216,11 +216,21 @@ th.category-name {
 .section-anchor::before { 
   display: block; 
   content: " "; 
-  margin-top: -105px; 
-  height: 105px; 
+  margin-top: -50px; 
+  height: 50px; 
   visibility: hidden; 
   pointer-events: none;
 }
+
+.section-anchor img {
+    display: inline-block;
+}
+
+.section-anchor h3 {
+    display: inline-block;
+    width: 80%;
+}
+
 
 
 footer {
@@ -266,4 +276,8 @@ footer {
     margin-top: 8px;
     margin-bottom: 8px;
 
+}
+
+.biome-reward {
+    margin-left: 16px;
 }
