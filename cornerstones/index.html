@@ -21,19 +21,19 @@
 ["21_Ascension_XVIII", 0.5],
 ["22_Ascension_XIX", 0.5],
 ["23_Ascension_XX", 0.5]]);
-                    var relicWorkRates = new Map([["11_Ascension_VIII", 0.5],
-["12_Ascension_IX", 0.5],
-["13_Ascension_X", 0.5],
-["14_Ascension_XI", 0.5],
-["15_Ascension_XII", 0.5],
-["16_Ascension_XIII", 0.5],
-["17_Ascension_XIV", 0.5],
-["18_Ascension_XV", 0.5],
-["19_Ascension_XVI", 0.5],
-["20_Ascension_XVII", 0.5],
-["21_Ascension_XVIII", 0.5],
-["22_Ascension_XIX", 0.5],
-["23_Ascension_XX", 0.5]]);
+                    var relicWorkRates = new Map([["11_Ascension_VIII", -0.33],
+["12_Ascension_IX", -0.33],
+["13_Ascension_X", -0.33],
+["14_Ascension_XI", -0.33],
+["15_Ascension_XII", -0.33],
+["16_Ascension_XIII", -0.33],
+["17_Ascension_XIV", -0.33],
+["18_Ascension_XV", -0.33],
+["19_Ascension_XVI", -0.33],
+["20_Ascension_XVII", -0.33],
+["21_Ascension_XVIII", -0.33],
+["22_Ascension_XIX", -0.33],
+["23_Ascension_XX", -0.33]]);
                 </script>
                 <script src="/data-wiki/common.js"></script>
             </head><body>
@@ -48,7 +48,7 @@
                     <a href="/data-wiki/upgrades">Upgrades</a>
                 </nav>
                  <nav>
-                    <span>Game Version: Early Access v0.30.4</span>
+                    <span>Game Version: Early Access v0.31.3</span>
                     <span>Scale costs for difficulty:</span>
                     <select id="difficulty-select">
                         <option value="0_Normal">Normal</option>
@@ -529,11 +529,6 @@
 <p>A strange relic that fits into the Hearth. Wood production is higher by +2, but the Storm lasts 40% longer.</p>
 <h4>Seasonal reward in:</h4><div class="biome-reward-container">
 <span class="biome-reward">Capital</span>
-<span class="biome-reward">Coral Forest</span>
-<span class="biome-reward">Cursed Royal Woodlands</span>
-<span class="biome-reward">Moorlands</span>
-<span class="biome-reward">Royal Woodlands</span>
-<span class="biome-reward">The Marshlands</span>
 </div>
 </div>
 <div class="cornerstone">
@@ -974,7 +969,7 @@
 </div>
 <div class="cornerstone">
 <a class="section-anchor" href="#Accidental_Provisions" id="Accidental_Provisions"><div><img  src="../img/1x1.png" width=32 height=32 style="background: url(../img/BagsAndBoxes_60.png); background-position: -0px -0px; background-size: 32px 32px;"/><h3>Peasant Supplies</h3></div></a>
-<p>Receive 10 <sprite name="[packs] pack of provisions"> Pack of Provisions for every 10 villagers in town.</p>
+<p>Receive 10 <sprite name="[packs] pack of provisions"> Pack of Provisions for every 10 villagers in town. (the bonus is added retroactively)</p>
 <h4>Seasonal reward in:</h4><div class="biome-reward-container">
 <span class="biome-reward">Coral Forest</span>
 <span class="biome-reward">Cursed Royal Woodlands</span>
@@ -996,7 +991,7 @@
 </div>
 <div class="cornerstone">
 <a class="section-anchor" href="#Hostility_for_Relics" id="Hostility_for_Relics"><div><img  src="../img/1x1.png" width=32 height=32 style="background: url(../img/SGI_01.png); background-position: -0px -0px; background-size: 32px 32px;"/><h3>Forest Mitigation</h3></div></a>
-<p>Each solved Glade Event lowers Hostility by -10.</p>
+<p>Each solved Glade Event lowers Hostility by -10. (the bonus is added retroactively)</p>
 <h4>Seasonal reward in:</h4><div class="biome-reward-container">
 <span class="biome-reward">Coral Forest</span>
 <span class="biome-reward">Cursed Royal Woodlands</span>
@@ -1007,7 +1002,7 @@
 </div>
 <div class="cornerstone">
 <a class="section-anchor" href="#Resolve_for_Standing" id="Resolve_for_Standing"><div><img  src="../img/1x1.png" width=32 height=32 style="background: url(../img/SGI_25.png); background-position: -0px -0px; background-size: 32px 32px;"/><h3>Friendly Relations</h3></div></a>
-<p>Gain 1 to Global Resolve for every 3 levels of Standing with other settlements in Trade Routes.</p>
+<p>Gain 1 to Global Resolve for every 3 levels of Standing with other settlements in Trade Routes. (the bonus is added retroactively)</p>
 <h4>Seasonal reward in:</h4><div class="biome-reward-container">
 <span class="biome-reward">Coral Forest</span>
 <span class="biome-reward">Cursed Royal Woodlands</span>
@@ -1018,7 +1013,7 @@
 </div>
 <div class="cornerstone">
 <a class="section-anchor" href="#Tablets_for_Events" id="Tablets_for_Events"><div><img  src="../img/1x1.png" width=32 height=32 style="background: url(../img/runestone_b_06.png); background-position: -0px -0px; background-size: 32px 32px;"/><h3>Hidden Reward</h3></div></a>
-<p>Gain 1 <sprite name="[valuable] ancient tablet"> Ancient Tablet for every 2 Glade Events Solved.</p>
+<p>Gain 1 <sprite name="[valuable] ancient tablet"> Ancient Tablet for every 2 Glade Events Solved. (the bonus is added retroactively)</p>
 <h4>Seasonal reward in:</h4><div class="biome-reward-container">
 <span class="biome-reward">Coral Forest</span>
 <span class="biome-reward">Cursed Royal Woodlands</span>
@@ -1201,7 +1196,7 @@
 </div>
 <div class="cornerstone">
 <a class="section-anchor" href="#Relic_time_reduction" id="Relic_time_reduction"><div><img  src="../img/1x1.png" width=32 height=32 style="background: url(../img/SpellBookPage09_110.png); background-position: -0px -0px; background-size: 32px 32px;"/><h3>Firekeeper's Prayer</h3></div></a>
-<p>Time spent working on Glade Events is decreased by 25%, but resources you sacrifice in the Ancient Hearth burn 25% shorter.</p>
+<p>Glade Event working speed increased by 30%. Resources you sacrifice in the Ancient Hearth burn 25% longer. </p>
 <h4>Seasonal reward in:</h4><div class="biome-reward-container">
 <span class="biome-reward">Coral Forest</span>
 <span class="biome-reward">Cursed Royal Woodlands</span>
@@ -1299,7 +1294,7 @@
 </div>
 </div>
 <div class="cornerstone">
-<a class="section-anchor" href="#Favoring_Block_for_Lower_Reroll_Cost" id="Favoring_Block_for_Lower_Reroll_Cost"><div><img  src="../img/1x1.png" width=32 height=32 style="background: url(../img/y_02.png); background-position: -0px -0px; background-size: 32px 32px;"/><h3>Equality</h3></div></a>
+<a class="section-anchor" href="#Favoring_Block_for_Lower_Reroll_Cost" id="Favoring_Block_for_Lower_Reroll_Cost"><div><img  src="../img/1x1.png" width=32 height=32 style="background: url(../img/Barbarian_icons_115_b.png); background-position: -0px -0px; background-size: 32px 32px;"/><h3>Equality</h3></div></a>
 <p>Cost of rerolling blueprints is lower by 10, but Favoring is disabled.</p>
 <h4>Seasonal reward in:</h4><div class="biome-reward-container">
 <span class="biome-reward">Coral Forest</span>
@@ -1311,7 +1306,7 @@
 </div>
 <div class="cornerstone">
 <a class="section-anchor" href="#Hostility_for_Dangerous_Relics" id="Hostility_for_Dangerous_Relics"><div><img  src="../img/1x1.png" width=32 height=32 style="background: url(../img/SGI_57.png); background-position: -0px -0px; background-size: 32px 32px;"/><h3>Calming the Forest</h3></div></a>
-<p>Every 2 solved dangerous Events lower Hostility by -50.</p>
+<p>Every 2 solved dangerous Events lower Hostility by -50. (the bonus is added retroactively)</p>
 <h4>Seasonal reward in:</h4><div class="biome-reward-container">
 <span class="biome-reward">Coral Forest</span>
 <span class="biome-reward">Cursed Royal Woodlands</span>
@@ -1321,8 +1316,8 @@
 </div>
 </div>
 <div class="cornerstone">
-<a class="section-anchor" href="#Working_Time_for_reward" id="Working_Time_for_reward"><div><img  src="../img/1x1.png" width=32 height=32 style="background: url(../img/y_12.png); background-position: -0px -0px; background-size: 32px 32px;"/><h3>Profitable Caution</h3></div></a>
-<p>Scouts work 50% longer on Dangerous Glade Events but have a +50% chance of bringing back double the amount of goods.</p>
+<a class="section-anchor" href="#Working_Time_for_reward" id="Working_Time_for_reward"><div><img  src="../img/1x1.png" width=32 height=32 style="background: url(../img/TrophyIcons_25_b.png); background-position: -0px -0px; background-size: 32px 32px;"/><h3>Profitable Caution</h3></div></a>
+<p>Scouts work 33% slower on Dangerous Glade Events but have a +50% chance of bringing back double the amount of goods.</p>
 <h4>Seasonal reward in:</h4><div class="biome-reward-container">
 <span class="biome-reward">Coral Forest</span>
 <span class="biome-reward">Cursed Royal Woodlands</span>
@@ -1355,7 +1350,7 @@
 </div>
 <div class="cornerstone">
 <a class="section-anchor" href="#Reroll_for_Standing" id="Reroll_for_Standing"><div><img  src="../img/1x1.png" width=32 height=32 style="background: url(../img/163_b.png); background-position: -0px -0px; background-size: 32px 32px;"/><h3>Influential Friends</h3></div></a>
-<p>Gain 1 Cornerstone Reroll Charge for every 1 level of Standing with other settlements in Trade Routes.</p>
+<p>Gain 1 Cornerstone Reroll Charge for every 1 level of Standing with other settlements in Trade Routes. (the bonus is added retroactively)</p>
 <h4>Seasonal reward in:</h4><div class="biome-reward-container">
 <span class="biome-reward">Coral Forest</span>
 <span class="biome-reward">Cursed Royal Woodlands</span>
@@ -1422,6 +1417,17 @@
 <div class="cornerstone">
 <a class="section-anchor" href="#Merch_for_Trade_Route_Price" id="Merch_for_Trade_Route_Price"><div><img  src="../img/1x1.png" width=32 height=32 style="background: url(../img/addons_36_b.png); background-position: -0px -0px; background-size: 32px 32px;"/><h3>Precious Antiques</h3></div></a>
 <p>You signed a special agreement with the Guild. Traders will have 1 more Cornerstone for sale, but Travel Cost in Trade Routes is increased by 1. </p>
+<h4>Seasonal reward in:</h4><div class="biome-reward-container">
+<span class="biome-reward">Coral Forest</span>
+<span class="biome-reward">Cursed Royal Woodlands</span>
+<span class="biome-reward">Moorlands</span>
+<span class="biome-reward">Royal Woodlands</span>
+<span class="biome-reward">The Marshlands</span>
+</div>
+</div>
+<div class="cornerstone">
+<a class="section-anchor" href="#Trade_routes_for_housing_spots" id="Trade_routes_for_housing_spots"><div><img  src="../img/1x1.png" width=32 height=32 style="background: url(../img/ScrollsAndBooks_45.png); background-position: -0px -0px; background-size: 32px 32px;"/><h3>Urban Planning</h3></div></a>
+<p>All houses have one more housing spot for every 10 completed Trade Routes, but construction is 25% slower.</p>
 <h4>Seasonal reward in:</h4><div class="biome-reward-container">
 <span class="biome-reward">Coral Forest</span>
 <span class="biome-reward">Cursed Royal Woodlands</span>
@@ -2254,7 +2260,7 @@
 </div>
 <div class="cornerstone">
 <a class="section-anchor" href="#Chest_Working_Time_-30" id="Chest_Working_Time_-30"><div><img  src="../img/1x1.png" width=32 height=32 style="background: url(../img/BagsAndBoxes_100.png); background-position: -0px -0px; background-size: 32px 32px;"/><h3>Experienced Scout</h3></div></a>
-<p>Scouts can open chests 30% faster.</p>
+<p>Scouts can open chests 40% faster.</p>
 <h4>Sold by:</h4><div class="biome-reward-container">
 <span class="biome-reward">Trader 3 - Ancient (50%)</span>
 <span class="biome-reward">Trader 4 - Vanguard of the Stolen Keys (50%)</span>

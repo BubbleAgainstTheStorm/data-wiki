@@ -21,19 +21,19 @@
 ["21_Ascension_XVIII", 0.5],
 ["22_Ascension_XIX", 0.5],
 ["23_Ascension_XX", 0.5]]);
-                    var relicWorkRates = new Map([["11_Ascension_VIII", 0.5],
-["12_Ascension_IX", 0.5],
-["13_Ascension_X", 0.5],
-["14_Ascension_XI", 0.5],
-["15_Ascension_XII", 0.5],
-["16_Ascension_XIII", 0.5],
-["17_Ascension_XIV", 0.5],
-["18_Ascension_XV", 0.5],
-["19_Ascension_XVI", 0.5],
-["20_Ascension_XVII", 0.5],
-["21_Ascension_XVIII", 0.5],
-["22_Ascension_XIX", 0.5],
-["23_Ascension_XX", 0.5]]);
+                    var relicWorkRates = new Map([["11_Ascension_VIII", -0.33],
+["12_Ascension_IX", -0.33],
+["13_Ascension_X", -0.33],
+["14_Ascension_XI", -0.33],
+["15_Ascension_XII", -0.33],
+["16_Ascension_XIII", -0.33],
+["17_Ascension_XIV", -0.33],
+["18_Ascension_XV", -0.33],
+["19_Ascension_XVI", -0.33],
+["20_Ascension_XVII", -0.33],
+["21_Ascension_XVIII", -0.33],
+["22_Ascension_XIX", -0.33],
+["23_Ascension_XX", -0.33]]);
                 </script>
                 <script src="/data-wiki/common.js"></script>
             </head><body>
@@ -48,7 +48,7 @@
                     <a href="/data-wiki/upgrades">Upgrades</a>
                 </nav>
                  <nav>
-                    <span>Game Version: Early Access v0.30.4</span>
+                    <span>Game Version: Early Access v0.31.3</span>
                     <span>Scale costs for difficulty:</span>
                     <select id="difficulty-select">
                         <option value="0_Normal">Normal</option>
@@ -262,9 +262,14 @@
       "img": "<img  src=\"../img/1x1.png\" width=32 height=32 style=\"background: url(../img/en_craft_1.png); background-position: -0px -0px; background-size: 32px 32px;\"/>"
     },
     {
-      "name": "Meta Reward Global Capacity",
-      "description": "Every worker in your settlement gets a permanent +1 to their carry capacity.",
-      "img": "<img  src=\"../img/1x1.png\" width=32 height=32 style=\"background: url(../img/BagsAndBoxes_20.png); background-position: -0px -0px; background-size: 32px 32px;\"/>"
+      "name": "Meta Reward Embark Goods Stone",
+      "description": "You gain a new Embark Bonus to choose from when starting a settlement: Stone",
+      "img": "<img  src=\"../img/1x1.png\" width=32 height=32 style=\"background: url(../img/sactx-0-2048x2048-BC7-Game%20UI%20Icons%20Atlas-8f612054.png); background-position: -198px -210px; background-size: 512px 512px;\"/>"
+    },
+    {
+      "name": "Meta Reward Embark Goods Clay",
+      "description": "You gain a new Embark Bonus to choose from when starting a settlement: Clay",
+      "img": "<img  src=\"../img/1x1.png\" width=32 height=32 style=\"background: url(../img/sactx-0-2048x2048-BC7-Game%20UI%20Icons%20Atlas-8f612054.png); background-position: -378.75px -285.5px; background-size: 512px 512px;\"/>"
     }
   ]
 }''></div>
@@ -304,7 +309,7 @@
     },
     {
       "name": "Meta Reward Glade Event Time",
-      "description": "You gain a permanent 10% Working Time reduction for all Glade Events. ",
+      "description": "You gain a permanent 10% bonus to the speed at which Scouts work on Glade Events.",
       "img": "<img  src=\"../img/1x1.png\" width=32 height=32 style=\"background: url(../img/SGI_addons_187.png); background-position: -0px -0px; background-size: 32px 32px;\"/>"
     }
   ]
@@ -424,7 +429,7 @@
     },
     {
       "name": "Meta Reward Glade Event Time",
-      "description": "You gain a permanent 10% Working Time reduction for all Glade Events. ",
+      "description": "You gain a permanent 10% bonus to the speed at which Scouts work on Glade Events.",
       "img": "<img  src=\"../img/1x1.png\" width=32 height=32 style=\"background: url(../img/SGI_addons_187.png); background-position: -0px -0px; background-size: 32px 32px;\"/>"
     }
   ]
@@ -444,14 +449,9 @@
       "img": "<img  src=\"../img/1x1.png\" width=32 height=32 style=\"background: url(../img/addon_09.png); background-position: -0px -0px; background-size: 32px 32px;\"/>"
     },
     {
-      "name": "Meta Reward Embark Goods Stone",
-      "description": "You gain a new Embark Bonus to choose from when starting a settlement: Stone",
-      "img": "<img  src=\"../img/1x1.png\" width=32 height=32 style=\"background: url(../img/sactx-0-2048x2048-BC7-Game%20UI%20Icons%20Atlas-8f612054.png); background-position: -198px -210px; background-size: 512px 512px;\"/>"
-    },
-    {
-      "name": "Meta Reward Embark Goods Clay",
-      "description": "You gain a new Embark Bonus to choose from when starting a settlement: Clay",
-      "img": "<img  src=\"../img/1x1.png\" width=32 height=32 style=\"background: url(../img/sactx-0-2048x2048-BC7-Game%20UI%20Icons%20Atlas-8f612054.png); background-position: -378.75px -285.5px; background-size: 512px 512px;\"/>"
+      "name": "Meta Reward Embark Point",
+      "description": "You gain +1 Embark Points to spend on resources and bonuses before starting a new settlement.",
+      "img": "<img  src=\"../img/1x1.png\" width=32 height=32 style=\"background: url(../img/chest_b_03.png); background-position: -0px -0px; background-size: 32px 32px;\"/>"
     }
   ]
 }''></div>
@@ -511,9 +511,9 @@
       "img": "<img  src=\"../img/1x1.png\" width=32 height=32 style=\"background: url(../img/addon_09.png); background-position: -0px -0px; background-size: 32px 32px;\"/>"
     },
     {
-      "name": "Meta Reward Embark Point",
-      "description": "You gain +1 Embark Points to spend on resources and bonuses before starting a new settlement.",
-      "img": "<img  src=\"../img/1x1.png\" width=32 height=32 style=\"background: url(../img/chest_b_03.png); background-position: -0px -0px; background-size: 32px 32px;\"/>"
+      "name": "Meta Reward Factions Activation",
+      "description": "Factions will settle the World Map alongside you. You can set up Trade Routes with their towns and compete with them for bonus resources at the end of a Cycle. ",
+      "img": "<img  src=\"../img/1x1.png\" width=32 height=32 style=\"background: url(../img/gobilen_b_03.png); background-position: -0px -0px; background-size: 32px 32px;\"/>"
     }
   ]
 }''></div>
@@ -1663,7 +1663,7 @@
     {
       "name": "Meta Trader Unlock B",
       "description": "He might have <color=#e0e09f>metal, fuel, tools, building materials, and a number of blueprints and perks</color> for sale. He is willing to buy Packs of Goods, resources, advanced building materials, metal, and some crafting materials.",
-      "img": "<img  src=\"../img/1x1.png\" width=32 height=32 style=\"background: url(../img/sactx-0-2048x2048-BC7-Game%20UI%20Icons%20Atlas-8f612054.png); background-position: -130.0078px -159.8745px; background-size: 257.0039px 257.0039px;\"/>"
+      "img": "<img  src=\"../img/1x1.png\" width=32 height=32 style=\"background: url(../img/sactx-0-2048x2048-BC7-Game%20UI%20Icons%20Atlas-8f612054.png); background-position: -162.5098px -192.3765px; background-size: 257.0039px 257.0039px;\"/>"
     },
     {
       "name": "Meta Perk Unlock Exploring Expedition",
@@ -1953,8 +1953,8 @@
     },
     {
       "name": "Meta Perk Unlock Slower Scouts",
-      "description": "Scouts work 50% longer on Dangerous Glade Events but have a +50% chance of bringing back double the amount of goods.",
-      "img": "<img  src=\"../img/1x1.png\" width=32 height=32 style=\"background: url(../img/y_12.png); background-position: -0px -0px; background-size: 32px 32px;\"/>"
+      "description": "Scouts work 33% slower on Dangerous Glade Events but have a +50% chance of bringing back double the amount of goods.",
+      "img": "<img  src=\"../img/1x1.png\" width=32 height=32 style=\"background: url(../img/TrophyIcons_25_b.png); background-position: -0px -0px; background-size: 32px 32px;\"/>"
     }
   ],
   "costs": []
@@ -2012,7 +2012,7 @@
     },
     {
       "name": "Meta Perk Unlock Reroll for standing",
-      "description": "Gain 1 Cornerstone Reroll Charge for every 1 level of Standing with other settlements in Trade Routes.",
+      "description": "Gain 1 Cornerstone Reroll Charge for every 1 level of Standing with other settlements in Trade Routes. (the bonus is added retroactively)",
       "img": "<img  src=\"../img/1x1.png\" width=32 height=32 style=\"background: url(../img/163_b.png); background-position: -0px -0px; background-size: 32px 32px;\"/>"
     }
   ],
