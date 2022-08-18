@@ -18,7 +18,7 @@ document.addEventListener('DOMContentLoaded', function() {
                 el.classList.add(`hidden`);
         }
 
-        const constructionMultiplier = 1 / (1.0 + (constructionRates.get(difficulty) ?? 0.0));
+        const constructionMultiplier = 1.0 + (constructionRates.get(difficulty) ?? 0.0);
         for (let c of constructionCosts) {
             c.innerText = Math.round(parseFloat(c.getAttribute("data-base-cost")) * constructionMultiplier);
         }
