@@ -1,0 +1,6332 @@
+<html><head>
+                <meta charset="UTF-8">
+                <meta name="viewport" content="width=device-width, initial-scale=1.0">
+                <title>AgainstTheStormpedia</title>
+                <link rel="stylesheet" href="/data-wiki/simple.min.css">
+                <link rel="stylesheet" href="/data-wiki/common.css">
+                <script>
+                    var constructionRates = new Map([["8_Ascension_V", 0.5],
+["9_Ascension_VI", 0.5],
+["10_Ascension_VII", 0.5],
+["11_Ascension_VIII", 0.5],
+["12_Ascension_IX", 0.5],
+["13_Ascension_X", 0.5],
+["14_Ascension_XI", 0.5],
+["15_Ascension_XII", 0.5],
+["16_Ascension_XIII", 0.5],
+["17_Ascension_XIV", 0.5],
+["18_Ascension_XV", 0.5],
+["19_Ascension_XVI", 0.5],
+["20_Ascension_XVII", 0.5],
+["21_Ascension_XVIII", 0.5],
+["22_Ascension_XIX", 0.5],
+["23_Ascension_XX", 0.5]]);
+                    var relicWorkRates = new Map([["11_Ascension_VIII", -0.33],
+["12_Ascension_IX", -0.33],
+["13_Ascension_X", -0.33],
+["14_Ascension_XI", -0.33],
+["15_Ascension_XII", -0.33],
+["16_Ascension_XIII", -0.33],
+["17_Ascension_XIV", -0.33],
+["18_Ascension_XV", -0.33],
+["19_Ascension_XVI", -0.33],
+["20_Ascension_XVII", -0.33],
+["21_Ascension_XVIII", -0.33],
+["22_Ascension_XIX", -0.33],
+["23_Ascension_XX", -0.33]]);
+                </script>
+                <script src="/data-wiki/common.js"></script>
+            </head><body>
+                        <header>
+                <nav>
+                    <a href="/data-wiki/buildings">Buildings</a>
+                    <a href="/data-wiki/goods">Goods</a>
+                    <a href="/data-wiki/orders">Orders</a>
+                    <a href="/data-wiki/relics">Glade Events</a>
+                    <a href="/data-wiki/cornerstones">Cornerstones</a>
+                    <a href="/data-wiki/biomes">Biomes</a>
+                    <a href="/data-wiki/upgrades">Upgrades</a>
+                </nav>
+                 <nav>
+                    <span>Game Version: Early Access v0.31.3</span>
+                    <span>Scale costs for difficulty:</span>
+                    <select id="difficulty-select">
+                        <option value="0_Normal">Normal</option>
+<option value="1_Hard">Hard</option>
+<option value="2_Very_Hard">Very Hard</option>
+<option value="3_Impossible">Impossible</option>
+<option value="4_Ascension_I">Prestige 1</option>
+<option value="5_Ascension_II">Prestige 2</option>
+<option value="6_Ascension_III">Prestige 3</option>
+<option value="7_Ascension_IV">Prestige 4</option>
+<option value="8_Ascension_V">Prestige 5</option>
+<option value="9_Ascension_VI">Prestige 6</option>
+<option value="10_Ascension_VII">Prestige 7</option>
+<option value="11_Ascension_VIII">Prestige 8</option>
+<option value="12_Ascension_IX">Prestige 9</option>
+<option value="13_Ascension_X">Prestige 10</option>
+<option value="14_Ascension_XI">Prestige 11</option>
+<option value="15_Ascension_XII">Prestige 12</option>
+<option value="16_Ascension_XIII">Prestige 13</option>
+<option value="17_Ascension_XIV">Prestige 14</option>
+<option value="18_Ascension_XV">Prestige 15</option>
+<option value="19_Ascension_XVI">Prestige 16</option>
+<option value="20_Ascension_XVII">Prestige 17</option>
+<option value="21_Ascension_XVIII">Prestige 18</option>
+<option value="22_Ascension_XIX">Prestige 19</option>
+<option value="23_Ascension_XX">Prestige 20</option>
+                    </select>
+                </nav>
+                </header><main>
+<table class="effects-table">
+<tr><th>Name</th><<th>Sources</th></tr>
+<tr>
+<td>Vineyard Town</td>
+<td>Biomes:  <img title=">Missing key<" src="/data-wiki/img/biome-0.png" width=32 height=32 style="object-position: -0px -0px; object-fit: none; width: 32px; height: 32px;"/> <img title="Coral Forest" src="/data-wiki/img/biome-0.png" width=32 height=32 style="object-position: -0px -32px; object-fit: none; width: 32px; height: 32px;"/> <img title="Cursed Royal Woodlands" src="/data-wiki/img/biome-0.png" width=32 height=32 style="object-position: -0px -64px; object-fit: none; width: 32px; height: 32px;"/> <img title="Scarlet Orchard" src="/data-wiki/img/biome-0.png" width=32 height=32 style="object-position: -0px -96px; object-fit: none; width: 32px; height: 32px;"/> <img title="Royal Woodlands" src="/data-wiki/img/biome-0.png" width=32 height=32 style="object-position: -0px -128px; object-fit: none; width: 32px; height: 32px;"/> <img title="The Marshlands" src="/data-wiki/img/biome-0.png" width=32 height=32 style="object-position: -0px -160px; object-fit: none; width: 32px; height: 32px;"/></td>
+</tr>
+<tr>
+<td>Cannibalism</td>
+<td>Biomes:  <img title=">Missing key<" src="/data-wiki/img/biome-0.png" width=32 height=32 style="object-position: -0px -0px; object-fit: none; width: 32px; height: 32px;"/> <img title="Coral Forest" src="/data-wiki/img/biome-0.png" width=32 height=32 style="object-position: -0px -32px; object-fit: none; width: 32px; height: 32px;"/> <img title="Cursed Royal Woodlands" src="/data-wiki/img/biome-0.png" width=32 height=32 style="object-position: -0px -64px; object-fit: none; width: 32px; height: 32px;"/> <img title="Scarlet Orchard" src="/data-wiki/img/biome-0.png" width=32 height=32 style="object-position: -0px -96px; object-fit: none; width: 32px; height: 32px;"/> <img title="Royal Woodlands" src="/data-wiki/img/biome-0.png" width=32 height=32 style="object-position: -0px -128px; object-fit: none; width: 32px; height: 32px;"/> <img title="The Marshlands" src="/data-wiki/img/biome-0.png" width=32 height=32 style="object-position: -0px -160px; object-fit: none; width: 32px; height: 32px;"/> <img title=">Missing key<" src="/data-wiki/img/biome-0.png" width=32 height=32 style="object-position: -0px -128px; object-fit: none; width: 32px; height: 32px;"/></td>
+</tr>
+<tr>
+<td>Leftover Crops</td>
+<td>Biomes:  <img title=">Missing key<" src="/data-wiki/img/biome-0.png" width=32 height=32 style="object-position: -0px -0px; object-fit: none; width: 32px; height: 32px;"/> <img title="Coral Forest" src="/data-wiki/img/biome-0.png" width=32 height=32 style="object-position: -0px -32px; object-fit: none; width: 32px; height: 32px;"/> <img title="Cursed Royal Woodlands" src="/data-wiki/img/biome-0.png" width=32 height=32 style="object-position: -0px -64px; object-fit: none; width: 32px; height: 32px;"/> <img title="Scarlet Orchard" src="/data-wiki/img/biome-0.png" width=32 height=32 style="object-position: -0px -96px; object-fit: none; width: 32px; height: 32px;"/> <img title="Royal Woodlands" src="/data-wiki/img/biome-0.png" width=32 height=32 style="object-position: -0px -128px; object-fit: none; width: 32px; height: 32px;"/> <img title="The Marshlands" src="/data-wiki/img/biome-0.png" width=32 height=32 style="object-position: -0px -160px; object-fit: none; width: 32px; height: 32px;"/></td>
+</tr>
+<tr>
+<td>Exploration Contract</td>
+<td>Biomes:  <img title=">Missing key<" src="/data-wiki/img/biome-0.png" width=32 height=32 style="object-position: -0px -0px; object-fit: none; width: 32px; height: 32px;"/> <img title="Scarlet Orchard" src="/data-wiki/img/biome-0.png" width=32 height=32 style="object-position: -0px -96px; object-fit: none; width: 32px; height: 32px;"/> <img title="The Marshlands" src="/data-wiki/img/biome-0.png" width=32 height=32 style="object-position: -0px -160px; object-fit: none; width: 32px; height: 32px;"/> <img title=">Missing key<" src="/data-wiki/img/biome-0.png" width=32 height=32 style="object-position: -0px -128px; object-fit: none; width: 32px; height: 32px;"/></td>
+</tr>
+<tr>
+<td>Grain Bags</td>
+<td>Traders:  Trader 5 - Royal Trading Company Biomes:  <img title=">Missing key<" src="/data-wiki/img/biome-0.png" width=32 height=32 style="object-position: -0px -0px; object-fit: none; width: 32px; height: 32px;"/> <img title="Coral Forest" src="/data-wiki/img/biome-0.png" width=32 height=32 style="object-position: -0px -32px; object-fit: none; width: 32px; height: 32px;"/> <img title="Cursed Royal Woodlands" src="/data-wiki/img/biome-0.png" width=32 height=32 style="object-position: -0px -64px; object-fit: none; width: 32px; height: 32px;"/> <img title="Scarlet Orchard" src="/data-wiki/img/biome-0.png" width=32 height=32 style="object-position: -0px -96px; object-fit: none; width: 32px; height: 32px;"/> <img title="Royal Woodlands" src="/data-wiki/img/biome-0.png" width=32 height=32 style="object-position: -0px -128px; object-fit: none; width: 32px; height: 32px;"/> <img title="The Marshlands" src="/data-wiki/img/biome-0.png" width=32 height=32 style="object-position: -0px -160px; object-fit: none; width: 32px; height: 32px;"/> <img title=">Missing key<" src="/data-wiki/img/biome-0.png" width=32 height=32 style="object-position: -0px -128px; object-fit: none; width: 32px; height: 32px;"/></td>
+</tr>
+<tr>
+<td>Spices</td>
+<td>Biomes:  <img title=">Missing key<" src="/data-wiki/img/biome-0.png" width=32 height=32 style="object-position: -0px -0px; object-fit: none; width: 32px; height: 32px;"/> <img title="Coral Forest" src="/data-wiki/img/biome-0.png" width=32 height=32 style="object-position: -0px -32px; object-fit: none; width: 32px; height: 32px;"/> <img title="Cursed Royal Woodlands" src="/data-wiki/img/biome-0.png" width=32 height=32 style="object-position: -0px -64px; object-fit: none; width: 32px; height: 32px;"/> <img title="Royal Woodlands" src="/data-wiki/img/biome-0.png" width=32 height=32 style="object-position: -0px -128px; object-fit: none; width: 32px; height: 32px;"/> <img title="The Marshlands" src="/data-wiki/img/biome-0.png" width=32 height=32 style="object-position: -0px -160px; object-fit: none; width: 32px; height: 32px;"/></td>
+</tr>
+<tr>
+<td>Meat Specialization</td>
+<td>Biomes:  <img title=">Missing key<" src="/data-wiki/img/biome-0.png" width=32 height=32 style="object-position: -0px -0px; object-fit: none; width: 32px; height: 32px;"/> <img title="Coral Forest" src="/data-wiki/img/biome-0.png" width=32 height=32 style="object-position: -0px -32px; object-fit: none; width: 32px; height: 32px;"/> <img title="Cursed Royal Woodlands" src="/data-wiki/img/biome-0.png" width=32 height=32 style="object-position: -0px -64px; object-fit: none; width: 32px; height: 32px;"/> <img title="Royal Woodlands" src="/data-wiki/img/biome-0.png" width=32 height=32 style="object-position: -0px -128px; object-fit: none; width: 32px; height: 32px;"/> <img title="The Marshlands" src="/data-wiki/img/biome-0.png" width=32 height=32 style="object-position: -0px -160px; object-fit: none; width: 32px; height: 32px;"/></td>
+</tr>
+<tr>
+<td>Moldy Grain Seeds</td>
+<td>Biomes:  <img title=">Missing key<" src="/data-wiki/img/biome-0.png" width=32 height=32 style="object-position: -0px -0px; object-fit: none; width: 32px; height: 32px;"/> <img title="Coral Forest" src="/data-wiki/img/biome-0.png" width=32 height=32 style="object-position: -0px -32px; object-fit: none; width: 32px; height: 32px;"/> <img title="Cursed Royal Woodlands" src="/data-wiki/img/biome-0.png" width=32 height=32 style="object-position: -0px -64px; object-fit: none; width: 32px; height: 32px;"/> <img title="Scarlet Orchard" src="/data-wiki/img/biome-0.png" width=32 height=32 style="object-position: -0px -96px; object-fit: none; width: 32px; height: 32px;"/> <img title="Royal Woodlands" src="/data-wiki/img/biome-0.png" width=32 height=32 style="object-position: -0px -128px; object-fit: none; width: 32px; height: 32px;"/> <img title="The Marshlands" src="/data-wiki/img/biome-0.png" width=32 height=32 style="object-position: -0px -160px; object-fit: none; width: 32px; height: 32px;"/></td>
+</tr>
+<tr>
+<td>Trade Logs</td>
+<td>Traders:  Trader 6 - Wandering Merchant Biomes:  <img title=">Missing key<" src="/data-wiki/img/biome-0.png" width=32 height=32 style="object-position: -0px -0px; object-fit: none; width: 32px; height: 32px;"/> <img title="Coral Forest" src="/data-wiki/img/biome-0.png" width=32 height=32 style="object-position: -0px -32px; object-fit: none; width: 32px; height: 32px;"/> <img title="Cursed Royal Woodlands" src="/data-wiki/img/biome-0.png" width=32 height=32 style="object-position: -0px -64px; object-fit: none; width: 32px; height: 32px;"/> <img title="Scarlet Orchard" src="/data-wiki/img/biome-0.png" width=32 height=32 style="object-position: -0px -96px; object-fit: none; width: 32px; height: 32px;"/> <img title="Royal Woodlands" src="/data-wiki/img/biome-0.png" width=32 height=32 style="object-position: -0px -128px; object-fit: none; width: 32px; height: 32px;"/> <img title="The Marshlands" src="/data-wiki/img/biome-0.png" width=32 height=32 style="object-position: -0px -160px; object-fit: none; width: 32px; height: 32px;"/></td>
+</tr>
+<tr>
+<td>Sahilda's Secret Cookbook</td>
+<td>Traders:  Trader 6 - Wandering Merchant Biomes:  <img title=">Missing key<" src="/data-wiki/img/biome-0.png" width=32 height=32 style="object-position: -0px -0px; object-fit: none; width: 32px; height: 32px;"/> <img title="Coral Forest" src="/data-wiki/img/biome-0.png" width=32 height=32 style="object-position: -0px -32px; object-fit: none; width: 32px; height: 32px;"/> <img title="Cursed Royal Woodlands" src="/data-wiki/img/biome-0.png" width=32 height=32 style="object-position: -0px -64px; object-fit: none; width: 32px; height: 32px;"/> <img title="Scarlet Orchard" src="/data-wiki/img/biome-0.png" width=32 height=32 style="object-position: -0px -96px; object-fit: none; width: 32px; height: 32px;"/> <img title="Royal Woodlands" src="/data-wiki/img/biome-0.png" width=32 height=32 style="object-position: -0px -128px; object-fit: none; width: 32px; height: 32px;"/> <img title="The Marshlands" src="/data-wiki/img/biome-0.png" width=32 height=32 style="object-position: -0px -160px; object-fit: none; width: 32px; height: 32px;"/></td>
+</tr>
+<tr>
+<td>Small Press</td>
+<td>Biomes:  <img title=">Missing key<" src="/data-wiki/img/biome-0.png" width=32 height=32 style="object-position: -0px -0px; object-fit: none; width: 32px; height: 32px;"/> <img title="Coral Forest" src="/data-wiki/img/biome-0.png" width=32 height=32 style="object-position: -0px -32px; object-fit: none; width: 32px; height: 32px;"/> <img title="Cursed Royal Woodlands" src="/data-wiki/img/biome-0.png" width=32 height=32 style="object-position: -0px -64px; object-fit: none; width: 32px; height: 32px;"/> <img title="Scarlet Orchard" src="/data-wiki/img/biome-0.png" width=32 height=32 style="object-position: -0px -96px; object-fit: none; width: 32px; height: 32px;"/> <img title="Royal Woodlands" src="/data-wiki/img/biome-0.png" width=32 height=32 style="object-position: -0px -128px; object-fit: none; width: 32px; height: 32px;"/> <img title="The Marshlands" src="/data-wiki/img/biome-0.png" width=32 height=32 style="object-position: -0px -160px; object-fit: none; width: 32px; height: 32px;"/></td>
+</tr>
+<tr>
+<td>Value Added Tax</td>
+<td>Biomes:  <img title=">Missing key<" src="/data-wiki/img/biome-0.png" width=32 height=32 style="object-position: -0px -0px; object-fit: none; width: 32px; height: 32px;"/> <img title="Coral Forest" src="/data-wiki/img/biome-0.png" width=32 height=32 style="object-position: -0px -32px; object-fit: none; width: 32px; height: 32px;"/> <img title="Cursed Royal Woodlands" src="/data-wiki/img/biome-0.png" width=32 height=32 style="object-position: -0px -64px; object-fit: none; width: 32px; height: 32px;"/> <img title="Scarlet Orchard" src="/data-wiki/img/biome-0.png" width=32 height=32 style="object-position: -0px -96px; object-fit: none; width: 32px; height: 32px;"/> <img title="Royal Woodlands" src="/data-wiki/img/biome-0.png" width=32 height=32 style="object-position: -0px -128px; object-fit: none; width: 32px; height: 32px;"/> <img title="The Marshlands" src="/data-wiki/img/biome-0.png" width=32 height=32 style="object-position: -0px -160px; object-fit: none; width: 32px; height: 32px;"/></td>
+</tr>
+<tr>
+<td>Ancient Artifact</td>
+<td>Biomes:  <img title=">Missing key<" src="/data-wiki/img/biome-0.png" width=32 height=32 style="object-position: -0px -0px; object-fit: none; width: 32px; height: 32px;"/> <img title=">Missing key<" src="/data-wiki/img/biome-0.png" width=32 height=32 style="object-position: -0px -128px; object-fit: none; width: 32px; height: 32px;"/></td>
+</tr>
+<tr>
+<td>Blood Price Contract (Stormforged)</td>
+<td>Biomes:  <img title=">Missing key<" src="/data-wiki/img/biome-0.png" width=32 height=32 style="object-position: -0px -0px; object-fit: none; width: 32px; height: 32px;"/></td>
+</tr>
+<tr>
+<td>Efficient Brewing</td>
+<td>Traders:  Trader 5 - Royal Trading Company Biomes:  <img title=">Missing key<" src="/data-wiki/img/biome-0.png" width=32 height=32 style="object-position: -0px -0px; object-fit: none; width: 32px; height: 32px;"/> <img title=">Missing key<" src="/data-wiki/img/biome-0.png" width=32 height=32 style="object-position: -0px -128px; object-fit: none; width: 32px; height: 32px;"/></td>
+</tr>
+<tr>
+<td>Fungal Guide</td>
+<td>Traders:  Trader 3 - Ancient Biomes:  <img title=">Missing key<" src="/data-wiki/img/biome-0.png" width=32 height=32 style="object-position: -0px -0px; object-fit: none; width: 32px; height: 32px;"/> <img title="Coral Forest" src="/data-wiki/img/biome-0.png" width=32 height=32 style="object-position: -0px -32px; object-fit: none; width: 32px; height: 32px;"/> <img title="Cursed Royal Woodlands" src="/data-wiki/img/biome-0.png" width=32 height=32 style="object-position: -0px -64px; object-fit: none; width: 32px; height: 32px;"/> <img title="Royal Woodlands" src="/data-wiki/img/biome-0.png" width=32 height=32 style="object-position: -0px -128px; object-fit: none; width: 32px; height: 32px;"/> <img title="The Marshlands" src="/data-wiki/img/biome-0.png" width=32 height=32 style="object-position: -0px -160px; object-fit: none; width: 32px; height: 32px;"/></td>
+</tr>
+<tr>
+<td>Prosperous Archaeology</td>
+<td>Biomes:  <img title=">Missing key<" src="/data-wiki/img/biome-0.png" width=32 height=32 style="object-position: -0px -0px; object-fit: none; width: 32px; height: 32px;"/> <img title="Coral Forest" src="/data-wiki/img/biome-0.png" width=32 height=32 style="object-position: -0px -32px; object-fit: none; width: 32px; height: 32px;"/> <img title="Cursed Royal Woodlands" src="/data-wiki/img/biome-0.png" width=32 height=32 style="object-position: -0px -64px; object-fit: none; width: 32px; height: 32px;"/> <img title="Scarlet Orchard" src="/data-wiki/img/biome-0.png" width=32 height=32 style="object-position: -0px -96px; object-fit: none; width: 32px; height: 32px;"/> <img title="Royal Woodlands" src="/data-wiki/img/biome-0.png" width=32 height=32 style="object-position: -0px -128px; object-fit: none; width: 32px; height: 32px;"/> <img title="The Marshlands" src="/data-wiki/img/biome-0.png" width=32 height=32 style="object-position: -0px -160px; object-fit: none; width: 32px; height: 32px;"/></td>
+</tr>
+<tr>
+<td>City Renown</td>
+<td>Biomes:  <img title=">Missing key<" src="/data-wiki/img/biome-0.png" width=32 height=32 style="object-position: -0px -0px; object-fit: none; width: 32px; height: 32px;"/></td>
+</tr>
+<tr>
+<td>Nets</td>
+<td>Biomes:  <img title=">Missing key<" src="/data-wiki/img/biome-0.png" width=32 height=32 style="object-position: -0px -0px; object-fit: none; width: 32px; height: 32px;"/> <img title=">Missing key<" src="/data-wiki/img/biome-0.png" width=32 height=32 style="object-position: -0px -128px; object-fit: none; width: 32px; height: 32px;"/></td>
+</tr>
+<tr>
+<td>Pottery Delivery Line</td>
+<td>Biomes:  <img title=">Missing key<" src="/data-wiki/img/biome-0.png" width=32 height=32 style="object-position: -0px -0px; object-fit: none; width: 32px; height: 32px;"/></td>
+</tr>
+<tr>
+<td>Reinforced Tools</td>
+<td>Biomes:  <img title=">Missing key<" src="/data-wiki/img/biome-0.png" width=32 height=32 style="object-position: -0px -0px; object-fit: none; width: 32px; height: 32px;"/> <img title="Coral Forest" src="/data-wiki/img/biome-0.png" width=32 height=32 style="object-position: -0px -32px; object-fit: none; width: 32px; height: 32px;"/> <img title="Cursed Royal Woodlands" src="/data-wiki/img/biome-0.png" width=32 height=32 style="object-position: -0px -64px; object-fit: none; width: 32px; height: 32px;"/> <img title="Scarlet Orchard" src="/data-wiki/img/biome-0.png" width=32 height=32 style="object-position: -0px -96px; object-fit: none; width: 32px; height: 32px;"/> <img title="Royal Woodlands" src="/data-wiki/img/biome-0.png" width=32 height=32 style="object-position: -0px -128px; object-fit: none; width: 32px; height: 32px;"/> <img title="The Marshlands" src="/data-wiki/img/biome-0.png" width=32 height=32 style="object-position: -0px -160px; object-fit: none; width: 32px; height: 32px;"/> <img title=">Missing key<" src="/data-wiki/img/biome-0.png" width=32 height=32 style="object-position: -0px -128px; object-fit: none; width: 32px; height: 32px;"/></td>
+</tr>
+<tr>
+<td>Wine Delivery Line</td>
+<td>Biomes:  <img title=">Missing key<" src="/data-wiki/img/biome-0.png" width=32 height=32 style="object-position: -0px -0px; object-fit: none; width: 32px; height: 32px;"/></td>
+</tr>
+<tr>
+<td>Ale Delivery Line</td>
+<td>Biomes:  <img title=">Missing key<" src="/data-wiki/img/biome-0.png" width=32 height=32 style="object-position: -0px -0px; object-fit: none; width: 32px; height: 32px;"/> <img title=">Missing key<" src="/data-wiki/img/biome-0.png" width=32 height=32 style="object-position: -0px -128px; object-fit: none; width: 32px; height: 32px;"/></td>
+</tr>
+<tr>
+<td>Barrel Delivery Line</td>
+<td>Biomes:  <img title=">Missing key<" src="/data-wiki/img/biome-0.png" width=32 height=32 style="object-position: -0px -0px; object-fit: none; width: 32px; height: 32px;"/></td>
+</tr>
+<tr>
+<td>Clay Delivery Line</td>
+<td>Biomes:  <img title=">Missing key<" src="/data-wiki/img/biome-0.png" width=32 height=32 style="object-position: -0px -0px; object-fit: none; width: 32px; height: 32px;"/></td>
+</tr>
+<tr>
+<td>Metal Delivery Line</td>
+<td>Biomes:  <img title=">Missing key<" src="/data-wiki/img/biome-0.png" width=32 height=32 style="object-position: -0px -0px; object-fit: none; width: 32px; height: 32px;"/></td>
+</tr>
+<tr>
+<td>Crowded Caravan</td>
+<td>Biomes:  <img title=">Missing key<" src="/data-wiki/img/biome-0.png" width=32 height=32 style="object-position: -0px -0px; object-fit: none; width: 32px; height: 32px;"/> <img title="Coral Forest" src="/data-wiki/img/biome-0.png" width=32 height=32 style="object-position: -0px -32px; object-fit: none; width: 32px; height: 32px;"/> <img title="Cursed Royal Woodlands" src="/data-wiki/img/biome-0.png" width=32 height=32 style="object-position: -0px -64px; object-fit: none; width: 32px; height: 32px;"/> <img title="Scarlet Orchard" src="/data-wiki/img/biome-0.png" width=32 height=32 style="object-position: -0px -96px; object-fit: none; width: 32px; height: 32px;"/> <img title="Royal Woodlands" src="/data-wiki/img/biome-0.png" width=32 height=32 style="object-position: -0px -128px; object-fit: none; width: 32px; height: 32px;"/> <img title="The Marshlands" src="/data-wiki/img/biome-0.png" width=32 height=32 style="object-position: -0px -160px; object-fit: none; width: 32px; height: 32px;"/></td>
+</tr>
+<tr>
+<td>Lost in the Wilds</td>
+<td>Biomes:  <img title=">Missing key<" src="/data-wiki/img/biome-0.png" width=32 height=32 style="object-position: -0px -0px; object-fit: none; width: 32px; height: 32px;"/> <img title="Coral Forest" src="/data-wiki/img/biome-0.png" width=32 height=32 style="object-position: -0px -32px; object-fit: none; width: 32px; height: 32px;"/> <img title="Cursed Royal Woodlands" src="/data-wiki/img/biome-0.png" width=32 height=32 style="object-position: -0px -64px; object-fit: none; width: 32px; height: 32px;"/> <img title="Scarlet Orchard" src="/data-wiki/img/biome-0.png" width=32 height=32 style="object-position: -0px -96px; object-fit: none; width: 32px; height: 32px;"/> <img title="Royal Woodlands" src="/data-wiki/img/biome-0.png" width=32 height=32 style="object-position: -0px -128px; object-fit: none; width: 32px; height: 32px;"/> <img title="The Marshlands" src="/data-wiki/img/biome-0.png" width=32 height=32 style="object-position: -0px -160px; object-fit: none; width: 32px; height: 32px;"/></td>
+</tr>
+<tr>
+<td>Lumber Tax</td>
+<td>Biomes:  <img title=">Missing key<" src="/data-wiki/img/biome-0.png" width=32 height=32 style="object-position: -0px -0px; object-fit: none; width: 32px; height: 32px;"/> <img title="Coral Forest" src="/data-wiki/img/biome-0.png" width=32 height=32 style="object-position: -0px -32px; object-fit: none; width: 32px; height: 32px;"/> <img title="Cursed Royal Woodlands" src="/data-wiki/img/biome-0.png" width=32 height=32 style="object-position: -0px -64px; object-fit: none; width: 32px; height: 32px;"/> <img title="Scarlet Orchard" src="/data-wiki/img/biome-0.png" width=32 height=32 style="object-position: -0px -96px; object-fit: none; width: 32px; height: 32px;"/> <img title="Royal Woodlands" src="/data-wiki/img/biome-0.png" width=32 height=32 style="object-position: -0px -128px; object-fit: none; width: 32px; height: 32px;"/> <img title="The Marshlands" src="/data-wiki/img/biome-0.png" width=32 height=32 style="object-position: -0px -160px; object-fit: none; width: 32px; height: 32px;"/></td>
+</tr>
+<tr>
+<td>Enriched Amber</td>
+<td>Biomes:  <img title=">Missing key<" src="/data-wiki/img/biome-0.png" width=32 height=32 style="object-position: -0px -0px; object-fit: none; width: 32px; height: 32px;"/></td>
+</tr>
+<tr>
+<td>Survivor Bonding</td>
+<td>Biomes:  <img title=">Missing key<" src="/data-wiki/img/biome-0.png" width=32 height=32 style="object-position: -0px -0px; object-fit: none; width: 32px; height: 32px;"/> <img title="Coral Forest" src="/data-wiki/img/biome-0.png" width=32 height=32 style="object-position: -0px -32px; object-fit: none; width: 32px; height: 32px;"/> <img title="Cursed Royal Woodlands" src="/data-wiki/img/biome-0.png" width=32 height=32 style="object-position: -0px -64px; object-fit: none; width: 32px; height: 32px;"/> <img title="Scarlet Orchard" src="/data-wiki/img/biome-0.png" width=32 height=32 style="object-position: -0px -96px; object-fit: none; width: 32px; height: 32px;"/> <img title="Royal Woodlands" src="/data-wiki/img/biome-0.png" width=32 height=32 style="object-position: -0px -128px; object-fit: none; width: 32px; height: 32px;"/> <img title="The Marshlands" src="/data-wiki/img/biome-0.png" width=32 height=32 style="object-position: -0px -160px; object-fit: none; width: 32px; height: 32px;"/></td>
+</tr>
+<tr>
+<td>Copper Extractor</td>
+<td>Biomes:  <img title=">Missing key<" src="/data-wiki/img/biome-0.png" width=32 height=32 style="object-position: -0px -0px; object-fit: none; width: 32px; height: 32px;"/> <img title="Coral Forest" src="/data-wiki/img/biome-0.png" width=32 height=32 style="object-position: -0px -32px; object-fit: none; width: 32px; height: 32px;"/> <img title="Cursed Royal Woodlands" src="/data-wiki/img/biome-0.png" width=32 height=32 style="object-position: -0px -64px; object-fit: none; width: 32px; height: 32px;"/> <img title="Scarlet Orchard" src="/data-wiki/img/biome-0.png" width=32 height=32 style="object-position: -0px -96px; object-fit: none; width: 32px; height: 32px;"/> <img title="Royal Woodlands" src="/data-wiki/img/biome-0.png" width=32 height=32 style="object-position: -0px -128px; object-fit: none; width: 32px; height: 32px;"/></td>
+</tr>
+<tr>
+<td>Small Distillery</td>
+<td>Biomes:  <img title=">Missing key<" src="/data-wiki/img/biome-0.png" width=32 height=32 style="object-position: -0px -0px; object-fit: none; width: 32px; height: 32px;"/> <img title="Coral Forest" src="/data-wiki/img/biome-0.png" width=32 height=32 style="object-position: -0px -32px; object-fit: none; width: 32px; height: 32px;"/> <img title="Cursed Royal Woodlands" src="/data-wiki/img/biome-0.png" width=32 height=32 style="object-position: -0px -64px; object-fit: none; width: 32px; height: 32px;"/> <img title="Scarlet Orchard" src="/data-wiki/img/biome-0.png" width=32 height=32 style="object-position: -0px -96px; object-fit: none; width: 32px; height: 32px;"/> <img title="Royal Woodlands" src="/data-wiki/img/biome-0.png" width=32 height=32 style="object-position: -0px -128px; object-fit: none; width: 32px; height: 32px;"/> <img title="The Marshlands" src="/data-wiki/img/biome-0.png" width=32 height=32 style="object-position: -0px -160px; object-fit: none; width: 32px; height: 32px;"/></td>
+</tr>
+<tr>
+<td>Rain Collector Filter</td>
+<td>Biomes:  <img title=">Missing key<" src="/data-wiki/img/biome-0.png" width=32 height=32 style="object-position: -0px -0px; object-fit: none; width: 32px; height: 32px;"/> <img title="Coral Forest" src="/data-wiki/img/biome-0.png" width=32 height=32 style="object-position: -0px -32px; object-fit: none; width: 32px; height: 32px;"/> <img title="Cursed Royal Woodlands" src="/data-wiki/img/biome-0.png" width=32 height=32 style="object-position: -0px -64px; object-fit: none; width: 32px; height: 32px;"/> <img title="Scarlet Orchard" src="/data-wiki/img/biome-0.png" width=32 height=32 style="object-position: -0px -96px; object-fit: none; width: 32px; height: 32px;"/> <img title="Royal Woodlands" src="/data-wiki/img/biome-0.png" width=32 height=32 style="object-position: -0px -128px; object-fit: none; width: 32px; height: 32px;"/></td>
+</tr>
+<tr>
+<td>Egg Delivery Line</td>
+<td>Biomes:  <img title=">Missing key<" src="/data-wiki/img/biome-0.png" width=32 height=32 style="object-position: -0px -0px; object-fit: none; width: 32px; height: 32px;"/> <img title=">Missing key<" src="/data-wiki/img/biome-0.png" width=32 height=32 style="object-position: -0px -128px; object-fit: none; width: 32px; height: 32px;"/></td>
+</tr>
+<tr>
+<td>Exploring Expedition</td>
+<td>Biomes:  <img title=">Missing key<" src="/data-wiki/img/biome-0.png" width=32 height=32 style="object-position: -0px -0px; object-fit: none; width: 32px; height: 32px;"/> <img title="Coral Forest" src="/data-wiki/img/biome-0.png" width=32 height=32 style="object-position: -0px -32px; object-fit: none; width: 32px; height: 32px;"/> <img title="Cursed Royal Woodlands" src="/data-wiki/img/biome-0.png" width=32 height=32 style="object-position: -0px -64px; object-fit: none; width: 32px; height: 32px;"/> <img title="Scarlet Orchard" src="/data-wiki/img/biome-0.png" width=32 height=32 style="object-position: -0px -96px; object-fit: none; width: 32px; height: 32px;"/> <img title="Royal Woodlands" src="/data-wiki/img/biome-0.png" width=32 height=32 style="object-position: -0px -128px; object-fit: none; width: 32px; height: 32px;"/> <img title="The Marshlands" src="/data-wiki/img/biome-0.png" width=32 height=32 style="object-position: -0px -160px; object-fit: none; width: 32px; height: 32px;"/></td>
+</tr>
+<tr>
+<td>Rooty ground</td>
+<td>Biomes:  <img title=">Missing key<" src="/data-wiki/img/biome-0.png" width=32 height=32 style="object-position: -0px -0px; object-fit: none; width: 32px; height: 32px;"/> <img title="Coral Forest" src="/data-wiki/img/biome-0.png" width=32 height=32 style="object-position: -0px -32px; object-fit: none; width: 32px; height: 32px;"/> <img title="Cursed Royal Woodlands" src="/data-wiki/img/biome-0.png" width=32 height=32 style="object-position: -0px -64px; object-fit: none; width: 32px; height: 32px;"/> <img title="Scarlet Orchard" src="/data-wiki/img/biome-0.png" width=32 height=32 style="object-position: -0px -96px; object-fit: none; width: 32px; height: 32px;"/> <img title="Royal Woodlands" src="/data-wiki/img/biome-0.png" width=32 height=32 style="object-position: -0px -128px; object-fit: none; width: 32px; height: 32px;"/> <img title="The Marshlands" src="/data-wiki/img/biome-0.png" width=32 height=32 style="object-position: -0px -160px; object-fit: none; width: 32px; height: 32px;"/></td>
+</tr>
+<tr>
+<td>Fiber Delivery Line</td>
+<td>Biomes:  <img title=">Missing key<" src="/data-wiki/img/biome-0.png" width=32 height=32 style="object-position: -0px -0px; object-fit: none; width: 32px; height: 32px;"/> <img title=">Missing key<" src="/data-wiki/img/biome-0.png" width=32 height=32 style="object-position: -0px -128px; object-fit: none; width: 32px; height: 32px;"/></td>
+</tr>
+<tr>
+<td>Forge Trip Hammer</td>
+<td>Biomes:  <img title=">Missing key<" src="/data-wiki/img/biome-0.png" width=32 height=32 style="object-position: -0px -0px; object-fit: none; width: 32px; height: 32px;"/> <img title="Coral Forest" src="/data-wiki/img/biome-0.png" width=32 height=32 style="object-position: -0px -32px; object-fit: none; width: 32px; height: 32px;"/> <img title="Cursed Royal Woodlands" src="/data-wiki/img/biome-0.png" width=32 height=32 style="object-position: -0px -64px; object-fit: none; width: 32px; height: 32px;"/> <img title="Scarlet Orchard" src="/data-wiki/img/biome-0.png" width=32 height=32 style="object-position: -0px -96px; object-fit: none; width: 32px; height: 32px;"/> <img title="Royal Woodlands" src="/data-wiki/img/biome-0.png" width=32 height=32 style="object-position: -0px -128px; object-fit: none; width: 32px; height: 32px;"/> <img title="The Marshlands" src="/data-wiki/img/biome-0.png" width=32 height=32 style="object-position: -0px -160px; object-fit: none; width: 32px; height: 32px;"/></td>
+</tr>
+<tr>
+<td>Grain Delivery Line</td>
+<td>Biomes:  <img title=">Missing key<" src="/data-wiki/img/biome-0.png" width=32 height=32 style="object-position: -0px -0px; object-fit: none; width: 32px; height: 32px;"/></td>
+</tr>
+<tr>
+<td>Hunter-gatherers</td>
+<td>Biomes:  <img title=">Missing key<" src="/data-wiki/img/biome-0.png" width=32 height=32 style="object-position: -0px -0px; object-fit: none; width: 32px; height: 32px;"/> <img title="Coral Forest" src="/data-wiki/img/biome-0.png" width=32 height=32 style="object-position: -0px -32px; object-fit: none; width: 32px; height: 32px;"/> <img title="Cursed Royal Woodlands" src="/data-wiki/img/biome-0.png" width=32 height=32 style="object-position: -0px -64px; object-fit: none; width: 32px; height: 32px;"/> <img title="Scarlet Orchard" src="/data-wiki/img/biome-0.png" width=32 height=32 style="object-position: -0px -96px; object-fit: none; width: 32px; height: 32px;"/> <img title="Royal Woodlands" src="/data-wiki/img/biome-0.png" width=32 height=32 style="object-position: -0px -128px; object-fit: none; width: 32px; height: 32px;"/> <img title="The Marshlands" src="/data-wiki/img/biome-0.png" width=32 height=32 style="object-position: -0px -160px; object-fit: none; width: 32px; height: 32px;"/></td>
+</tr>
+<tr>
+<td>Ancient Pact</td>
+<td>Biomes:  <img title=">Missing key<" src="/data-wiki/img/biome-0.png" width=32 height=32 style="object-position: -0px -0px; object-fit: none; width: 32px; height: 32px;"/> <img title="Coral Forest" src="/data-wiki/img/biome-0.png" width=32 height=32 style="object-position: -0px -32px; object-fit: none; width: 32px; height: 32px;"/> <img title="Scarlet Orchard" src="/data-wiki/img/biome-0.png" width=32 height=32 style="object-position: -0px -96px; object-fit: none; width: 32px; height: 32px;"/> <img title="Royal Woodlands" src="/data-wiki/img/biome-0.png" width=32 height=32 style="object-position: -0px -128px; object-fit: none; width: 32px; height: 32px;"/> <img title="The Marshlands" src="/data-wiki/img/biome-0.png" width=32 height=32 style="object-position: -0px -160px; object-fit: none; width: 32px; height: 32px;"/></td>
+</tr>
+<tr>
+<td>Ancient Stabilizer</td>
+<td>Biomes:  <img title=">Missing key<" src="/data-wiki/img/biome-0.png" width=32 height=32 style="object-position: -0px -0px; object-fit: none; width: 32px; height: 32px;"/></td>
+</tr>
+<tr>
+<td>Reinforced Axes</td>
+<td>Biomes:  <img title=">Missing key<" src="/data-wiki/img/biome-0.png" width=32 height=32 style="object-position: -0px -0px; object-fit: none; width: 32px; height: 32px;"/> <img title="Coral Forest" src="/data-wiki/img/biome-0.png" width=32 height=32 style="object-position: -0px -32px; object-fit: none; width: 32px; height: 32px;"/> <img title="Cursed Royal Woodlands" src="/data-wiki/img/biome-0.png" width=32 height=32 style="object-position: -0px -64px; object-fit: none; width: 32px; height: 32px;"/> <img title="Scarlet Orchard" src="/data-wiki/img/biome-0.png" width=32 height=32 style="object-position: -0px -96px; object-fit: none; width: 32px; height: 32px;"/> <img title="Royal Woodlands" src="/data-wiki/img/biome-0.png" width=32 height=32 style="object-position: -0px -128px; object-fit: none; width: 32px; height: 32px;"/> <img title="The Marshlands" src="/data-wiki/img/biome-0.png" width=32 height=32 style="object-position: -0px -160px; object-fit: none; width: 32px; height: 32px;"/></td>
+</tr>
+<tr>
+<td>Lost Supplies</td>
+<td>Biomes:  <img title=">Missing key<" src="/data-wiki/img/biome-0.png" width=32 height=32 style="object-position: -0px -0px; object-fit: none; width: 32px; height: 32px;"/> <img title="Coral Forest" src="/data-wiki/img/biome-0.png" width=32 height=32 style="object-position: -0px -32px; object-fit: none; width: 32px; height: 32px;"/> <img title="Cursed Royal Woodlands" src="/data-wiki/img/biome-0.png" width=32 height=32 style="object-position: -0px -64px; object-fit: none; width: 32px; height: 32px;"/> <img title="Scarlet Orchard" src="/data-wiki/img/biome-0.png" width=32 height=32 style="object-position: -0px -96px; object-fit: none; width: 32px; height: 32px;"/> <img title="Royal Woodlands" src="/data-wiki/img/biome-0.png" width=32 height=32 style="object-position: -0px -128px; object-fit: none; width: 32px; height: 32px;"/> <img title="The Marshlands" src="/data-wiki/img/biome-0.png" width=32 height=32 style="object-position: -0px -160px; object-fit: none; width: 32px; height: 32px;"/></td>
+</tr>
+<tr>
+<td>Mist Piercers</td>
+<td>Biomes:  <img title=">Missing key<" src="/data-wiki/img/biome-0.png" width=32 height=32 style="object-position: -0px -0px; object-fit: none; width: 32px; height: 32px;"/> <img title="Coral Forest" src="/data-wiki/img/biome-0.png" width=32 height=32 style="object-position: -0px -32px; object-fit: none; width: 32px; height: 32px;"/> <img title="Scarlet Orchard" src="/data-wiki/img/biome-0.png" width=32 height=32 style="object-position: -0px -96px; object-fit: none; width: 32px; height: 32px;"/> <img title="Royal Woodlands" src="/data-wiki/img/biome-0.png" width=32 height=32 style="object-position: -0px -128px; object-fit: none; width: 32px; height: 32px;"/> <img title="The Marshlands" src="/data-wiki/img/biome-0.png" width=32 height=32 style="object-position: -0px -160px; object-fit: none; width: 32px; height: 32px;"/></td>
+</tr>
+<tr>
+<td>Ritual of prosperity</td>
+<td>Biomes:  <img title=">Missing key<" src="/data-wiki/img/biome-0.png" width=32 height=32 style="object-position: -0px -0px; object-fit: none; width: 32px; height: 32px;"/> <img title="Coral Forest" src="/data-wiki/img/biome-0.png" width=32 height=32 style="object-position: -0px -32px; object-fit: none; width: 32px; height: 32px;"/> <img title="Cursed Royal Woodlands" src="/data-wiki/img/biome-0.png" width=32 height=32 style="object-position: -0px -64px; object-fit: none; width: 32px; height: 32px;"/> <img title="Scarlet Orchard" src="/data-wiki/img/biome-0.png" width=32 height=32 style="object-position: -0px -96px; object-fit: none; width: 32px; height: 32px;"/> <img title="Royal Woodlands" src="/data-wiki/img/biome-0.png" width=32 height=32 style="object-position: -0px -128px; object-fit: none; width: 32px; height: 32px;"/> <img title="The Marshlands" src="/data-wiki/img/biome-0.png" width=32 height=32 style="object-position: -0px -160px; object-fit: none; width: 32px; height: 32px;"/></td>
+</tr>
+<tr>
+<td>Biscuit Diet</td>
+<td>Biomes:  <img title=">Missing key<" src="/data-wiki/img/biome-0.png" width=32 height=32 style="object-position: -0px -0px; object-fit: none; width: 32px; height: 32px;"/> <img title="Coral Forest" src="/data-wiki/img/biome-0.png" width=32 height=32 style="object-position: -0px -32px; object-fit: none; width: 32px; height: 32px;"/> <img title="Cursed Royal Woodlands" src="/data-wiki/img/biome-0.png" width=32 height=32 style="object-position: -0px -64px; object-fit: none; width: 32px; height: 32px;"/> <img title="Scarlet Orchard" src="/data-wiki/img/biome-0.png" width=32 height=32 style="object-position: -0px -96px; object-fit: none; width: 32px; height: 32px;"/> <img title="Royal Woodlands" src="/data-wiki/img/biome-0.png" width=32 height=32 style="object-position: -0px -128px; object-fit: none; width: 32px; height: 32px;"/> <img title="The Marshlands" src="/data-wiki/img/biome-0.png" width=32 height=32 style="object-position: -0px -160px; object-fit: none; width: 32px; height: 32px;"/></td>
+</tr>
+<tr>
+<td>Rich glades</td>
+<td>Biomes:  <img title=">Missing key<" src="/data-wiki/img/biome-0.png" width=32 height=32 style="object-position: -0px -0px; object-fit: none; width: 32px; height: 32px;"/> <img title="Coral Forest" src="/data-wiki/img/biome-0.png" width=32 height=32 style="object-position: -0px -32px; object-fit: none; width: 32px; height: 32px;"/> <img title="Cursed Royal Woodlands" src="/data-wiki/img/biome-0.png" width=32 height=32 style="object-position: -0px -64px; object-fit: none; width: 32px; height: 32px;"/> <img title="Scarlet Orchard" src="/data-wiki/img/biome-0.png" width=32 height=32 style="object-position: -0px -96px; object-fit: none; width: 32px; height: 32px;"/> <img title="Royal Woodlands" src="/data-wiki/img/biome-0.png" width=32 height=32 style="object-position: -0px -128px; object-fit: none; width: 32px; height: 32px;"/> <img title="The Marshlands" src="/data-wiki/img/biome-0.png" width=32 height=32 style="object-position: -0px -160px; object-fit: none; width: 32px; height: 32px;"/></td>
+</tr>
+<tr>
+<td>Rebellious Spirit</td>
+<td>Biomes:  <img title=">Missing key<" src="/data-wiki/img/biome-0.png" width=32 height=32 style="object-position: -0px -0px; object-fit: none; width: 32px; height: 32px;"/> <img title="Coral Forest" src="/data-wiki/img/biome-0.png" width=32 height=32 style="object-position: -0px -32px; object-fit: none; width: 32px; height: 32px;"/> <img title="Cursed Royal Woodlands" src="/data-wiki/img/biome-0.png" width=32 height=32 style="object-position: -0px -64px; object-fit: none; width: 32px; height: 32px;"/> <img title="Scarlet Orchard" src="/data-wiki/img/biome-0.png" width=32 height=32 style="object-position: -0px -96px; object-fit: none; width: 32px; height: 32px;"/> <img title="Royal Woodlands" src="/data-wiki/img/biome-0.png" width=32 height=32 style="object-position: -0px -128px; object-fit: none; width: 32px; height: 32px;"/> <img title="The Marshlands" src="/data-wiki/img/biome-0.png" width=32 height=32 style="object-position: -0px -160px; object-fit: none; width: 32px; height: 32px;"/></td>
+</tr>
+<tr>
+<td>Prosperous Settlement</td>
+<td>Biomes:  <img title=">Missing key<" src="/data-wiki/img/biome-0.png" width=32 height=32 style="object-position: -0px -0px; object-fit: none; width: 32px; height: 32px;"/> <img title="Coral Forest" src="/data-wiki/img/biome-0.png" width=32 height=32 style="object-position: -0px -32px; object-fit: none; width: 32px; height: 32px;"/> <img title="Cursed Royal Woodlands" src="/data-wiki/img/biome-0.png" width=32 height=32 style="object-position: -0px -64px; object-fit: none; width: 32px; height: 32px;"/> <img title="Scarlet Orchard" src="/data-wiki/img/biome-0.png" width=32 height=32 style="object-position: -0px -96px; object-fit: none; width: 32px; height: 32px;"/> <img title="Royal Woodlands" src="/data-wiki/img/biome-0.png" width=32 height=32 style="object-position: -0px -128px; object-fit: none; width: 32px; height: 32px;"/> <img title="The Marshlands" src="/data-wiki/img/biome-0.png" width=32 height=32 style="object-position: -0px -160px; object-fit: none; width: 32px; height: 32px;"/></td>
+</tr>
+<tr>
+<td>Bone Tools</td>
+<td>Biomes:  <img title=">Missing key<" src="/data-wiki/img/biome-0.png" width=32 height=32 style="object-position: -0px -0px; object-fit: none; width: 32px; height: 32px;"/> <img title="Coral Forest" src="/data-wiki/img/biome-0.png" width=32 height=32 style="object-position: -0px -32px; object-fit: none; width: 32px; height: 32px;"/> <img title="Cursed Royal Woodlands" src="/data-wiki/img/biome-0.png" width=32 height=32 style="object-position: -0px -64px; object-fit: none; width: 32px; height: 32px;"/> <img title="Scarlet Orchard" src="/data-wiki/img/biome-0.png" width=32 height=32 style="object-position: -0px -96px; object-fit: none; width: 32px; height: 32px;"/> <img title="Royal Woodlands" src="/data-wiki/img/biome-0.png" width=32 height=32 style="object-position: -0px -128px; object-fit: none; width: 32px; height: 32px;"/> <img title="The Marshlands" src="/data-wiki/img/biome-0.png" width=32 height=32 style="object-position: -0px -160px; object-fit: none; width: 32px; height: 32px;"/></td>
+</tr>
+<tr>
+<td>Improvised Tools</td>
+<td>Biomes:  <img title=">Missing key<" src="/data-wiki/img/biome-0.png" width=32 height=32 style="object-position: -0px -0px; object-fit: none; width: 32px; height: 32px;"/> <img title="Coral Forest" src="/data-wiki/img/biome-0.png" width=32 height=32 style="object-position: -0px -32px; object-fit: none; width: 32px; height: 32px;"/> <img title="Cursed Royal Woodlands" src="/data-wiki/img/biome-0.png" width=32 height=32 style="object-position: -0px -64px; object-fit: none; width: 32px; height: 32px;"/> <img title="Scarlet Orchard" src="/data-wiki/img/biome-0.png" width=32 height=32 style="object-position: -0px -96px; object-fit: none; width: 32px; height: 32px;"/> <img title="Royal Woodlands" src="/data-wiki/img/biome-0.png" width=32 height=32 style="object-position: -0px -128px; object-fit: none; width: 32px; height: 32px;"/> <img title="The Marshlands" src="/data-wiki/img/biome-0.png" width=32 height=32 style="object-position: -0px -160px; object-fit: none; width: 32px; height: 32px;"/></td>
+</tr>
+<tr>
+<td>Hidden from the Queen</td>
+<td>Biomes:  <img title=">Missing key<" src="/data-wiki/img/biome-0.png" width=32 height=32 style="object-position: -0px -0px; object-fit: none; width: 32px; height: 32px;"/> <img title="Coral Forest" src="/data-wiki/img/biome-0.png" width=32 height=32 style="object-position: -0px -32px; object-fit: none; width: 32px; height: 32px;"/> <img title="Cursed Royal Woodlands" src="/data-wiki/img/biome-0.png" width=32 height=32 style="object-position: -0px -64px; object-fit: none; width: 32px; height: 32px;"/> <img title="Scarlet Orchard" src="/data-wiki/img/biome-0.png" width=32 height=32 style="object-position: -0px -96px; object-fit: none; width: 32px; height: 32px;"/> <img title="Royal Woodlands" src="/data-wiki/img/biome-0.png" width=32 height=32 style="object-position: -0px -128px; object-fit: none; width: 32px; height: 32px;"/> <img title="The Marshlands" src="/data-wiki/img/biome-0.png" width=32 height=32 style="object-position: -0px -160px; object-fit: none; width: 32px; height: 32px;"/></td>
+</tr>
+<tr>
+<td>Dye Extractor</td>
+<td>Biomes:  <img title="Coral Forest" src="/data-wiki/img/biome-0.png" width=32 height=32 style="object-position: -0px -32px; object-fit: none; width: 32px; height: 32px;"/> <img title="Scarlet Orchard" src="/data-wiki/img/biome-0.png" width=32 height=32 style="object-position: -0px -96px; object-fit: none; width: 32px; height: 32px;"/> <img title="The Marshlands" src="/data-wiki/img/biome-0.png" width=32 height=32 style="object-position: -0px -160px; object-fit: none; width: 32px; height: 32px;"/></td>
+</tr>
+<tr>
+<td>Reinforced Stoves</td>
+<td>Biomes:  <img title="Coral Forest" src="/data-wiki/img/biome-0.png" width=32 height=32 style="object-position: -0px -32px; object-fit: none; width: 32px; height: 32px;"/> <img title="Cursed Royal Woodlands" src="/data-wiki/img/biome-0.png" width=32 height=32 style="object-position: -0px -64px; object-fit: none; width: 32px; height: 32px;"/> <img title="Scarlet Orchard" src="/data-wiki/img/biome-0.png" width=32 height=32 style="object-position: -0px -96px; object-fit: none; width: 32px; height: 32px;"/> <img title="Royal Woodlands" src="/data-wiki/img/biome-0.png" width=32 height=32 style="object-position: -0px -128px; object-fit: none; width: 32px; height: 32px;"/> <img title="The Marshlands" src="/data-wiki/img/biome-0.png" width=32 height=32 style="object-position: -0px -160px; object-fit: none; width: 32px; height: 32px;"/></td>
+</tr>
+<tr>
+<td>Blood Price Contract</td>
+<td>Traders:  Trader 3 - Ancient Biomes:  <img title="Coral Forest" src="/data-wiki/img/biome-0.png" width=32 height=32 style="object-position: -0px -32px; object-fit: none; width: 32px; height: 32px;"/> <img title="Cursed Royal Woodlands" src="/data-wiki/img/biome-0.png" width=32 height=32 style="object-position: -0px -64px; object-fit: none; width: 32px; height: 32px;"/> <img title="Scarlet Orchard" src="/data-wiki/img/biome-0.png" width=32 height=32 style="object-position: -0px -96px; object-fit: none; width: 32px; height: 32px;"/> <img title="Royal Woodlands" src="/data-wiki/img/biome-0.png" width=32 height=32 style="object-position: -0px -128px; object-fit: none; width: 32px; height: 32px;"/> <img title="The Marshlands" src="/data-wiki/img/biome-0.png" width=32 height=32 style="object-position: -0px -160px; object-fit: none; width: 32px; height: 32px;"/></td>
+</tr>
+<tr>
+<td>Advanced Brewing</td>
+<td>Biomes:  <img title="Coral Forest" src="/data-wiki/img/biome-0.png" width=32 height=32 style="object-position: -0px -32px; object-fit: none; width: 32px; height: 32px;"/> <img title="Cursed Royal Woodlands" src="/data-wiki/img/biome-0.png" width=32 height=32 style="object-position: -0px -64px; object-fit: none; width: 32px; height: 32px;"/> <img title="Scarlet Orchard" src="/data-wiki/img/biome-0.png" width=32 height=32 style="object-position: -0px -96px; object-fit: none; width: 32px; height: 32px;"/> <img title="Royal Woodlands" src="/data-wiki/img/biome-0.png" width=32 height=32 style="object-position: -0px -128px; object-fit: none; width: 32px; height: 32px;"/> <img title="The Marshlands" src="/data-wiki/img/biome-0.png" width=32 height=32 style="object-position: -0px -160px; object-fit: none; width: 32px; height: 32px;"/></td>
+</tr>
+<tr>
+<td>Clay Delivery Line</td>
+<td>Biomes:  <img title="Coral Forest" src="/data-wiki/img/biome-0.png" width=32 height=32 style="object-position: -0px -32px; object-fit: none; width: 32px; height: 32px;"/> <img title="Cursed Royal Woodlands" src="/data-wiki/img/biome-0.png" width=32 height=32 style="object-position: -0px -64px; object-fit: none; width: 32px; height: 32px;"/> <img title="Scarlet Orchard" src="/data-wiki/img/biome-0.png" width=32 height=32 style="object-position: -0px -96px; object-fit: none; width: 32px; height: 32px;"/> <img title="Royal Woodlands" src="/data-wiki/img/biome-0.png" width=32 height=32 style="object-position: -0px -128px; object-fit: none; width: 32px; height: 32px;"/> <img title="The Marshlands" src="/data-wiki/img/biome-0.png" width=32 height=32 style="object-position: -0px -160px; object-fit: none; width: 32px; height: 32px;"/></td>
+</tr>
+<tr>
+<td>Fiber Delivery Line</td>
+<td>Biomes:  <img title="Coral Forest" src="/data-wiki/img/biome-0.png" width=32 height=32 style="object-position: -0px -32px; object-fit: none; width: 32px; height: 32px;"/> <img title="Cursed Royal Woodlands" src="/data-wiki/img/biome-0.png" width=32 height=32 style="object-position: -0px -64px; object-fit: none; width: 32px; height: 32px;"/> <img title="Scarlet Orchard" src="/data-wiki/img/biome-0.png" width=32 height=32 style="object-position: -0px -96px; object-fit: none; width: 32px; height: 32px;"/> <img title="Royal Woodlands" src="/data-wiki/img/biome-0.png" width=32 height=32 style="object-position: -0px -128px; object-fit: none; width: 32px; height: 32px;"/> <img title="The Marshlands" src="/data-wiki/img/biome-0.png" width=32 height=32 style="object-position: -0px -160px; object-fit: none; width: 32px; height: 32px;"/></td>
+</tr>
+<tr>
+<td>Advanced Fuel</td>
+<td>Biomes:  <img title="Coral Forest" src="/data-wiki/img/biome-0.png" width=32 height=32 style="object-position: -0px -32px; object-fit: none; width: 32px; height: 32px;"/> <img title="Cursed Royal Woodlands" src="/data-wiki/img/biome-0.png" width=32 height=32 style="object-position: -0px -64px; object-fit: none; width: 32px; height: 32px;"/> <img title="Scarlet Orchard" src="/data-wiki/img/biome-0.png" width=32 height=32 style="object-position: -0px -96px; object-fit: none; width: 32px; height: 32px;"/> <img title="Royal Woodlands" src="/data-wiki/img/biome-0.png" width=32 height=32 style="object-position: -0px -128px; object-fit: none; width: 32px; height: 32px;"/> <img title="The Marshlands" src="/data-wiki/img/biome-0.png" width=32 height=32 style="object-position: -0px -160px; object-fit: none; width: 32px; height: 32px;"/></td>
+</tr>
+<tr>
+<td>Grain Delivery Line</td>
+<td>Biomes:  <img title="Coral Forest" src="/data-wiki/img/biome-0.png" width=32 height=32 style="object-position: -0px -32px; object-fit: none; width: 32px; height: 32px;"/> <img title="Cursed Royal Woodlands" src="/data-wiki/img/biome-0.png" width=32 height=32 style="object-position: -0px -64px; object-fit: none; width: 32px; height: 32px;"/> <img title="Scarlet Orchard" src="/data-wiki/img/biome-0.png" width=32 height=32 style="object-position: -0px -96px; object-fit: none; width: 32px; height: 32px;"/> <img title="Royal Woodlands" src="/data-wiki/img/biome-0.png" width=32 height=32 style="object-position: -0px -128px; object-fit: none; width: 32px; height: 32px;"/> <img title="The Marshlands" src="/data-wiki/img/biome-0.png" width=32 height=32 style="object-position: -0px -160px; object-fit: none; width: 32px; height: 32px;"/></td>
+</tr>
+<tr>
+<td>Cosmetic Specialization</td>
+<td>Biomes:  <img title="Coral Forest" src="/data-wiki/img/biome-0.png" width=32 height=32 style="object-position: -0px -32px; object-fit: none; width: 32px; height: 32px;"/> <img title="Cursed Royal Woodlands" src="/data-wiki/img/biome-0.png" width=32 height=32 style="object-position: -0px -64px; object-fit: none; width: 32px; height: 32px;"/> <img title="Scarlet Orchard" src="/data-wiki/img/biome-0.png" width=32 height=32 style="object-position: -0px -96px; object-fit: none; width: 32px; height: 32px;"/> <img title="Royal Woodlands" src="/data-wiki/img/biome-0.png" width=32 height=32 style="object-position: -0px -128px; object-fit: none; width: 32px; height: 32px;"/> <img title="The Marshlands" src="/data-wiki/img/biome-0.png" width=32 height=32 style="object-position: -0px -160px; object-fit: none; width: 32px; height: 32px;"/></td>
+</tr>
+<tr>
+<td>Silent Looting</td>
+<td>Biomes:  <img title="Coral Forest" src="/data-wiki/img/biome-0.png" width=32 height=32 style="object-position: -0px -32px; object-fit: none; width: 32px; height: 32px;"/> <img title="Cursed Royal Woodlands" src="/data-wiki/img/biome-0.png" width=32 height=32 style="object-position: -0px -64px; object-fit: none; width: 32px; height: 32px;"/> <img title="Scarlet Orchard" src="/data-wiki/img/biome-0.png" width=32 height=32 style="object-position: -0px -96px; object-fit: none; width: 32px; height: 32px;"/> <img title="Royal Woodlands" src="/data-wiki/img/biome-0.png" width=32 height=32 style="object-position: -0px -128px; object-fit: none; width: 32px; height: 32px;"/> <img title="The Marshlands" src="/data-wiki/img/biome-0.png" width=32 height=32 style="object-position: -0px -160px; object-fit: none; width: 32px; height: 32px;"/></td>
+</tr>
+<tr>
+<td>Protected Trade</td>
+<td>Biomes:  <img title="Coral Forest" src="/data-wiki/img/biome-0.png" width=32 height=32 style="object-position: -0px -32px; object-fit: none; width: 32px; height: 32px;"/> <img title="Cursed Royal Woodlands" src="/data-wiki/img/biome-0.png" width=32 height=32 style="object-position: -0px -64px; object-fit: none; width: 32px; height: 32px;"/> <img title="Scarlet Orchard" src="/data-wiki/img/biome-0.png" width=32 height=32 style="object-position: -0px -96px; object-fit: none; width: 32px; height: 32px;"/> <img title="Royal Woodlands" src="/data-wiki/img/biome-0.png" width=32 height=32 style="object-position: -0px -128px; object-fit: none; width: 32px; height: 32px;"/> <img title="The Marshlands" src="/data-wiki/img/biome-0.png" width=32 height=32 style="object-position: -0px -160px; object-fit: none; width: 32px; height: 32px;"/></td>
+</tr>
+<tr>
+<td>Religious Settlement</td>
+<td>Biomes:  <img title="Coral Forest" src="/data-wiki/img/biome-0.png" width=32 height=32 style="object-position: -0px -32px; object-fit: none; width: 32px; height: 32px;"/> <img title="Cursed Royal Woodlands" src="/data-wiki/img/biome-0.png" width=32 height=32 style="object-position: -0px -64px; object-fit: none; width: 32px; height: 32px;"/> <img title="Scarlet Orchard" src="/data-wiki/img/biome-0.png" width=32 height=32 style="object-position: -0px -96px; object-fit: none; width: 32px; height: 32px;"/> <img title="Royal Woodlands" src="/data-wiki/img/biome-0.png" width=32 height=32 style="object-position: -0px -128px; object-fit: none; width: 32px; height: 32px;"/> <img title="The Marshlands" src="/data-wiki/img/biome-0.png" width=32 height=32 style="object-position: -0px -160px; object-fit: none; width: 32px; height: 32px;"/></td>
+</tr>
+<tr>
+<td>Woodpecker Technique</td>
+<td>Biomes:  <img title="Coral Forest" src="/data-wiki/img/biome-0.png" width=32 height=32 style="object-position: -0px -32px; object-fit: none; width: 32px; height: 32px;"/> <img title="Cursed Royal Woodlands" src="/data-wiki/img/biome-0.png" width=32 height=32 style="object-position: -0px -64px; object-fit: none; width: 32px; height: 32px;"/> <img title="Scarlet Orchard" src="/data-wiki/img/biome-0.png" width=32 height=32 style="object-position: -0px -96px; object-fit: none; width: 32px; height: 32px;"/> <img title="Royal Woodlands" src="/data-wiki/img/biome-0.png" width=32 height=32 style="object-position: -0px -128px; object-fit: none; width: 32px; height: 32px;"/> <img title="The Marshlands" src="/data-wiki/img/biome-0.png" width=32 height=32 style="object-position: -0px -160px; object-fit: none; width: 32px; height: 32px;"/></td>
+</tr>
+<tr>
+<td>Tanning Racks</td>
+<td>Biomes:  <img title="Coral Forest" src="/data-wiki/img/biome-0.png" width=32 height=32 style="object-position: -0px -32px; object-fit: none; width: 32px; height: 32px;"/> <img title="Cursed Royal Woodlands" src="/data-wiki/img/biome-0.png" width=32 height=32 style="object-position: -0px -64px; object-fit: none; width: 32px; height: 32px;"/> <img title="Royal Woodlands" src="/data-wiki/img/biome-0.png" width=32 height=32 style="object-position: -0px -128px; object-fit: none; width: 32px; height: 32px;"/> <img title="The Marshlands" src="/data-wiki/img/biome-0.png" width=32 height=32 style="object-position: -0px -160px; object-fit: none; width: 32px; height: 32px;"/></td>
+</tr>
+<tr>
+<td>Flame Amulets</td>
+<td>Biomes:  <img title="Coral Forest" src="/data-wiki/img/biome-0.png" width=32 height=32 style="object-position: -0px -32px; object-fit: none; width: 32px; height: 32px;"/> <img title="Cursed Royal Woodlands" src="/data-wiki/img/biome-0.png" width=32 height=32 style="object-position: -0px -64px; object-fit: none; width: 32px; height: 32px;"/> <img title="Scarlet Orchard" src="/data-wiki/img/biome-0.png" width=32 height=32 style="object-position: -0px -96px; object-fit: none; width: 32px; height: 32px;"/> <img title="Royal Woodlands" src="/data-wiki/img/biome-0.png" width=32 height=32 style="object-position: -0px -128px; object-fit: none; width: 32px; height: 32px;"/> <img title="The Marshlands" src="/data-wiki/img/biome-0.png" width=32 height=32 style="object-position: -0px -160px; object-fit: none; width: 32px; height: 32px;"/></td>
+</tr>
+<tr>
+<td>Training Grounds</td>
+<td>Biomes:  <img title="Coral Forest" src="/data-wiki/img/biome-0.png" width=32 height=32 style="object-position: -0px -32px; object-fit: none; width: 32px; height: 32px;"/> <img title="Cursed Royal Woodlands" src="/data-wiki/img/biome-0.png" width=32 height=32 style="object-position: -0px -64px; object-fit: none; width: 32px; height: 32px;"/> <img title="Scarlet Orchard" src="/data-wiki/img/biome-0.png" width=32 height=32 style="object-position: -0px -96px; object-fit: none; width: 32px; height: 32px;"/> <img title="Royal Woodlands" src="/data-wiki/img/biome-0.png" width=32 height=32 style="object-position: -0px -128px; object-fit: none; width: 32px; height: 32px;"/> <img title="The Marshlands" src="/data-wiki/img/biome-0.png" width=32 height=32 style="object-position: -0px -160px; object-fit: none; width: 32px; height: 32px;"/></td>
+</tr>
+<tr>
+<td>Meat Delivery Line</td>
+<td>Biomes:  <img title="Coral Forest" src="/data-wiki/img/biome-0.png" width=32 height=32 style="object-position: -0px -32px; object-fit: none; width: 32px; height: 32px;"/> <img title="Cursed Royal Woodlands" src="/data-wiki/img/biome-0.png" width=32 height=32 style="object-position: -0px -64px; object-fit: none; width: 32px; height: 32px;"/> <img title="Scarlet Orchard" src="/data-wiki/img/biome-0.png" width=32 height=32 style="object-position: -0px -96px; object-fit: none; width: 32px; height: 32px;"/> <img title="Royal Woodlands" src="/data-wiki/img/biome-0.png" width=32 height=32 style="object-position: -0px -128px; object-fit: none; width: 32px; height: 32px;"/></td>
+</tr>
+<tr>
+<td>Metallurgic Proficiency</td>
+<td>Traders:  Trader 2 - Brass Order Trader 3 - Ancient Trader 4 - Vanguard of the Stolen Keys Biomes:  <img title="Coral Forest" src="/data-wiki/img/biome-0.png" width=32 height=32 style="object-position: -0px -32px; object-fit: none; width: 32px; height: 32px;"/> <img title="Cursed Royal Woodlands" src="/data-wiki/img/biome-0.png" width=32 height=32 style="object-position: -0px -64px; object-fit: none; width: 32px; height: 32px;"/> <img title="Scarlet Orchard" src="/data-wiki/img/biome-0.png" width=32 height=32 style="object-position: -0px -96px; object-fit: none; width: 32px; height: 32px;"/> <img title="Royal Woodlands" src="/data-wiki/img/biome-0.png" width=32 height=32 style="object-position: -0px -128px; object-fit: none; width: 32px; height: 32px;"/> <img title="The Marshlands" src="/data-wiki/img/biome-0.png" width=32 height=32 style="object-position: -0px -160px; object-fit: none; width: 32px; height: 32px;"/></td>
+</tr>
+<tr>
+<td>Export Specialization</td>
+<td>Traders:  Trader 5 - Royal Trading Company Biomes:  <img title="Coral Forest" src="/data-wiki/img/biome-0.png" width=32 height=32 style="object-position: -0px -32px; object-fit: none; width: 32px; height: 32px;"/> <img title="Cursed Royal Woodlands" src="/data-wiki/img/biome-0.png" width=32 height=32 style="object-position: -0px -64px; object-fit: none; width: 32px; height: 32px;"/> <img title="Scarlet Orchard" src="/data-wiki/img/biome-0.png" width=32 height=32 style="object-position: -0px -96px; object-fit: none; width: 32px; height: 32px;"/> <img title="Royal Woodlands" src="/data-wiki/img/biome-0.png" width=32 height=32 style="object-position: -0px -128px; object-fit: none; width: 32px; height: 32px;"/> <img title="The Marshlands" src="/data-wiki/img/biome-0.png" width=32 height=32 style="object-position: -0px -160px; object-fit: none; width: 32px; height: 32px;"/></td>
+</tr>
+<tr>
+<td>Root Delivery Line</td>
+<td>Biomes:  <img title="Coral Forest" src="/data-wiki/img/biome-0.png" width=32 height=32 style="object-position: -0px -32px; object-fit: none; width: 32px; height: 32px;"/> <img title="Cursed Royal Woodlands" src="/data-wiki/img/biome-0.png" width=32 height=32 style="object-position: -0px -64px; object-fit: none; width: 32px; height: 32px;"/> <img title="Scarlet Orchard" src="/data-wiki/img/biome-0.png" width=32 height=32 style="object-position: -0px -96px; object-fit: none; width: 32px; height: 32px;"/> <img title="Royal Woodlands" src="/data-wiki/img/biome-0.png" width=32 height=32 style="object-position: -0px -128px; object-fit: none; width: 32px; height: 32px;"/> <img title="The Marshlands" src="/data-wiki/img/biome-0.png" width=32 height=32 style="object-position: -0px -160px; object-fit: none; width: 32px; height: 32px;"/></td>
+</tr>
+<tr>
+<td>Fiery Wrath</td>
+<td>Biomes:  <img title="Coral Forest" src="/data-wiki/img/biome-0.png" width=32 height=32 style="object-position: -0px -32px; object-fit: none; width: 32px; height: 32px;"/> <img title="Cursed Royal Woodlands" src="/data-wiki/img/biome-0.png" width=32 height=32 style="object-position: -0px -64px; object-fit: none; width: 32px; height: 32px;"/> <img title="Scarlet Orchard" src="/data-wiki/img/biome-0.png" width=32 height=32 style="object-position: -0px -96px; object-fit: none; width: 32px; height: 32px;"/> <img title="Royal Woodlands" src="/data-wiki/img/biome-0.png" width=32 height=32 style="object-position: -0px -128px; object-fit: none; width: 32px; height: 32px;"/> <img title="The Marshlands" src="/data-wiki/img/biome-0.png" width=32 height=32 style="object-position: -0px -160px; object-fit: none; width: 32px; height: 32px;"/></td>
+</tr>
+<tr>
+<td>Steel Mattocks</td>
+<td>Biomes:  <img title="Coral Forest" src="/data-wiki/img/biome-0.png" width=32 height=32 style="object-position: -0px -32px; object-fit: none; width: 32px; height: 32px;"/> <img title="Cursed Royal Woodlands" src="/data-wiki/img/biome-0.png" width=32 height=32 style="object-position: -0px -64px; object-fit: none; width: 32px; height: 32px;"/> <img title="Scarlet Orchard" src="/data-wiki/img/biome-0.png" width=32 height=32 style="object-position: -0px -96px; object-fit: none; width: 32px; height: 32px;"/> <img title="Royal Woodlands" src="/data-wiki/img/biome-0.png" width=32 height=32 style="object-position: -0px -128px; object-fit: none; width: 32px; height: 32px;"/> <img title="The Marshlands" src="/data-wiki/img/biome-0.png" width=32 height=32 style="object-position: -0px -160px; object-fit: none; width: 32px; height: 32px;"/></td>
+</tr>
+<tr>
+<td>Giant Vegetables</td>
+<td>Traders:  Trader 5 - Royal Trading Company Biomes:  <img title="Coral Forest" src="/data-wiki/img/biome-0.png" width=32 height=32 style="object-position: -0px -32px; object-fit: none; width: 32px; height: 32px;"/> <img title="Cursed Royal Woodlands" src="/data-wiki/img/biome-0.png" width=32 height=32 style="object-position: -0px -64px; object-fit: none; width: 32px; height: 32px;"/> <img title="Royal Woodlands" src="/data-wiki/img/biome-0.png" width=32 height=32 style="object-position: -0px -128px; object-fit: none; width: 32px; height: 32px;"/></td>
+</tr>
+<tr>
+<td>Moss Broccoli Seeds</td>
+<td>Biomes:  <img title="Coral Forest" src="/data-wiki/img/biome-0.png" width=32 height=32 style="object-position: -0px -32px; object-fit: none; width: 32px; height: 32px;"/> <img title="Cursed Royal Woodlands" src="/data-wiki/img/biome-0.png" width=32 height=32 style="object-position: -0px -64px; object-fit: none; width: 32px; height: 32px;"/> <img title="Scarlet Orchard" src="/data-wiki/img/biome-0.png" width=32 height=32 style="object-position: -0px -96px; object-fit: none; width: 32px; height: 32px;"/> <img title="Royal Woodlands" src="/data-wiki/img/biome-0.png" width=32 height=32 style="object-position: -0px -128px; object-fit: none; width: 32px; height: 32px;"/> <img title="The Marshlands" src="/data-wiki/img/biome-0.png" width=32 height=32 style="object-position: -0px -160px; object-fit: none; width: 32px; height: 32px;"/></td>
+</tr>
+<tr>
+<td>Stormwalker Training</td>
+<td>Biomes:  <img title="Coral Forest" src="/data-wiki/img/biome-0.png" width=32 height=32 style="object-position: -0px -32px; object-fit: none; width: 32px; height: 32px;"/> <img title="Cursed Royal Woodlands" src="/data-wiki/img/biome-0.png" width=32 height=32 style="object-position: -0px -64px; object-fit: none; width: 32px; height: 32px;"/> <img title="Scarlet Orchard" src="/data-wiki/img/biome-0.png" width=32 height=32 style="object-position: -0px -96px; object-fit: none; width: 32px; height: 32px;"/> <img title="Royal Woodlands" src="/data-wiki/img/biome-0.png" width=32 height=32 style="object-position: -0px -128px; object-fit: none; width: 32px; height: 32px;"/> <img title="The Marshlands" src="/data-wiki/img/biome-0.png" width=32 height=32 style="object-position: -0px -160px; object-fit: none; width: 32px; height: 32px;"/></td>
+</tr>
+<tr>
+<td>Chicken or Egg?</td>
+<td>Biomes:  <img title="Coral Forest" src="/data-wiki/img/biome-0.png" width=32 height=32 style="object-position: -0px -32px; object-fit: none; width: 32px; height: 32px;"/> <img title="Cursed Royal Woodlands" src="/data-wiki/img/biome-0.png" width=32 height=32 style="object-position: -0px -64px; object-fit: none; width: 32px; height: 32px;"/> <img title="Scarlet Orchard" src="/data-wiki/img/biome-0.png" width=32 height=32 style="object-position: -0px -96px; object-fit: none; width: 32px; height: 32px;"/> <img title="Royal Woodlands" src="/data-wiki/img/biome-0.png" width=32 height=32 style="object-position: -0px -128px; object-fit: none; width: 32px; height: 32px;"/> <img title="The Marshlands" src="/data-wiki/img/biome-0.png" width=32 height=32 style="object-position: -0px -160px; object-fit: none; width: 32px; height: 32px;"/></td>
+</tr>
+<tr>
+<td>Surprise Child</td>
+<td>Biomes:  <img title="Coral Forest" src="/data-wiki/img/biome-0.png" width=32 height=32 style="object-position: -0px -32px; object-fit: none; width: 32px; height: 32px;"/> <img title="Cursed Royal Woodlands" src="/data-wiki/img/biome-0.png" width=32 height=32 style="object-position: -0px -64px; object-fit: none; width: 32px; height: 32px;"/> <img title="Scarlet Orchard" src="/data-wiki/img/biome-0.png" width=32 height=32 style="object-position: -0px -96px; object-fit: none; width: 32px; height: 32px;"/> <img title="Royal Woodlands" src="/data-wiki/img/biome-0.png" width=32 height=32 style="object-position: -0px -128px; object-fit: none; width: 32px; height: 32px;"/> <img title="The Marshlands" src="/data-wiki/img/biome-0.png" width=32 height=32 style="object-position: -0px -160px; object-fit: none; width: 32px; height: 32px;"/></td>
+</tr>
+<tr>
+<td>Peasant Supplies</td>
+<td>Biomes:  <img title="Coral Forest" src="/data-wiki/img/biome-0.png" width=32 height=32 style="object-position: -0px -32px; object-fit: none; width: 32px; height: 32px;"/> <img title="Cursed Royal Woodlands" src="/data-wiki/img/biome-0.png" width=32 height=32 style="object-position: -0px -64px; object-fit: none; width: 32px; height: 32px;"/> <img title="Scarlet Orchard" src="/data-wiki/img/biome-0.png" width=32 height=32 style="object-position: -0px -96px; object-fit: none; width: 32px; height: 32px;"/> <img title="Royal Woodlands" src="/data-wiki/img/biome-0.png" width=32 height=32 style="object-position: -0px -128px; object-fit: none; width: 32px; height: 32px;"/> <img title="The Marshlands" src="/data-wiki/img/biome-0.png" width=32 height=32 style="object-position: -0px -160px; object-fit: none; width: 32px; height: 32px;"/></td>
+</tr>
+<tr>
+<td>Deep Pocket</td>
+<td>Biomes:  <img title="Coral Forest" src="/data-wiki/img/biome-0.png" width=32 height=32 style="object-position: -0px -32px; object-fit: none; width: 32px; height: 32px;"/> <img title="Cursed Royal Woodlands" src="/data-wiki/img/biome-0.png" width=32 height=32 style="object-position: -0px -64px; object-fit: none; width: 32px; height: 32px;"/> <img title="Scarlet Orchard" src="/data-wiki/img/biome-0.png" width=32 height=32 style="object-position: -0px -96px; object-fit: none; width: 32px; height: 32px;"/> <img title="Royal Woodlands" src="/data-wiki/img/biome-0.png" width=32 height=32 style="object-position: -0px -128px; object-fit: none; width: 32px; height: 32px;"/> <img title="The Marshlands" src="/data-wiki/img/biome-0.png" width=32 height=32 style="object-position: -0px -160px; object-fit: none; width: 32px; height: 32px;"/></td>
+</tr>
+<tr>
+<td>Forest Mitigation</td>
+<td>Biomes:  <img title="Coral Forest" src="/data-wiki/img/biome-0.png" width=32 height=32 style="object-position: -0px -32px; object-fit: none; width: 32px; height: 32px;"/> <img title="Cursed Royal Woodlands" src="/data-wiki/img/biome-0.png" width=32 height=32 style="object-position: -0px -64px; object-fit: none; width: 32px; height: 32px;"/> <img title="Scarlet Orchard" src="/data-wiki/img/biome-0.png" width=32 height=32 style="object-position: -0px -96px; object-fit: none; width: 32px; height: 32px;"/> <img title="Royal Woodlands" src="/data-wiki/img/biome-0.png" width=32 height=32 style="object-position: -0px -128px; object-fit: none; width: 32px; height: 32px;"/> <img title="The Marshlands" src="/data-wiki/img/biome-0.png" width=32 height=32 style="object-position: -0px -160px; object-fit: none; width: 32px; height: 32px;"/></td>
+</tr>
+<tr>
+<td>Friendly Relations</td>
+<td>Biomes:  <img title="Coral Forest" src="/data-wiki/img/biome-0.png" width=32 height=32 style="object-position: -0px -32px; object-fit: none; width: 32px; height: 32px;"/> <img title="Cursed Royal Woodlands" src="/data-wiki/img/biome-0.png" width=32 height=32 style="object-position: -0px -64px; object-fit: none; width: 32px; height: 32px;"/> <img title="Scarlet Orchard" src="/data-wiki/img/biome-0.png" width=32 height=32 style="object-position: -0px -96px; object-fit: none; width: 32px; height: 32px;"/> <img title="Royal Woodlands" src="/data-wiki/img/biome-0.png" width=32 height=32 style="object-position: -0px -128px; object-fit: none; width: 32px; height: 32px;"/> <img title="The Marshlands" src="/data-wiki/img/biome-0.png" width=32 height=32 style="object-position: -0px -160px; object-fit: none; width: 32px; height: 32px;"/></td>
+</tr>
+<tr>
+<td>Hidden Reward</td>
+<td>Biomes:  <img title="Coral Forest" src="/data-wiki/img/biome-0.png" width=32 height=32 style="object-position: -0px -32px; object-fit: none; width: 32px; height: 32px;"/> <img title="Cursed Royal Woodlands" src="/data-wiki/img/biome-0.png" width=32 height=32 style="object-position: -0px -64px; object-fit: none; width: 32px; height: 32px;"/> <img title="Scarlet Orchard" src="/data-wiki/img/biome-0.png" width=32 height=32 style="object-position: -0px -96px; object-fit: none; width: 32px; height: 32px;"/> <img title="Royal Woodlands" src="/data-wiki/img/biome-0.png" width=32 height=32 style="object-position: -0px -128px; object-fit: none; width: 32px; height: 32px;"/> <img title="The Marshlands" src="/data-wiki/img/biome-0.png" width=32 height=32 style="object-position: -0px -160px; object-fit: none; width: 32px; height: 32px;"/></td>
+</tr>
+<tr>
+<td>Tightened Belt</td>
+<td>Biomes:  <img title="Coral Forest" src="/data-wiki/img/biome-0.png" width=32 height=32 style="object-position: -0px -32px; object-fit: none; width: 32px; height: 32px;"/> <img title="Cursed Royal Woodlands" src="/data-wiki/img/biome-0.png" width=32 height=32 style="object-position: -0px -64px; object-fit: none; width: 32px; height: 32px;"/> <img title="Scarlet Orchard" src="/data-wiki/img/biome-0.png" width=32 height=32 style="object-position: -0px -96px; object-fit: none; width: 32px; height: 32px;"/> <img title="Royal Woodlands" src="/data-wiki/img/biome-0.png" width=32 height=32 style="object-position: -0px -128px; object-fit: none; width: 32px; height: 32px;"/> <img title="The Marshlands" src="/data-wiki/img/biome-0.png" width=32 height=32 style="object-position: -0px -160px; object-fit: none; width: 32px; height: 32px;"/></td>
+</tr>
+<tr>
+<td>Well-rested Workers</td>
+<td>Biomes:  <img title="Coral Forest" src="/data-wiki/img/biome-0.png" width=32 height=32 style="object-position: -0px -32px; object-fit: none; width: 32px; height: 32px;"/> <img title="Cursed Royal Woodlands" src="/data-wiki/img/biome-0.png" width=32 height=32 style="object-position: -0px -64px; object-fit: none; width: 32px; height: 32px;"/> <img title="Scarlet Orchard" src="/data-wiki/img/biome-0.png" width=32 height=32 style="object-position: -0px -96px; object-fit: none; width: 32px; height: 32px;"/> <img title="Royal Woodlands" src="/data-wiki/img/biome-0.png" width=32 height=32 style="object-position: -0px -128px; object-fit: none; width: 32px; height: 32px;"/> <img title="The Marshlands" src="/data-wiki/img/biome-0.png" width=32 height=32 style="object-position: -0px -160px; object-fit: none; width: 32px; height: 32px;"/></td>
+</tr>
+<tr>
+<td>Safe Haven</td>
+<td>Biomes:  <img title="Coral Forest" src="/data-wiki/img/biome-0.png" width=32 height=32 style="object-position: -0px -32px; object-fit: none; width: 32px; height: 32px;"/> <img title="Cursed Royal Woodlands" src="/data-wiki/img/biome-0.png" width=32 height=32 style="object-position: -0px -64px; object-fit: none; width: 32px; height: 32px;"/> <img title="Scarlet Orchard" src="/data-wiki/img/biome-0.png" width=32 height=32 style="object-position: -0px -96px; object-fit: none; width: 32px; height: 32px;"/> <img title="Royal Woodlands" src="/data-wiki/img/biome-0.png" width=32 height=32 style="object-position: -0px -128px; object-fit: none; width: 32px; height: 32px;"/> <img title="The Marshlands" src="/data-wiki/img/biome-0.png" width=32 height=32 style="object-position: -0px -160px; object-fit: none; width: 32px; height: 32px;"/></td>
+</tr>
+<tr>
+<td>Trade Negotiations</td>
+<td>Biomes:  <img title="Coral Forest" src="/data-wiki/img/biome-0.png" width=32 height=32 style="object-position: -0px -32px; object-fit: none; width: 32px; height: 32px;"/> <img title="Cursed Royal Woodlands" src="/data-wiki/img/biome-0.png" width=32 height=32 style="object-position: -0px -64px; object-fit: none; width: 32px; height: 32px;"/> <img title="Scarlet Orchard" src="/data-wiki/img/biome-0.png" width=32 height=32 style="object-position: -0px -96px; object-fit: none; width: 32px; height: 32px;"/> <img title="Royal Woodlands" src="/data-wiki/img/biome-0.png" width=32 height=32 style="object-position: -0px -128px; object-fit: none; width: 32px; height: 32px;"/> <img title="The Marshlands" src="/data-wiki/img/biome-0.png" width=32 height=32 style="object-position: -0px -160px; object-fit: none; width: 32px; height: 32px;"/></td>
+</tr>
+<tr>
+<td>Prayer Book</td>
+<td>Biomes:  <img title="Coral Forest" src="/data-wiki/img/biome-0.png" width=32 height=32 style="object-position: -0px -32px; object-fit: none; width: 32px; height: 32px;"/> <img title="Cursed Royal Woodlands" src="/data-wiki/img/biome-0.png" width=32 height=32 style="object-position: -0px -64px; object-fit: none; width: 32px; height: 32px;"/> <img title="Scarlet Orchard" src="/data-wiki/img/biome-0.png" width=32 height=32 style="object-position: -0px -96px; object-fit: none; width: 32px; height: 32px;"/> <img title="Royal Woodlands" src="/data-wiki/img/biome-0.png" width=32 height=32 style="object-position: -0px -128px; object-fit: none; width: 32px; height: 32px;"/> <img title="The Marshlands" src="/data-wiki/img/biome-0.png" width=32 height=32 style="object-position: -0px -160px; object-fit: none; width: 32px; height: 32px;"/></td>
+</tr>
+<tr>
+<td>Bed and breakfast</td>
+<td>Biomes:  <img title="Coral Forest" src="/data-wiki/img/biome-0.png" width=32 height=32 style="object-position: -0px -32px; object-fit: none; width: 32px; height: 32px;"/> <img title="Cursed Royal Woodlands" src="/data-wiki/img/biome-0.png" width=32 height=32 style="object-position: -0px -64px; object-fit: none; width: 32px; height: 32px;"/> <img title="Scarlet Orchard" src="/data-wiki/img/biome-0.png" width=32 height=32 style="object-position: -0px -96px; object-fit: none; width: 32px; height: 32px;"/> <img title="Royal Woodlands" src="/data-wiki/img/biome-0.png" width=32 height=32 style="object-position: -0px -128px; object-fit: none; width: 32px; height: 32px;"/> <img title="The Marshlands" src="/data-wiki/img/biome-0.png" width=32 height=32 style="object-position: -0px -160px; object-fit: none; width: 32px; height: 32px;"/></td>
+</tr>
+<tr>
+<td>Generous Gifts</td>
+<td>Biomes:  <img title="Coral Forest" src="/data-wiki/img/biome-0.png" width=32 height=32 style="object-position: -0px -32px; object-fit: none; width: 32px; height: 32px;"/> <img title="Cursed Royal Woodlands" src="/data-wiki/img/biome-0.png" width=32 height=32 style="object-position: -0px -64px; object-fit: none; width: 32px; height: 32px;"/> <img title="Scarlet Orchard" src="/data-wiki/img/biome-0.png" width=32 height=32 style="object-position: -0px -96px; object-fit: none; width: 32px; height: 32px;"/> <img title="Royal Woodlands" src="/data-wiki/img/biome-0.png" width=32 height=32 style="object-position: -0px -128px; object-fit: none; width: 32px; height: 32px;"/> <img title="The Marshlands" src="/data-wiki/img/biome-0.png" width=32 height=32 style="object-position: -0px -160px; object-fit: none; width: 32px; height: 32px;"/></td>
+</tr>
+<tr>
+<td>Burnt to a Crisp</td>
+<td>Biomes:  <img title="Coral Forest" src="/data-wiki/img/biome-0.png" width=32 height=32 style="object-position: -0px -32px; object-fit: none; width: 32px; height: 32px;"/> <img title="Cursed Royal Woodlands" src="/data-wiki/img/biome-0.png" width=32 height=32 style="object-position: -0px -64px; object-fit: none; width: 32px; height: 32px;"/> <img title="Scarlet Orchard" src="/data-wiki/img/biome-0.png" width=32 height=32 style="object-position: -0px -96px; object-fit: none; width: 32px; height: 32px;"/> <img title="Royal Woodlands" src="/data-wiki/img/biome-0.png" width=32 height=32 style="object-position: -0px -128px; object-fit: none; width: 32px; height: 32px;"/> <img title="The Marshlands" src="/data-wiki/img/biome-0.png" width=32 height=32 style="object-position: -0px -160px; object-fit: none; width: 32px; height: 32px;"/></td>
+</tr>
+<tr>
+<td>Firekeeper's Armor</td>
+<td>Biomes:  <img title="Coral Forest" src="/data-wiki/img/biome-0.png" width=32 height=32 style="object-position: -0px -32px; object-fit: none; width: 32px; height: 32px;"/> <img title="Cursed Royal Woodlands" src="/data-wiki/img/biome-0.png" width=32 height=32 style="object-position: -0px -64px; object-fit: none; width: 32px; height: 32px;"/> <img title="Scarlet Orchard" src="/data-wiki/img/biome-0.png" width=32 height=32 style="object-position: -0px -96px; object-fit: none; width: 32px; height: 32px;"/> <img title="Royal Woodlands" src="/data-wiki/img/biome-0.png" width=32 height=32 style="object-position: -0px -128px; object-fit: none; width: 32px; height: 32px;"/> <img title="The Marshlands" src="/data-wiki/img/biome-0.png" width=32 height=32 style="object-position: -0px -160px; object-fit: none; width: 32px; height: 32px;"/></td>
+</tr>
+<tr>
+<td>Over Diligent Woodworkers</td>
+<td>Biomes:  <img title="Coral Forest" src="/data-wiki/img/biome-0.png" width=32 height=32 style="object-position: -0px -32px; object-fit: none; width: 32px; height: 32px;"/> <img title="Cursed Royal Woodlands" src="/data-wiki/img/biome-0.png" width=32 height=32 style="object-position: -0px -64px; object-fit: none; width: 32px; height: 32px;"/> <img title="Scarlet Orchard" src="/data-wiki/img/biome-0.png" width=32 height=32 style="object-position: -0px -96px; object-fit: none; width: 32px; height: 32px;"/> <img title="Royal Woodlands" src="/data-wiki/img/biome-0.png" width=32 height=32 style="object-position: -0px -128px; object-fit: none; width: 32px; height: 32px;"/> <img title="The Marshlands" src="/data-wiki/img/biome-0.png" width=32 height=32 style="object-position: -0px -160px; object-fit: none; width: 32px; height: 32px;"/></td>
+</tr>
+<tr>
+<td>Extraction Tools</td>
+<td>Biomes:  <img title="Coral Forest" src="/data-wiki/img/biome-0.png" width=32 height=32 style="object-position: -0px -32px; object-fit: none; width: 32px; height: 32px;"/></td>
+</tr>
+<tr>
+<td>Back to Nature</td>
+<td>Biomes:  <img title="Coral Forest" src="/data-wiki/img/biome-0.png" width=32 height=32 style="object-position: -0px -32px; object-fit: none; width: 32px; height: 32px;"/> <img title="Cursed Royal Woodlands" src="/data-wiki/img/biome-0.png" width=32 height=32 style="object-position: -0px -64px; object-fit: none; width: 32px; height: 32px;"/> <img title="Scarlet Orchard" src="/data-wiki/img/biome-0.png" width=32 height=32 style="object-position: -0px -96px; object-fit: none; width: 32px; height: 32px;"/> <img title="Royal Woodlands" src="/data-wiki/img/biome-0.png" width=32 height=32 style="object-position: -0px -128px; object-fit: none; width: 32px; height: 32px;"/> <img title="The Marshlands" src="/data-wiki/img/biome-0.png" width=32 height=32 style="object-position: -0px -160px; object-fit: none; width: 32px; height: 32px;"/></td>
+</tr>
+<tr>
+<td>Worker's Rations</td>
+<td>Biomes:  <img title="Coral Forest" src="/data-wiki/img/biome-0.png" width=32 height=32 style="object-position: -0px -32px; object-fit: none; width: 32px; height: 32px;"/> <img title="Cursed Royal Woodlands" src="/data-wiki/img/biome-0.png" width=32 height=32 style="object-position: -0px -64px; object-fit: none; width: 32px; height: 32px;"/> <img title="Scarlet Orchard" src="/data-wiki/img/biome-0.png" width=32 height=32 style="object-position: -0px -96px; object-fit: none; width: 32px; height: 32px;"/> <img title="Royal Woodlands" src="/data-wiki/img/biome-0.png" width=32 height=32 style="object-position: -0px -128px; object-fit: none; width: 32px; height: 32px;"/> <img title="The Marshlands" src="/data-wiki/img/biome-0.png" width=32 height=32 style="object-position: -0px -160px; object-fit: none; width: 32px; height: 32px;"/></td>
+</tr>
+<tr>
+<td>Mushroom Seedlings</td>
+<td>Biomes:  <img title="Coral Forest" src="/data-wiki/img/biome-0.png" width=32 height=32 style="object-position: -0px -32px; object-fit: none; width: 32px; height: 32px;"/> <img title="Cursed Royal Woodlands" src="/data-wiki/img/biome-0.png" width=32 height=32 style="object-position: -0px -64px; object-fit: none; width: 32px; height: 32px;"/> <img title="Scarlet Orchard" src="/data-wiki/img/biome-0.png" width=32 height=32 style="object-position: -0px -96px; object-fit: none; width: 32px; height: 32px;"/> <img title="Royal Woodlands" src="/data-wiki/img/biome-0.png" width=32 height=32 style="object-position: -0px -128px; object-fit: none; width: 32px; height: 32px;"/> <img title="The Marshlands" src="/data-wiki/img/biome-0.png" width=32 height=32 style="object-position: -0px -160px; object-fit: none; width: 32px; height: 32px;"/></td>
+</tr>
+<tr>
+<td>Free Samples</td>
+<td>Biomes:  <img title="Coral Forest" src="/data-wiki/img/biome-0.png" width=32 height=32 style="object-position: -0px -32px; object-fit: none; width: 32px; height: 32px;"/> <img title="Cursed Royal Woodlands" src="/data-wiki/img/biome-0.png" width=32 height=32 style="object-position: -0px -64px; object-fit: none; width: 32px; height: 32px;"/> <img title="Scarlet Orchard" src="/data-wiki/img/biome-0.png" width=32 height=32 style="object-position: -0px -96px; object-fit: none; width: 32px; height: 32px;"/> <img title="Royal Woodlands" src="/data-wiki/img/biome-0.png" width=32 height=32 style="object-position: -0px -128px; object-fit: none; width: 32px; height: 32px;"/> <img title="The Marshlands" src="/data-wiki/img/biome-0.png" width=32 height=32 style="object-position: -0px -160px; object-fit: none; width: 32px; height: 32px;"/></td>
+</tr>
+<tr>
+<td>Work Safety Guide</td>
+<td>Biomes:  <img title="Coral Forest" src="/data-wiki/img/biome-0.png" width=32 height=32 style="object-position: -0px -32px; object-fit: none; width: 32px; height: 32px;"/> <img title="Cursed Royal Woodlands" src="/data-wiki/img/biome-0.png" width=32 height=32 style="object-position: -0px -64px; object-fit: none; width: 32px; height: 32px;"/> <img title="Scarlet Orchard" src="/data-wiki/img/biome-0.png" width=32 height=32 style="object-position: -0px -96px; object-fit: none; width: 32px; height: 32px;"/> <img title="Royal Woodlands" src="/data-wiki/img/biome-0.png" width=32 height=32 style="object-position: -0px -128px; object-fit: none; width: 32px; height: 32px;"/> <img title="The Marshlands" src="/data-wiki/img/biome-0.png" width=32 height=32 style="object-position: -0px -160px; object-fit: none; width: 32px; height: 32px;"/></td>
+</tr>
+<tr>
+<td>Firekeeper's Prayer</td>
+<td>Biomes:  <img title="Coral Forest" src="/data-wiki/img/biome-0.png" width=32 height=32 style="object-position: -0px -32px; object-fit: none; width: 32px; height: 32px;"/> <img title="Cursed Royal Woodlands" src="/data-wiki/img/biome-0.png" width=32 height=32 style="object-position: -0px -64px; object-fit: none; width: 32px; height: 32px;"/> <img title="Scarlet Orchard" src="/data-wiki/img/biome-0.png" width=32 height=32 style="object-position: -0px -96px; object-fit: none; width: 32px; height: 32px;"/> <img title="Royal Woodlands" src="/data-wiki/img/biome-0.png" width=32 height=32 style="object-position: -0px -128px; object-fit: none; width: 32px; height: 32px;"/> <img title="The Marshlands" src="/data-wiki/img/biome-0.png" width=32 height=32 style="object-position: -0px -160px; object-fit: none; width: 32px; height: 32px;"/></td>
+</tr>
+<tr>
+<td>Letters to the Citadel</td>
+<td>Biomes:  <img title="Coral Forest" src="/data-wiki/img/biome-0.png" width=32 height=32 style="object-position: -0px -32px; object-fit: none; width: 32px; height: 32px;"/> <img title="Cursed Royal Woodlands" src="/data-wiki/img/biome-0.png" width=32 height=32 style="object-position: -0px -64px; object-fit: none; width: 32px; height: 32px;"/> <img title="Scarlet Orchard" src="/data-wiki/img/biome-0.png" width=32 height=32 style="object-position: -0px -96px; object-fit: none; width: 32px; height: 32px;"/> <img title="Royal Woodlands" src="/data-wiki/img/biome-0.png" width=32 height=32 style="object-position: -0px -128px; object-fit: none; width: 32px; height: 32px;"/> <img title="The Marshlands" src="/data-wiki/img/biome-0.png" width=32 height=32 style="object-position: -0px -160px; object-fit: none; width: 32px; height: 32px;"/></td>
+</tr>
+<tr>
+<td>Trade Hub</td>
+<td>Biomes:  <img title="Coral Forest" src="/data-wiki/img/biome-0.png" width=32 height=32 style="object-position: -0px -32px; object-fit: none; width: 32px; height: 32px;"/> <img title="Cursed Royal Woodlands" src="/data-wiki/img/biome-0.png" width=32 height=32 style="object-position: -0px -64px; object-fit: none; width: 32px; height: 32px;"/> <img title="Scarlet Orchard" src="/data-wiki/img/biome-0.png" width=32 height=32 style="object-position: -0px -96px; object-fit: none; width: 32px; height: 32px;"/> <img title="Royal Woodlands" src="/data-wiki/img/biome-0.png" width=32 height=32 style="object-position: -0px -128px; object-fit: none; width: 32px; height: 32px;"/> <img title="The Marshlands" src="/data-wiki/img/biome-0.png" width=32 height=32 style="object-position: -0px -160px; object-fit: none; width: 32px; height: 32px;"/></td>
+</tr>
+<tr>
+<td>The Queen's Message</td>
+<td>Biomes:  <img title="Coral Forest" src="/data-wiki/img/biome-0.png" width=32 height=32 style="object-position: -0px -32px; object-fit: none; width: 32px; height: 32px;"/> <img title="Cursed Royal Woodlands" src="/data-wiki/img/biome-0.png" width=32 height=32 style="object-position: -0px -64px; object-fit: none; width: 32px; height: 32px;"/> <img title="Scarlet Orchard" src="/data-wiki/img/biome-0.png" width=32 height=32 style="object-position: -0px -96px; object-fit: none; width: 32px; height: 32px;"/> <img title="Royal Woodlands" src="/data-wiki/img/biome-0.png" width=32 height=32 style="object-position: -0px -128px; object-fit: none; width: 32px; height: 32px;"/> <img title="The Marshlands" src="/data-wiki/img/biome-0.png" width=32 height=32 style="object-position: -0px -160px; object-fit: none; width: 32px; height: 32px;"/></td>
+</tr>
+<tr>
+<td>Generous Rations</td>
+<td>Biomes:  <img title="Coral Forest" src="/data-wiki/img/biome-0.png" width=32 height=32 style="object-position: -0px -32px; object-fit: none; width: 32px; height: 32px;"/> <img title="Cursed Royal Woodlands" src="/data-wiki/img/biome-0.png" width=32 height=32 style="object-position: -0px -64px; object-fit: none; width: 32px; height: 32px;"/> <img title="Scarlet Orchard" src="/data-wiki/img/biome-0.png" width=32 height=32 style="object-position: -0px -96px; object-fit: none; width: 32px; height: 32px;"/> <img title="Royal Woodlands" src="/data-wiki/img/biome-0.png" width=32 height=32 style="object-position: -0px -128px; object-fit: none; width: 32px; height: 32px;"/> <img title="The Marshlands" src="/data-wiki/img/biome-0.png" width=32 height=32 style="object-position: -0px -160px; object-fit: none; width: 32px; height: 32px;"/></td>
+</tr>
+<tr>
+<td>No Quality Control</td>
+<td>Biomes:  <img title="Coral Forest" src="/data-wiki/img/biome-0.png" width=32 height=32 style="object-position: -0px -32px; object-fit: none; width: 32px; height: 32px;"/> <img title="Cursed Royal Woodlands" src="/data-wiki/img/biome-0.png" width=32 height=32 style="object-position: -0px -64px; object-fit: none; width: 32px; height: 32px;"/> <img title="Scarlet Orchard" src="/data-wiki/img/biome-0.png" width=32 height=32 style="object-position: -0px -96px; object-fit: none; width: 32px; height: 32px;"/> <img title="Royal Woodlands" src="/data-wiki/img/biome-0.png" width=32 height=32 style="object-position: -0px -128px; object-fit: none; width: 32px; height: 32px;"/> <img title="The Marshlands" src="/data-wiki/img/biome-0.png" width=32 height=32 style="object-position: -0px -160px; object-fit: none; width: 32px; height: 32px;"/></td>
+</tr>
+<tr>
+<td>Without Restrictions</td>
+<td>Biomes:  <img title="Coral Forest" src="/data-wiki/img/biome-0.png" width=32 height=32 style="object-position: -0px -32px; object-fit: none; width: 32px; height: 32px;"/> <img title="Cursed Royal Woodlands" src="/data-wiki/img/biome-0.png" width=32 height=32 style="object-position: -0px -64px; object-fit: none; width: 32px; height: 32px;"/> <img title="Scarlet Orchard" src="/data-wiki/img/biome-0.png" width=32 height=32 style="object-position: -0px -96px; object-fit: none; width: 32px; height: 32px;"/> <img title="Royal Woodlands" src="/data-wiki/img/biome-0.png" width=32 height=32 style="object-position: -0px -128px; object-fit: none; width: 32px; height: 32px;"/> <img title="The Marshlands" src="/data-wiki/img/biome-0.png" width=32 height=32 style="object-position: -0px -160px; object-fit: none; width: 32px; height: 32px;"/></td>
+</tr>
+<tr>
+<td>Deserted Caravans</td>
+<td>Biomes:  <img title="Coral Forest" src="/data-wiki/img/biome-0.png" width=32 height=32 style="object-position: -0px -32px; object-fit: none; width: 32px; height: 32px;"/> <img title="Cursed Royal Woodlands" src="/data-wiki/img/biome-0.png" width=32 height=32 style="object-position: -0px -64px; object-fit: none; width: 32px; height: 32px;"/> <img title="Scarlet Orchard" src="/data-wiki/img/biome-0.png" width=32 height=32 style="object-position: -0px -96px; object-fit: none; width: 32px; height: 32px;"/> <img title="Royal Woodlands" src="/data-wiki/img/biome-0.png" width=32 height=32 style="object-position: -0px -128px; object-fit: none; width: 32px; height: 32px;"/> <img title="The Marshlands" src="/data-wiki/img/biome-0.png" width=32 height=32 style="object-position: -0px -160px; object-fit: none; width: 32px; height: 32px;"/></td>
+</tr>
+<tr>
+<td>Shorter Torment</td>
+<td>Biomes:  <img title="Coral Forest" src="/data-wiki/img/biome-0.png" width=32 height=32 style="object-position: -0px -32px; object-fit: none; width: 32px; height: 32px;"/> <img title="Cursed Royal Woodlands" src="/data-wiki/img/biome-0.png" width=32 height=32 style="object-position: -0px -64px; object-fit: none; width: 32px; height: 32px;"/> <img title="Scarlet Orchard" src="/data-wiki/img/biome-0.png" width=32 height=32 style="object-position: -0px -96px; object-fit: none; width: 32px; height: 32px;"/> <img title="Royal Woodlands" src="/data-wiki/img/biome-0.png" width=32 height=32 style="object-position: -0px -128px; object-fit: none; width: 32px; height: 32px;"/> <img title="The Marshlands" src="/data-wiki/img/biome-0.png" width=32 height=32 style="object-position: -0px -160px; object-fit: none; width: 32px; height: 32px;"/></td>
+</tr>
+<tr>
+<td>Equality</td>
+<td>Biomes:  <img title="Coral Forest" src="/data-wiki/img/biome-0.png" width=32 height=32 style="object-position: -0px -32px; object-fit: none; width: 32px; height: 32px;"/> <img title="Cursed Royal Woodlands" src="/data-wiki/img/biome-0.png" width=32 height=32 style="object-position: -0px -64px; object-fit: none; width: 32px; height: 32px;"/> <img title="Scarlet Orchard" src="/data-wiki/img/biome-0.png" width=32 height=32 style="object-position: -0px -96px; object-fit: none; width: 32px; height: 32px;"/> <img title="Royal Woodlands" src="/data-wiki/img/biome-0.png" width=32 height=32 style="object-position: -0px -128px; object-fit: none; width: 32px; height: 32px;"/> <img title="The Marshlands" src="/data-wiki/img/biome-0.png" width=32 height=32 style="object-position: -0px -160px; object-fit: none; width: 32px; height: 32px;"/></td>
+</tr>
+<tr>
+<td>Calming the Forest</td>
+<td>Biomes:  <img title="Coral Forest" src="/data-wiki/img/biome-0.png" width=32 height=32 style="object-position: -0px -32px; object-fit: none; width: 32px; height: 32px;"/> <img title="Cursed Royal Woodlands" src="/data-wiki/img/biome-0.png" width=32 height=32 style="object-position: -0px -64px; object-fit: none; width: 32px; height: 32px;"/> <img title="Scarlet Orchard" src="/data-wiki/img/biome-0.png" width=32 height=32 style="object-position: -0px -96px; object-fit: none; width: 32px; height: 32px;"/> <img title="Royal Woodlands" src="/data-wiki/img/biome-0.png" width=32 height=32 style="object-position: -0px -128px; object-fit: none; width: 32px; height: 32px;"/> <img title="The Marshlands" src="/data-wiki/img/biome-0.png" width=32 height=32 style="object-position: -0px -160px; object-fit: none; width: 32px; height: 32px;"/></td>
+</tr>
+<tr>
+<td>Profitable Caution</td>
+<td>Biomes:  <img title="Coral Forest" src="/data-wiki/img/biome-0.png" width=32 height=32 style="object-position: -0px -32px; object-fit: none; width: 32px; height: 32px;"/> <img title="Cursed Royal Woodlands" src="/data-wiki/img/biome-0.png" width=32 height=32 style="object-position: -0px -64px; object-fit: none; width: 32px; height: 32px;"/> <img title="Scarlet Orchard" src="/data-wiki/img/biome-0.png" width=32 height=32 style="object-position: -0px -96px; object-fit: none; width: 32px; height: 32px;"/> <img title="Royal Woodlands" src="/data-wiki/img/biome-0.png" width=32 height=32 style="object-position: -0px -128px; object-fit: none; width: 32px; height: 32px;"/> <img title="The Marshlands" src="/data-wiki/img/biome-0.png" width=32 height=32 style="object-position: -0px -160px; object-fit: none; width: 32px; height: 32px;"/></td>
+</tr>
+<tr>
+<td>Cheap Construction</td>
+<td>Biomes:  <img title="Coral Forest" src="/data-wiki/img/biome-0.png" width=32 height=32 style="object-position: -0px -32px; object-fit: none; width: 32px; height: 32px;"/> <img title="Cursed Royal Woodlands" src="/data-wiki/img/biome-0.png" width=32 height=32 style="object-position: -0px -64px; object-fit: none; width: 32px; height: 32px;"/> <img title="Scarlet Orchard" src="/data-wiki/img/biome-0.png" width=32 height=32 style="object-position: -0px -96px; object-fit: none; width: 32px; height: 32px;"/> <img title="Royal Woodlands" src="/data-wiki/img/biome-0.png" width=32 height=32 style="object-position: -0px -128px; object-fit: none; width: 32px; height: 32px;"/> <img title="The Marshlands" src="/data-wiki/img/biome-0.png" width=32 height=32 style="object-position: -0px -160px; object-fit: none; width: 32px; height: 32px;"/></td>
+</tr>
+<tr>
+<td>Frequent Caravans</td>
+<td>Biomes:  <img title="Coral Forest" src="/data-wiki/img/biome-0.png" width=32 height=32 style="object-position: -0px -32px; object-fit: none; width: 32px; height: 32px;"/> <img title="Cursed Royal Woodlands" src="/data-wiki/img/biome-0.png" width=32 height=32 style="object-position: -0px -64px; object-fit: none; width: 32px; height: 32px;"/> <img title="Scarlet Orchard" src="/data-wiki/img/biome-0.png" width=32 height=32 style="object-position: -0px -96px; object-fit: none; width: 32px; height: 32px;"/> <img title="Royal Woodlands" src="/data-wiki/img/biome-0.png" width=32 height=32 style="object-position: -0px -128px; object-fit: none; width: 32px; height: 32px;"/> <img title="The Marshlands" src="/data-wiki/img/biome-0.png" width=32 height=32 style="object-position: -0px -160px; object-fit: none; width: 32px; height: 32px;"/></td>
+</tr>
+<tr>
+<td>Influential Friends</td>
+<td>Biomes:  <img title="Coral Forest" src="/data-wiki/img/biome-0.png" width=32 height=32 style="object-position: -0px -32px; object-fit: none; width: 32px; height: 32px;"/> <img title="Cursed Royal Woodlands" src="/data-wiki/img/biome-0.png" width=32 height=32 style="object-position: -0px -64px; object-fit: none; width: 32px; height: 32px;"/> <img title="Scarlet Orchard" src="/data-wiki/img/biome-0.png" width=32 height=32 style="object-position: -0px -96px; object-fit: none; width: 32px; height: 32px;"/> <img title="Royal Woodlands" src="/data-wiki/img/biome-0.png" width=32 height=32 style="object-position: -0px -128px; object-fit: none; width: 32px; height: 32px;"/> <img title="The Marshlands" src="/data-wiki/img/biome-0.png" width=32 height=32 style="object-position: -0px -160px; object-fit: none; width: 32px; height: 32px;"/></td>
+</tr>
+<tr>
+<td>Blessed Flames</td>
+<td>Biomes:  <img title="Coral Forest" src="/data-wiki/img/biome-0.png" width=32 height=32 style="object-position: -0px -32px; object-fit: none; width: 32px; height: 32px;"/> <img title="Cursed Royal Woodlands" src="/data-wiki/img/biome-0.png" width=32 height=32 style="object-position: -0px -64px; object-fit: none; width: 32px; height: 32px;"/> <img title="Scarlet Orchard" src="/data-wiki/img/biome-0.png" width=32 height=32 style="object-position: -0px -96px; object-fit: none; width: 32px; height: 32px;"/> <img title="Royal Woodlands" src="/data-wiki/img/biome-0.png" width=32 height=32 style="object-position: -0px -128px; object-fit: none; width: 32px; height: 32px;"/> <img title="The Marshlands" src="/data-wiki/img/biome-0.png" width=32 height=32 style="object-position: -0px -160px; object-fit: none; width: 32px; height: 32px;"/></td>
+</tr>
+<tr>
+<td>Baptism of Fire</td>
+<td>Biomes:  <img title="Coral Forest" src="/data-wiki/img/biome-0.png" width=32 height=32 style="object-position: -0px -32px; object-fit: none; width: 32px; height: 32px;"/> <img title="Cursed Royal Woodlands" src="/data-wiki/img/biome-0.png" width=32 height=32 style="object-position: -0px -64px; object-fit: none; width: 32px; height: 32px;"/> <img title="Scarlet Orchard" src="/data-wiki/img/biome-0.png" width=32 height=32 style="object-position: -0px -96px; object-fit: none; width: 32px; height: 32px;"/> <img title="Royal Woodlands" src="/data-wiki/img/biome-0.png" width=32 height=32 style="object-position: -0px -128px; object-fit: none; width: 32px; height: 32px;"/> <img title="The Marshlands" src="/data-wiki/img/biome-0.png" width=32 height=32 style="object-position: -0px -160px; object-fit: none; width: 32px; height: 32px;"/></td>
+</tr>
+<tr>
+<td>Blight Extractor</td>
+<td>Biomes:  <img title="Coral Forest" src="/data-wiki/img/biome-0.png" width=32 height=32 style="object-position: -0px -32px; object-fit: none; width: 32px; height: 32px;"/> <img title="Cursed Royal Woodlands" src="/data-wiki/img/biome-0.png" width=32 height=32 style="object-position: -0px -64px; object-fit: none; width: 32px; height: 32px;"/> <img title="Scarlet Orchard" src="/data-wiki/img/biome-0.png" width=32 height=32 style="object-position: -0px -96px; object-fit: none; width: 32px; height: 32px;"/> <img title="Royal Woodlands" src="/data-wiki/img/biome-0.png" width=32 height=32 style="object-position: -0px -128px; object-fit: none; width: 32px; height: 32px;"/> <img title="The Marshlands" src="/data-wiki/img/biome-0.png" width=32 height=32 style="object-position: -0px -160px; object-fit: none; width: 32px; height: 32px;"/></td>
+</tr>
+<tr>
+<td>Smuggler's Visit</td>
+<td>Biomes:  <img title="Coral Forest" src="/data-wiki/img/biome-0.png" width=32 height=32 style="object-position: -0px -32px; object-fit: none; width: 32px; height: 32px;"/> <img title="Cursed Royal Woodlands" src="/data-wiki/img/biome-0.png" width=32 height=32 style="object-position: -0px -64px; object-fit: none; width: 32px; height: 32px;"/> <img title="Scarlet Orchard" src="/data-wiki/img/biome-0.png" width=32 height=32 style="object-position: -0px -96px; object-fit: none; width: 32px; height: 32px;"/> <img title="Royal Woodlands" src="/data-wiki/img/biome-0.png" width=32 height=32 style="object-position: -0px -128px; object-fit: none; width: 32px; height: 32px;"/> <img title="The Marshlands" src="/data-wiki/img/biome-0.png" width=32 height=32 style="object-position: -0px -160px; object-fit: none; width: 32px; height: 32px;"/></td>
+</tr>
+<tr>
+<td>Queen's Gift</td>
+<td>Biomes:  <img title="Coral Forest" src="/data-wiki/img/biome-0.png" width=32 height=32 style="object-position: -0px -32px; object-fit: none; width: 32px; height: 32px;"/> <img title="Cursed Royal Woodlands" src="/data-wiki/img/biome-0.png" width=32 height=32 style="object-position: -0px -64px; object-fit: none; width: 32px; height: 32px;"/> <img title="Scarlet Orchard" src="/data-wiki/img/biome-0.png" width=32 height=32 style="object-position: -0px -96px; object-fit: none; width: 32px; height: 32px;"/> <img title="Royal Woodlands" src="/data-wiki/img/biome-0.png" width=32 height=32 style="object-position: -0px -128px; object-fit: none; width: 32px; height: 32px;"/> <img title="The Marshlands" src="/data-wiki/img/biome-0.png" width=32 height=32 style="object-position: -0px -160px; object-fit: none; width: 32px; height: 32px;"/></td>
+</tr>
+<tr>
+<td>Precious Antiques</td>
+<td>Biomes:  <img title="Coral Forest" src="/data-wiki/img/biome-0.png" width=32 height=32 style="object-position: -0px -32px; object-fit: none; width: 32px; height: 32px;"/> <img title="Cursed Royal Woodlands" src="/data-wiki/img/biome-0.png" width=32 height=32 style="object-position: -0px -64px; object-fit: none; width: 32px; height: 32px;"/> <img title="Scarlet Orchard" src="/data-wiki/img/biome-0.png" width=32 height=32 style="object-position: -0px -96px; object-fit: none; width: 32px; height: 32px;"/> <img title="Royal Woodlands" src="/data-wiki/img/biome-0.png" width=32 height=32 style="object-position: -0px -128px; object-fit: none; width: 32px; height: 32px;"/> <img title="The Marshlands" src="/data-wiki/img/biome-0.png" width=32 height=32 style="object-position: -0px -160px; object-fit: none; width: 32px; height: 32px;"/></td>
+</tr>
+<tr>
+<td>Urban Planning</td>
+<td>Biomes:  <img title="Coral Forest" src="/data-wiki/img/biome-0.png" width=32 height=32 style="object-position: -0px -32px; object-fit: none; width: 32px; height: 32px;"/> <img title="Cursed Royal Woodlands" src="/data-wiki/img/biome-0.png" width=32 height=32 style="object-position: -0px -64px; object-fit: none; width: 32px; height: 32px;"/> <img title="Scarlet Orchard" src="/data-wiki/img/biome-0.png" width=32 height=32 style="object-position: -0px -96px; object-fit: none; width: 32px; height: 32px;"/> <img title="Royal Woodlands" src="/data-wiki/img/biome-0.png" width=32 height=32 style="object-position: -0px -128px; object-fit: none; width: 32px; height: 32px;"/> <img title="The Marshlands" src="/data-wiki/img/biome-0.png" width=32 height=32 style="object-position: -0px -160px; object-fit: none; width: 32px; height: 32px;"/></td>
+</tr>
+<tr>
+<td>Golden Marrow</td>
+<td>Biomes:  <img title="Cursed Royal Woodlands" src="/data-wiki/img/biome-0.png" width=32 height=32 style="object-position: -0px -64px; object-fit: none; width: 32px; height: 32px;"/> <img title="Scarlet Orchard" src="/data-wiki/img/biome-0.png" width=32 height=32 style="object-position: -0px -96px; object-fit: none; width: 32px; height: 32px;"/> <img title="Royal Woodlands" src="/data-wiki/img/biome-0.png" width=32 height=32 style="object-position: -0px -128px; object-fit: none; width: 32px; height: 32px;"/></td>
+</tr>
+<tr>
+<td>Crowded Houses</td>
+<td>Biomes:  <img title="Cursed Royal Woodlands" src="/data-wiki/img/biome-0.png" width=32 height=32 style="object-position: -0px -64px; object-fit: none; width: 32px; height: 32px;"/> <img title="Scarlet Orchard" src="/data-wiki/img/biome-0.png" width=32 height=32 style="object-position: -0px -96px; object-fit: none; width: 32px; height: 32px;"/> <img title="Royal Woodlands" src="/data-wiki/img/biome-0.png" width=32 height=32 style="object-position: -0px -128px; object-fit: none; width: 32px; height: 32px;"/> <img title="The Marshlands" src="/data-wiki/img/biome-0.png" width=32 height=32 style="object-position: -0px -160px; object-fit: none; width: 32px; height: 32px;"/></td>
+</tr>
+<tr>
+<td>Sharp Sickles</td>
+<td>Biomes:  <img title="Scarlet Orchard" src="/data-wiki/img/biome-0.png" width=32 height=32 style="object-position: -0px -96px; object-fit: none; width: 32px; height: 32px;"/></td>
+</tr>
+<tr>
+<td>Local Taxes</td>
+<td>Biomes:  <img title="Scarlet Orchard" src="/data-wiki/img/biome-0.png" width=32 height=32 style="object-position: -0px -96px; object-fit: none; width: 32px; height: 32px;"/> <img title="The Marshlands" src="/data-wiki/img/biome-0.png" width=32 height=32 style="object-position: -0px -160px; object-fit: none; width: 32px; height: 32px;"/></td>
+</tr>
+<tr>
+<td>Leather Gloves</td>
+<td>Biomes:  <img title="Scarlet Orchard" src="/data-wiki/img/biome-0.png" width=32 height=32 style="object-position: -0px -96px; object-fit: none; width: 32px; height: 32px;"/></td>
+</tr>
+<tr>
+<td>Steel Pickaxes</td>
+<td>Biomes:  <img title="Scarlet Orchard" src="/data-wiki/img/biome-0.png" width=32 height=32 style="object-position: -0px -96px; object-fit: none; width: 32px; height: 32px;"/> <img title="The Marshlands" src="/data-wiki/img/biome-0.png" width=32 height=32 style="object-position: -0px -160px; object-fit: none; width: 32px; height: 32px;"/></td>
+</tr>
+<tr>
+<td>Carpenter's Tools</td>
+<td>Biomes:  <img title=">Missing key<" src="/data-wiki/img/biome-0.png" width=32 height=32 style="object-position: -0px -128px; object-fit: none; width: 32px; height: 32px;"/></td>
+</tr>
+<tr>
+<td>Barrel Delivery Line</td>
+<td>Biomes:  <img title=">Missing key<" src="/data-wiki/img/biome-0.png" width=32 height=32 style="object-position: -0px -128px; object-fit: none; width: 32px; height: 32px;"/></td>
+</tr>
+<tr>
+<td>Pocket Knives</td>
+<td>Traders:  Trader 0 - General Biomes:  <img title=">Missing key<" src="/data-wiki/img/biome-0.png" width=32 height=32 style="object-position: -0px -128px; object-fit: none; width: 32px; height: 32px;"/></td>
+</tr>
+<tr>
+<td>Thrill of Exploration</td>
+<td>Biomes:  <img title=">Missing key<" src="/data-wiki/img/biome-0.png" width=32 height=32 style="object-position: -0px -128px; object-fit: none; width: 32px; height: 32px;"/></td>
+</tr>
+<tr>
+<td>Herbalists' Camp</td>
+<td>Traders:  Trader 0 - General Trader 3 - Ancient Trader 6 - Wandering Merchant</td>
+</tr>
+<tr>
+<td>Foragers' Camp</td>
+<td>Traders:  Trader 0 - General Trader 6 - Wandering Merchant</td>
+</tr>
+<tr>
+<td>Trappers' Camp</td>
+<td>Traders:  Trader 0 - General Trader 6 - Wandering Merchant</td>
+</tr>
+<tr>
+<td>Mold Supply</td>
+<td>Traders:  Trader 0 - General</td>
+</tr>
+<tr>
+<td>Steel Shovels</td>
+<td>Traders:  Trader 0 - General</td>
+</tr>
+<tr>
+<td>Fungal Growth</td>
+<td>Traders:  Trader 0 - General</td>
+</tr>
+<tr>
+<td>Firekeeper's Secret Techniques</td>
+<td>Traders:  Trader 0 - General Trader 3 - Ancient Trader 4 - Vanguard of the Stolen Keys</td>
+</tr>
+<tr>
+<td>Heavy Millstone</td>
+<td>Traders:  Trader 0 - General</td>
+</tr>
+<tr>
+<td>Reinforced Needles</td>
+<td>Traders:  Trader 0 - General Trader 4 - Vanguard of the Stolen Keys Trader 6 - Wandering Merchant</td>
+</tr>
+<tr>
+<td>Dual Brewing Tools</td>
+<td>Traders:  Trader 0 - General Trader 5 - Royal Trading Company</td>
+</tr>
+<tr>
+<td>Sturdy Boots</td>
+<td>Traders:  Trader 0 - General Trader 4 - Vanguard of the Stolen Keys</td>
+</tr>
+<tr>
+<td>Biscuit Recipes</td>
+<td>Traders:  Trader 0 - General Trader 1 - First Dawn Company</td>
+</tr>
+<tr>
+<td>Ancient Sewing Technique</td>
+<td>Traders:  Trader 0 - General Trader 6 - Wandering Merchant</td>
+</tr>
+<tr>
+<td>Ancient Sewing Technique</td>
+<td>Traders:  Trader 0 - General</td>
+</tr>
+<tr>
+<td>Furniture</td>
+<td>Traders:  Trader 0 - General Trader 4 - Vanguard of the Stolen Keys</td>
+</tr>
+<tr>
+<td>Archaeological Tools</td>
+<td>Traders:  Trader 0 - General Trader 3 - Ancient Trader 4 - Vanguard of the Stolen Keys</td>
+</tr>
+<tr>
+<td>Small Farm</td>
+<td>Traders:  Trader 0 - General Trader 1 - First Dawn Company Trader 6 - Wandering Merchant</td>
+</tr>
+<tr>
+<td>Generous Donation</td>
+<td>Traders:  Trader 0 - General Trader 1 - First Dawn Company Trader 2 - Brass Order Trader 3 - Ancient Trader 4 - Vanguard of the Stolen Keys Trader 5 - Royal Trading Company Trader 6 - Wandering Merchant</td>
+</tr>
+<tr>
+<td>Viceroy's Survival Guide</td>
+<td>Traders:  Trader 0 - General Trader 1 - First Dawn Company Trader 5 - Royal Trading Company</td>
+</tr>
+<tr>
+<td>Quick Deliveries</td>
+<td>Traders:  Trader 0 - General Trader 2 - Brass Order Trader 5 - Royal Trading Company</td>
+</tr>
+<tr>
+<td>Plantation</td>
+<td>Traders:  Trader 0 - General Trader 1 - First Dawn Company</td>
+</tr>
+<tr>
+<td>Orderly Storage</td>
+<td>Traders:  Trader 0 - General Trader 1 - First Dawn Company Trader 5 - Royal Trading Company Trader 6 - Wandering Merchant</td>
+</tr>
+<tr>
+<td>Specialized Boots</td>
+<td>Traders:  Trader 0 - General Trader 1 - First Dawn Company Trader 3 - Ancient</td>
+</tr>
+<tr>
+<td>Brewery</td>
+<td>Traders:  Trader 1 - First Dawn Company</td>
+</tr>
+<tr>
+<td>Cookhouse</td>
+<td>Traders:  Trader 1 - First Dawn Company</td>
+</tr>
+<tr>
+<td>Bakery</td>
+<td>Traders:  Trader 1 - First Dawn Company</td>
+</tr>
+<tr>
+<td>Herb Garden</td>
+<td>Traders:  Trader 1 - First Dawn Company Trader 6 - Wandering Merchant</td>
+</tr>
+<tr>
+<td>Sharp Sickles</td>
+<td>Traders:  Trader 1 - First Dawn Company</td>
+</tr>
+<tr>
+<td>Mold Supply</td>
+<td>Traders:  Trader 1 - First Dawn Company</td>
+</tr>
+<tr>
+<td>Insect Traps</td>
+<td>Traders:  Trader 1 - First Dawn Company</td>
+</tr>
+<tr>
+<td>Farmer's Pack</td>
+<td>Traders:  Trader 1 - First Dawn Company</td>
+</tr>
+<tr>
+<td>Rich in Fiber</td>
+<td>Traders:  Trader 1 - First Dawn Company</td>
+</tr>
+<tr>
+<td>Bigger Barrels</td>
+<td>Traders:  Trader 1 - First Dawn Company</td>
+</tr>
+<tr>
+<td>Obsidian Shovels</td>
+<td>Traders:  Trader 1 - First Dawn Company</td>
+</tr>
+<tr>
+<td>Obsidian Sickles</td>
+<td>Traders:  Trader 1 - First Dawn Company</td>
+</tr>
+<tr>
+<td>Fragrant Roots</td>
+<td>Traders:  Trader 1 - First Dawn Company</td>
+</tr>
+<tr>
+<td>Rain Powered Pottery Wheel</td>
+<td>Traders:  Trader 1 - First Dawn Company</td>
+</tr>
+<tr>
+<td>Beneficial Agreement</td>
+<td>Traders:  Trader 1 - First Dawn Company Trader 3 - Ancient Trader 5 - Royal Trading Company</td>
+</tr>
+<tr>
+<td>Ranch</td>
+<td>Traders:  Trader 1 - First Dawn Company</td>
+</tr>
+<tr>
+<td>Greenhouse</td>
+<td>Traders:  Trader 1 - First Dawn Company</td>
+</tr>
+<tr>
+<td>Clay Pit</td>
+<td>Traders:  Trader 1 - First Dawn Company</td>
+</tr>
+<tr>
+<td>Contraband</td>
+<td>Traders:  Trader 1 - First Dawn Company Trader 3 - Ancient Trader 4 - Vanguard of the Stolen Keys Trader 6 - Wandering Merchant</td>
+</tr>
+<tr>
+<td>Smelter</td>
+<td>Traders:  Trader 2 - Brass Order</td>
+</tr>
+<tr>
+<td>Smithy</td>
+<td>Traders:  Trader 2 - Brass Order</td>
+</tr>
+<tr>
+<td>Toolshop</td>
+<td>Traders:  Trader 2 - Brass Order</td>
+</tr>
+<tr>
+<td>Carpenter</td>
+<td>Traders:  Trader 2 - Brass Order</td>
+</tr>
+<tr>
+<td>Rain Mill</td>
+<td>Traders:  Trader 2 - Brass Order</td>
+</tr>
+<tr>
+<td>Rainpunk Drills</td>
+<td>Traders:  Trader 2 - Brass Order</td>
+</tr>
+<tr>
+<td>Advanced Smithing</td>
+<td>Traders:  Trader 2 - Brass Order Trader 4 - Vanguard of the Stolen Keys</td>
+</tr>
+<tr>
+<td>Reinforced Axes</td>
+<td>Traders:  Trader 2 - Brass Order Trader 4 - Vanguard of the Stolen Keys</td>
+</tr>
+<tr>
+<td>Repurposed clay</td>
+<td>Traders:  Trader 2 - Brass Order</td>
+</tr>
+<tr>
+<td>Salvaging Tools</td>
+<td>Traders:  Trader 2 - Brass Order</td>
+</tr>
+<tr>
+<td>Advanced Smelting</td>
+<td>Traders:  Trader 2 - Brass Order</td>
+</tr>
+<tr>
+<td>Crystal Growth</td>
+<td>Traders:  Trader 2 - Brass Order</td>
+</tr>
+<tr>
+<td>Accumulated Dew</td>
+<td>Traders:  Trader 2 - Brass Order</td>
+</tr>
+<tr>
+<td>Steel Pickaxes</td>
+<td>Traders:  Trader 2 - Brass Order</td>
+</tr>
+<tr>
+<td>Shovels</td>
+<td>Traders:  Trader 2 - Brass Order Trader 5 - Royal Trading Company</td>
+</tr>
+<tr>
+<td>Advanced Coopering</td>
+<td>Traders:  Trader 2 - Brass Order</td>
+</tr>
+<tr>
+<td>Scout's Pack</td>
+<td>Traders:  Trader 2 - Brass Order</td>
+</tr>
+<tr>
+<td>Beaver Clan Support</td>
+<td>Traders:  Trader 2 - Brass Order</td>
+</tr>
+<tr>
+<td>Big Phials</td>
+<td>Traders:  Trader 2 - Brass Order</td>
+</tr>
+<tr>
+<td>Ways of the Forest</td>
+<td>Traders:  Trader 2 - Brass Order Trader 3 - Ancient Trader 4 - Vanguard of the Stolen Keys Trader 5 - Royal Trading Company</td>
+</tr>
+<tr>
+<td>Beaver Friendship</td>
+<td>Traders:  Trader 2 - Brass Order</td>
+</tr>
+<tr>
+<td>Enhanced Blueprints</td>
+<td>Traders:  Trader 2 - Brass Order Trader 5 - Royal Trading Company Trader 6 - Wandering Merchant</td>
+</tr>
+<tr>
+<td>Druid's Hut</td>
+<td>Traders:  Trader 3 - Ancient</td>
+</tr>
+<tr>
+<td>Tinctury</td>
+<td>Traders:  Trader 3 - Ancient</td>
+</tr>
+<tr>
+<td>Apothecary</td>
+<td>Traders:  Trader 3 - Ancient</td>
+</tr>
+<tr>
+<td>Alchemist's Hut</td>
+<td>Traders:  Trader 3 - Ancient</td>
+</tr>
+<tr>
+<td>Advanced Filters</td>
+<td>Traders:  Trader 3 - Ancient</td>
+</tr>
+<tr>
+<td>Big Phials</td>
+<td>Traders:  Trader 3 - Ancient</td>
+</tr>
+<tr>
+<td>Drizzle Totem</td>
+<td>Traders:  Trader 3 - Ancient</td>
+</tr>
+<tr>
+<td>Clearance Totem</td>
+<td>Traders:  Trader 3 - Ancient</td>
+</tr>
+<tr>
+<td>Storm Shield</td>
+<td>Traders:  Trader 3 - Ancient</td>
+</tr>
+<tr>
+<td>Specialized Mining</td>
+<td>Traders:  Trader 3 - Ancient</td>
+</tr>
+<tr>
+<td>Spiced Ale</td>
+<td>Traders:  Trader 3 - Ancient</td>
+</tr>
+<tr>
+<td>Builder's Pack</td>
+<td>Traders:  Trader 3 - Ancient Trader 5 - Royal Trading Company</td>
+</tr>
+<tr>
+<td>Harpy Friendship</td>
+<td>Traders:  Trader 3 - Ancient Trader 6 - Wandering Merchant</td>
+</tr>
+<tr>
+<td>Experienced Scout</td>
+<td>Traders:  Trader 3 - Ancient Trader 4 - Vanguard of the Stolen Keys Trader 6 - Wandering Merchant</td>
+</tr>
+<tr>
+<td>Working Hard and Smart</td>
+<td>Traders:  Trader 4 - Vanguard of the Stolen Keys</td>
+</tr>
+<tr>
+<td>Drying Boards</td>
+<td>Traders:  Trader 4 - Vanguard of the Stolen Keys</td>
+</tr>
+<tr>
+<td>Reinforced Saw Blades</td>
+<td>Traders:  Trader 4 - Vanguard of the Stolen Keys</td>
+</tr>
+<tr>
+<td>Lizard Friendship</td>
+<td>Traders:  Trader 4 - Vanguard of the Stolen Keys</td>
+</tr>
+<tr>
+<td>Advanced Press</td>
+<td>Traders:  Trader 4 - Vanguard of the Stolen Keys</td>
+</tr>
+<tr>
+<td>Gathering Tools</td>
+<td>Traders:  Trader 4 - Vanguard of the Stolen Keys</td>
+</tr>
+<tr>
+<td>Bleeding Trees</td>
+<td>Traders:  Trader 4 - Vanguard of the Stolen Keys</td>
+</tr>
+<tr>
+<td>Kiln</td>
+<td>Traders:  Trader 4 - Vanguard of the Stolen Keys</td>
+</tr>
+<tr>
+<td>Smokehouse</td>
+<td>Traders:  Trader 4 - Vanguard of the Stolen Keys</td>
+</tr>
+<tr>
+<td>Stamping Mill</td>
+<td>Traders:  Trader 4 - Vanguard of the Stolen Keys</td>
+</tr>
+<tr>
+<td>Scribe</td>
+<td>Traders:  Trader 4 - Vanguard of the Stolen Keys</td>
+</tr>
+<tr>
+<td>Guild House</td>
+<td>Traders:  Trader 5 - Royal Trading Company</td>
+</tr>
+<tr>
+<td>Temple</td>
+<td>Traders:  Trader 5 - Royal Trading Company</td>
+</tr>
+<tr>
+<td>Tavern</td>
+<td>Traders:  Trader 5 - Royal Trading Company</td>
+</tr>
+<tr>
+<td>Monastery</td>
+<td>Traders:  Trader 5 - Royal Trading Company</td>
+</tr>
+<tr>
+<td>Market</td>
+<td>Traders:  Trader 5 - Royal Trading Company</td>
+</tr>
+<tr>
+<td>Explorers' Lodge</td>
+<td>Traders:  Trader 5 - Royal Trading Company</td>
+</tr>
+<tr>
+<td>Trade Contract</td>
+<td>Traders:  Trader 5 - Royal Trading Company</td>
+</tr>
+<tr>
+<td>Bigger Ovens</td>
+<td>Traders:  Trader 5 - Royal Trading Company</td>
+</tr>
+<tr>
+<td>Human Friendship</td>
+<td>Traders:  Trader 5 - Royal Trading Company</td>
+</tr>
+<tr>
+<td>Human Clan Support</td>
+<td>Traders:  Trader 5 - Royal Trading Company</td>
+</tr>
+<tr>
+<td>Workstation Upgrade</td>
+<td>Traders:  Trader 5 - Royal Trading Company</td>
+</tr>
+<tr>
+<td>Grubbing Tools</td>
+<td>Traders:  Trader 5 - Royal Trading Company</td>
+</tr>
+<tr>
+<td>Forum</td>
+<td>Traders:  Trader 5 - Royal Trading Company</td>
+</tr>
+<tr>
+<td>Bath House</td>
+<td>Traders:  Trader 5 - Royal Trading Company</td>
+</tr>
+<tr>
+<td>Clan Hall</td>
+<td>Traders:  Trader 5 - Royal Trading Company</td>
+</tr>
+<tr>
+<td>Salted Jerky</td>
+<td>Traders:  Trader 6 - Wandering Merchant</td>
+</tr>
+<tr>
+<td>Mortar and Pestle</td>
+<td>Traders:  Trader 6 - Wandering Merchant</td>
+</tr>
+<tr>
+<td>Bigger Barrels</td>
+<td>Traders:  Trader 6 - Wandering Merchant</td>
+</tr>
+<tr>
+<td>Reinforced Brick Mould</td>
+<td>Traders:  Trader 6 - Wandering Merchant</td>
+</tr>
+<tr>
+<td>Heavy Press</td>
+<td>Traders:  Trader 6 - Wandering Merchant</td>
+</tr>
+<tr>
+<td>Giant Vegetables</td>
+<td>Traders:  Trader 6 - Wandering Merchant</td>
+</tr>
+<tr>
+<td>Brickyard</td>
+<td>Traders:  Trader 6 - Wandering Merchant</td>
+</tr>
+<tr>
+<td>Lumber Mill</td>
+<td>Traders:  Trader 6 - Wandering Merchant</td>
+</tr>
+<tr>
+<td>Weaver</td>
+<td>Traders:  Trader 6 - Wandering Merchant</td>
+</tr>
+<tr>
+<td>Workstation Upgrade</td>
+<td>Traders:  Trader 6 - Wandering Merchant</td>
+</tr>
+<tr>
+<td>Bigger Grill</td>
+<td>Traders:  Trader 6 - Wandering Merchant</td>
+</tr>
+<tr>
+<td>Grim Fate</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>The Queen's People</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>Over Diligent Woodworkers (Stormforged)</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>Small Press (Stormforged)</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>Dye Extractor (Stormforged)</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>Deep Pocket (Stormforged)</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>Back to Nature (Stormforged)</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>Vineyard Town (Stormforged)</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>Cannibalism (Stormforged)</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>Cheap Construction (Stormforged)</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>Copper Extractor (Stormforged)</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>Forsaken Seal (Stormforged)</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>>Missing key< (Stormforged)</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>Leftover Crops (Stormforged)</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>Forge Trip Hammer (Stormforged)</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>Advanced Fuel (Stormforged)</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>Firekeeper's Secret Techniques (Stormforged)</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>Cosmetic Specialization (Stormforged)</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>Spices (Stormforged)</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>Crowded Houses (Stormforged)</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>Generous Gifts (Stormforged)</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>Religious Settlement (Stormforged)</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>Hunter-gatherers (Stormforged)</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>Ancient Pact (Stormforged)</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>Flame Amulets (Stormforged)</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>Training Grounds (Stormforged)</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>Ancient Stabilizer (Stormforged)</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>Metallurgic Proficiency (Stormforged)</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>Mist Piercers (Stormforged)</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>Moldy Grain Seeds (Stormforged)</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>Trade Negotiations (Stormforged)</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>Ritual of prosperity (Stormforged)</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>Crowded Caravan (Stormforged)</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>Export Specialization (Stormforged)</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>Export Contract (Stormforged)</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>Free Samples (Stormforged)</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>Stormwalker Training (Stormforged)</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>Bone Tools (Stormforged)</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>>Missing key< (Stormforged)</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>Improvised Tools (Stormforged)</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>Tightened Belt (Stormforged)</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>Urban Planning (Stormforged)</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>Trade Logs (Stormforged)</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>Prayer Book (Stormforged)</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>>Missing key<</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>Ritual of Denial</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>Cursed Rain</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>No contact</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>Higher Expectations</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>Politically Outmaneuvered</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>>Missing key<</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>>Missing key<</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>Forsaken Altar</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>Artisan</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>Beaver House</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>Forsaken Altar</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>Brick Oven</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>Butcher</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>Cellar</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>Rain Collector</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>Cooperage</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>Crude Workstation</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>Homestead</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>Finesmith</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>Furnace</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>Granary</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>Grill</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>Grove</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>Human House</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>Forsaken Altar</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>Leatherworker</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>Library</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>Lizard House</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>Manufactory</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>Press</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>Provisioner</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>Clothier</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>Supplier</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>Tinkerer</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>Meat Cleavers</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>>Missing key<</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>Reinforced Tools</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>Workstation Upgrade</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>Obsidian Tools</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>Obsidian Tools</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>Reinforced Tools</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>Reinforced Tools</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>Reinforced Tools</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>>Missing key<</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>Reinforced Tools</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>>Missing key<</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>Reinforced Tools</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>Reinforced Tools</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>Reinforced Tools</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>>Missing key<</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>Advanced Herbalism</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>Reinforced Tools</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>Reinforced Tools</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>Reinforced Tools</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>Rainpunk Drills</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>>Missing key<</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>Large Baskets</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>Reinforced Tools</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>Reinforced Tools</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>Reinforced Tools</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>Rotting Wood</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>Intensive Mutations</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>Reinforced Tools</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>Old Ghran's Technique</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>Reinforced Tools</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>Reinforced Tools</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>Reinforced Tools</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>Reinforced Tools</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>Reinforced Tools</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>Reinforced Tools</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>Reinforced Tools</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>Lightning Strike</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>>Missing key<</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>>Missing key<</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>Corrosive Torrent</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>>Missing key<</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>>Missing key<</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>Insatiable Hunger</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>Vanishing Goods</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>Consumerism</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>Parasites</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>Mitosis</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>Barrel Schematics</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>Haste Makes Waste</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>Stormbird's Anger</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>Ancient Ways</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>Fishmen Rituals</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>Giant Beast</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>Giant Beast</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>Giant Beast</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>Giant Beast</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>Export Specialization</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>Export Contract</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>Termite Infestation</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>Termite Infestation</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>Termite Infestation</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>Termite Infestation</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>Ominous Whispers</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>Ominous Whispers</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>Ominous Whispers</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>Ominous Whispers</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>Sloppy Woodcutting</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>Diverse Flora</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>Giant Organisms</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>Blightrot & Corruption</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>>Missing key<</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>District</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>Neighborhood</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>Encampment</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>Flooded Mines</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>Monastery of the Holy Flame</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>Watchtower</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>Forsaken Gods Temple</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>Advent of Flame</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>Calm Lands</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>Missing Crude Workstation</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>Scavenging Party</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>Third Party</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>Wine Shortage</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>>Missing key<</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>>Missing key<</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>>Missing key<</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>Wet Soil</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>>Missing key<</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>>Missing key<</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>Royal Permit</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>Heavy Fog</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>Haunted Forest</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>Haunted Forest</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>Toxic Ooze</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>Earthquake</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>Magical Explosion</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>Magical Explosion</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>Small Miasma Cloud</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>ModifierEffect_AncientGate_Name</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>Ruined Settlement</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>>Missing key<</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>Budget Cuts</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>Queen's Support</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>>Missing key<</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>Flooding</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>Wildfire Presence</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>Wildfire Presence</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>Wildfire Presence</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>Wildfire Presence</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>Fickle Flame</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>Firekeeper's Secret Techniques</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>Firekeeper's Secret Techniques</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>>Missing key<</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>Pragmatic Frugality</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>Piercing Winds</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>Humid Climate</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>>Missing key<</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>Fertile Grounds</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>Barren Lands</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>Light as a Feather</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>Market Carts</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>>Missing key<</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>Public Lectures</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>Inspiring Pressure</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>District</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>>Missing key<</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>>Missing key<</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>>Missing key<</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>>Missing key<</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>>Missing key<</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>>Missing key<</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>>Missing key<</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>Good Health</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>Overheating</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>Sacrifice Oil</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>Neighborhood</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>Industrialized Agriculture</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>Explorers' Boredom</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>Frequent Caravans</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>Generous Rations</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>Sacred Pyre</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>Converted Harmony Spirit Altar</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>Gleeman's Tales</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>Joy Of Discovery</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>Rebellious Spirit</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>Converted Totem of Denial</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>Creeping Shadows</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>Ancient Artifact</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>Thrill of Exploration</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>Tales of Discovery</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>Spices from the Citadel</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>Wealth</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>Encampment</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>Living Matter</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>Chaos</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>Gate Presence</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>Gate Presence</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>Gate Presence</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>Gate Presence</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>Fear of the Wilds</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>Fear of the Wilds</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>Fear of the Wilds</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>Fear of the Wilds</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>Fear of the Wilds</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>Fear of the Wilds</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>Fear of the Wilds</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>Fear of the Wilds</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>Creeping Fishmen</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>Foul Taste</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>Devastating Storms</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>Stonetooth Swarm</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>Stonetooth Swarm</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>Stonetooth Swarm</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>Stonetooth Swarm</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>Growing Darkness</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>Forsaken Gods Temple</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>Looming Darkness</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>Looming Darkness</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>Barrels of Ale</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>Barrels of Ale</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>Barrels of Ale</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>Barrels of Ale</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>Barrels of Ale</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>Barrels of Ale</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>Barrels of Ale</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>Barrels of Ale</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>Amber Pouch</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>Amber Pouch</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>Amber Pouch</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>Amber Pouch</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>Amber Pouch</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>Amber Pouch</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>Amber Pouch</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>Amber Pouch</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>Amber Pouch</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>Amber Pouch</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>Amber Pouch</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>Amber Pouch</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>Amber Pouch</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>Amber Pouch</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>Amber Pouch</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>Amber Pouch</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>Amber Pouch</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>Amber Pouch</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>Amber Pouch</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>Amber Pouch</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>Chest of Ancient Tablets</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>Chest of Ancient Tablets</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>Chest of Ancient Tablets</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>Chest of Ancient Tablets</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>Chest of Ancient Tablets</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>Chest of Ancient Tablets</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>Artifacts</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>Artifacts</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>Artifacts</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>Artifacts</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>Artifacts</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>Artifacts</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>Crate of Cosmetics</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>Crate of Cosmetics</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>Crate of Cosmetics</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>Barrels</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>Barrels</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>Barrels</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>Barrels</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>Barrels</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>Barrels</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>Barrels</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>Barrels</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>Barrels</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>Barrels</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>Barrels</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>Barrels</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>Basket of Berries</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>Basket of Berries</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>Basket of Berries</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>Basket of Berries</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>Basket of Berries</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>Basket of Biscuits</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>Basket of Biscuits</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>Basket of Biscuits</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>Basket of Biscuits</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>Basket of Biscuits</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>Basket of Biscuits</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>Crate of Bricks</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>Crate of Bricks</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>Crate of Bricks</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>Crate of Bricks</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>Crate of Bricks</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>Crate of Bricks</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>Crate of Bricks</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>Crate of Bricks</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>Crate of Bricks</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>Crate of Clay</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>Crate of Clay</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>Crate of Clay</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>Crate of Clay</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>Crate of Clay</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>Crate of Clay</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>Crate of Clay</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>Crate of Clay</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>Crate of Clay</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>Crate of Clay</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>Chest of Coal</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>Chest of Coal</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>Chest of Coal</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>Chest of Coal</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>Chest of Coal</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>Chest of Coal</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>Chest of Coal</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>Bundle of Coats</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>Bundle of Coats</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>Bundle of Coats</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>Bundle of Coats</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>Bundle of Coats</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>Bundle of Coats</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>Bundle of Coats</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>Bundle of Coats</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>Copper Bars</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>Copper Bars</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>Copper Bars</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>Copper Bars</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>Copper Bars</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>Crate of Copper Ore</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>Crate of Copper Ore</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>Crate of Copper Ore</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>Crate of Copper Ore</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>Crate of Copper Ore</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>Crate of Copper Ore</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>Crate of Copper Ore</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>Box of Crystalized Dew</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>Box of Crystalized Dew</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>Box of Crystalized Dew</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>Box of Crystalized Dew</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>Box of Crystalized Dew</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>Box of Crystalized Dew</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>Box of Crystalized Dew</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>Box of Crystalized Dew</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>Box of Crystalized Dew</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>Box of Crystalized Dew</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>Box of Crystalized Dew</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>Basket of Eggs</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>Basket of Eggs</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>Basket of Eggs</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>Basket of Eggs</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>Basket of Eggs</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>Bundle of Fabric</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>Bundle of Fabric</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>Bundle of Fabric</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>Bundle of Fabric</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>Bundle of Fabric</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>Bundle of Fabric</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>Bundle of Fabric</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>Bundle of Fabric</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>Sacks of Flour</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>Sacks of Flour</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>Sacks of Flour</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>Sacks of Flour</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>Sacks of Flour</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>Sacks of Flour</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>Sacks of Flour</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>Sacks of Flour</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>Food Stockpiles</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>Food Stockpiles</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>Food Stockpiles</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>Food Stockpiles</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>Food Stockpiles</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>Food Stockpiles</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>Oil Vessels</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>Oil Vessels</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>Oil Vessels</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>Oil Vessels</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>Oil Vessels</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>Oil Vessels</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>Box of Grain</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>Box of Grain</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>Box of Grain</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>Box of Grain</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>Box of Grain</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>Box of Grain</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>Bundle of Herbs</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>Bundle of Herbs</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>Bundle of Herbs</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>Bundle of Herbs</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>Bundle of Herbs</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>Bundle of Herbs</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>Bundle of Herbs</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>Bundle of Herbs</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>Vessel of Incense</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>Vessel of Incense</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>Vessel of Incense</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>Vessel of Incense</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>Vessel of Incense</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>Vessel of Incense</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>Vessel of Incense</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>Vessel of Incense</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>Box of Infused Tools</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>Box of Infused Tools</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>Box of Infused Tools</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>Box of Infused Tools</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>Box of Infused Tools</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>Box of Infused Tools</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>Box of Infused Tools</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>Box of Infused Tools</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>Box of Infused Tools</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>Box of Infused Tools</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>Box of Infused Tools</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>Vials of Pigment</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>Vials of Pigment</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>Vials of Pigment</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>Vials of Pigment</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>Vials of Pigment</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>An Insect</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>An Insect</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>An Insect</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>An Insect</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>Basket of Insects</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>Basket of Insects</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>Basket of Insects</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>Basket of Jerky</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>Basket of Jerky</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>Basket of Jerky</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>Basket of Jerky</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>Basket of Jerky</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>Basket of Jerky</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>Bundle of Leather</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>Bundle of Leather</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>Bundle of Leather</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>Bundle of Leather</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>Bundle of Leather</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>Machinery</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>Machinery</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>Machinery</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>Machinery</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>Machinery</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>Machinery</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>Box of Simple Tools</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>Box of Simple Tools</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>Box of Simple Tools</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>Box of Simple Tools</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>Box of Simple Tools</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>Box of Simple Tools</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>Box of Simple Tools</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>Box of Simple Tools</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>Box of Simple Tools</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>Box of Simple Tools</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>Box of Simple Tools</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>Box of Simple Tools</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>Box of Simple Tools</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>Box of Simple Tools</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>Pack of Mushrooms</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>Pack of Mushrooms</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>Pack of Mushrooms</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>Pack of Mushrooms</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>Pack of Mushrooms</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>Pack of Mushrooms</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>Pack of Mushrooms</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>Pack of Mushrooms</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>Pack of Mushrooms</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>Pack of Mushrooms</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>Pack of Meat</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>Pack of Meat</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>Pack of Meat</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>Pack of Meat</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>Pack of Meat</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>Pack of Meat</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>Pack of Meat</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>Pack of Meat</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>Pack of Meat</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>Pack of Meat</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>Oil Vessels</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>Oil Vessels</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>Oil Vessels</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>Oil Vessels</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>Oil Vessels</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>Oil Vessels</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>Oil Vessels</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>Oil Vessels</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>Oil Vessels</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>Oil Vessels</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>Packs of Building Materials</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>Packs of Building Materials</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>Packs of Building Materials</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>Packs of Building Materials</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>Packs of Building Materials</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>Packs of Building Materials</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>Packs of Crops</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>Packs of Crops</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>Packs of Crops</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>Packs of Crops</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>Packs of Provisions</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>Packs of Provisions</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>Packs of Provisions</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>Packs of Provisions</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>Packs of Provisions</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>Pack of Trade Goods</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>Pack of Trade Goods</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>Pack of Luxury Goods</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>Pack of Luxury Goods</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>Bundle of Scrolls</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>Bundle of Scrolls</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>Bundle of Scrolls</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>Bundle of Scrolls</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>Parts</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>Parts</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>Parts</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>Parts</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>Parts</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>Parts</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>Parts</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>Parts</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>Parts</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>Parts</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>Parts</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>Pickled Goods</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>Pickled Goods</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>Pickled Goods</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>Pickled Goods</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>Pickled Goods</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>Basket of Pies</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>Basket of Pies</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>Basket of Pies</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>Box of Planks</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>Box of Planks</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>Box of Planks</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>Box of Planks</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>Box of Planks</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>Box of Planks</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>Box of Planks</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>Box of Planks</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>Bundle of Plant Fiber</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>Bundle of Plant Fiber</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>Bundle of Plant Fiber</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>Bundle of Plant Fiber</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>Bundle of Plant Fiber</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>Bundle of Plant Fiber</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>Bundle of Plant Fiber</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>Bundle of Plant Fiber</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>Box of Pottery</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>Box of Pottery</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>Box of Pottery</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>Box of Pottery</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>Box of Pottery</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>Box of Pottery</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>Box of Pottery</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>Box of Pottery</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>Purging Fire</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>Purging Fire</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>Bundle of Reeds</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>Bundle of Reeds</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>Bundle of Reeds</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>Bundle of Reeds</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>Bundle of Reeds</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>Bundle of Reeds</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>Bundle of Reeds</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>Bundle of Reeds</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>Bundle of Reeds</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>Bundle of Reeds</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>Resin</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>Resin</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>Resin</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>Resin</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>Pack of Roots</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>Pack of Roots</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>Pack of Roots</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>Pack of Roots</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>Pack of Roots</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>Pack of Roots</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>Gift from the Woods</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>Crate of Sea Marrow</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>Crate of Sea Marrow</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>Crate of Sea Marrow</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>Crate of Sea Marrow</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>Crate of Sea Marrow</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>Crate of Sea Marrow</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>Crate of Sea Marrow</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>Crate of Sea Marrow</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>Pack of Skewers</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>Pack of Skewers</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>Pack of Skewers</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>Vessels of Sparkdew</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>Vessels of Sparkdew</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>Vessels of Sparkdew</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>Vessels of Sparkdew</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>Vessels of Sparkdew</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>Vessels of Sparkdew</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>Training Gear</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>Training Gear</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>Training Gear</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>Crate of Vegetables</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>Crate of Vegetables</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>Crate of Vegetables</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>Crate of Vegetables</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>Crate of Waterskins</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>Crate of Waterskins</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>Crate of Waterskins</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>Crate of Waterskins</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>Crate of Waterskins</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>Crate of Waterskins</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>Crate of Waterskins</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>Crate of Stone</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>Crate of Stone</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>Crate of Stone</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>Crate of Stone</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>Crate of Stone</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>Crate of Stone</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>Crate of Stone</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>Crate of Stone</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>Crate of Stone</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>Crate of Stone</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>Barrels of Wine</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>Barrels of Wine</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>Barrels of Wine</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>Barrels of Wine</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>Barrels of Wine</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>Crate of Wood</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>Crate of Wood</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>Crate of Wood</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>Crate of Wood</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>Crate of Wood</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>Crate of Wood</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>Crate of Wood</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>Crate of Wood</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>Crate of Wood</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>Crate of Wood</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>Ale Delivery Line</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>Amber Tax</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>Amber Tax</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>Amber Tax</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>Berry Delivery Line</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>Berry Delivery Line</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>Coal Delivery Line</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>Coal Delivery Line</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>Coat Delivery Line</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>Coat Delivery Line</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>Metal Delivery Line</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>Metal Delivery Line</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>Metal Delivery Line</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>Ore Delivery Line</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>Egg Delivery Line</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>Egg Delivery Line</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>Fiber Delivery Line</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>Grain Delivery Line</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>Herb Delivery Line</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>Herb Delivery Line</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>Herb Delivery Line</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>Incense Delivery Line</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>Incense Delivery Line</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>Termite Nest</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>Leather Delivery Line</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>Leather Delivery Line</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>Scroll Delivery Line</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>Scroll Delivery Line</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>Meat Delivery Line</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>Mushroom Delivery Line</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>Mushroom Delivery Line</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>Oil Delivery Line</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>Oil Delivery Line</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>Reed Delivery Line</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>Reed Delivery Line</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>Root Delivery Line</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>Sparkdew Delivery Line</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>Sparkdew Delivery Line</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>Sparkdew Delivery Line</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>Stone Delivery Line</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>Stone Delivery Line</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>Tool Delivery Line</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>Tool Delivery Line</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>Training Gear delivery line</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>Training Gear delivery line</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>Vegetable Delivery Line</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>Vegetable Delivery Line</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>Bigger Barrels</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>Mortar and Pestle</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>Mortar and Pestle</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>Advanced Coopering</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>Advanced Coopering</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>Large Berry Baskets</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>Large Berry Baskets</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>Large Berry Baskets</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>Bigger Pans</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>Bigger Pans</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>Bigger Pans</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>Reinforced Brick Mould</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>Reinforced Brick Mould</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>Steel Shovels</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>Steel Shovels</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>Specialized Mining</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>Specialized Mining</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>Ancient Sewing Technique</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>Advanced Smelting</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>Advanced Smelting</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>Steel Shovels</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>Steel Shovels</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>Steel Shovels</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>Advanced Smithing</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>Advanced Smithing</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>Crystal Growth</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>Crystal Growth</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>Reinforced Needles</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>Reinforced Needles</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>Heavy Millstone</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>Heavy Millstone</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>Mold Supply</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>Sharp Sickles</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>Vessel of Incense</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>Vessel of Incense</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>Vessel of Incense</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>Rainpunk Smithing</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>Rainpunk Smithing</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>Rainpunk Smithing</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>Big Phials</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>Nets</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>Nets</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>Nets</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>Salted Jerky</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>Salted Jerky</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>Tanning Racks</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>Tanning Racks</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>Nets</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>Nets</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>Fungal Growth</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>Fungal Growth</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>Heavy Press</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>Heavy Press</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>>Missing key<</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>>Missing key<</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>>Missing key<</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>Industrialized Farming</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>Industrialized Farming</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>Industrialized Farming</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>>Missing key<</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>>Missing key<</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>>Missing key<</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>>Missing key<</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>>Missing key<</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>>Missing key<</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>>Missing key<</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>>Missing key<</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>>Missing key<</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>Advanced Press</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>Advanced Press</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>Bigger Ovens</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>Bigger Ovens</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>Reinforced Saw Blades</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>Reinforced Saw Blades</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>Rich in Fiber</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>Rich in Fiber</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>Rain Powered Pottery Wheel</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>Rain Powered Pottery Wheel</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>Leather Gloves</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>Leather Gloves</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>Bleeding Trees</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>Bleeding Trees</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>Steel Penknives</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>Steel Penknives</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>Steel Penknives</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>Berry New Year</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>Mating Season</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>Mushrooms after Rain</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>Heavy Drops</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>Bigger Grill</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>Bigger Grill</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>Steel Pickaxes</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>Woodworking Tools</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>Woodworking Tools</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>Woodworking Tools</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>Giant Vegetables</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>Advanced Filters</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>Advanced Filters</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>Steel Axes</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>Steel Axes</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>Steel Axes</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>Mistworm Infestation</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>Forced Sacrifice</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>Agitated Swarm</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>Petrified Wood</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>Combustion</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>>Missing key<</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>Humans Influx</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>Quick Harvest</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>Quick Harvest</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>Slow Harvest</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>Slow Harvest</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>Slow Harvest</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>Slow Harvest</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>Slow Harvest</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>Gift of the Woodlands</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>>Missing key<</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>>Missing key<</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>>Missing key<</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>>Missing key<</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>Sacrament of the Flame</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>Hearth Defect</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>Sacrificial Rituals</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>Respected Business Partner</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>Luxury Tax</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>Overcharged Rainpunk Technology</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>Overcharged Rainpunk Technology</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>Overcharged Rainpunk Technology</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>Overcharged Rainpunk Technology</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>Carpenter's Tools</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>Disturbing the Dead</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>Disturbing the Dead</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>Disturbing the Dead</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>Disturbing the Dead</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>>Missing key<</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>The Crown Chronicles</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>The Guild's Welfare</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>Prayers</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>Converted Harmony Spirit Altar</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>Creeping Fishmen</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>Creeping Fishmen</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>Creeping Fishmen</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>Creeping Fishmen</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>Sacrificial Rituals</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>Royal Funding</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>Creeping Shadows</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>Cricket Mating Grounds</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>Lightning</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>Bleeding Trees</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>Resisting Flora</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>Thunder</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>>Missing key<</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>Growing Darkness</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>Growing Darkness</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>Violent Dusk</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>Inspiring Pressure</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>Gathering Knowledge</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>Royal Tax</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>Land Tax</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>Guild's Disfavor</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>Rage of the Forest</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>>Missing key<</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>High Voltage</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>>Missing key<</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>>Missing key<</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>>Missing key<</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>>Missing key<</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>Ways of the Forest</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>Rage of the Forest</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>The Green Brew</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>Converted Rain Totem</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>Sacrifice Coal</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>Sacrifice Wood</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>Ancient Battleground</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>Memory of the Forest</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>>Missing key<</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>Flame Amulets</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>>Missing key<</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>>Missing key<</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>>Missing key<</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>Calm Lands</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>Calm Lands</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>>Missing key<</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>Famine Outbreaks</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>>Missing key<</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>Regular Baths</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>Higher Standards</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>>Missing key<</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>>Missing key<</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>>Missing key<</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>>Missing key<</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>>Missing key<</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>>Missing key<</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>Bad Reputation</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>Bad Reputation</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>Bad Reputation</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>Levitating Monument</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>Poisoned Food</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>Newcomers</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>Newcomers</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>Newcomers</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>Newcomers</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>Newcomers</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>Newcomers</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>>Missing key<</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>Beaver</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>Group of Beavers</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>Group of Beavers</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>Group of Beavers</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>Group of Beavers</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>Harpy</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>Group of Harpies</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>Group of Harpies</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>Group of Harpies</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>Group of Harpies</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>Human</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>Group of Humans</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>Group of Humans</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>Group of Humans</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>Group of Humans</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>Lizard</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>Group of Lizards</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>Group of Lizards</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>Group of Lizards</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>Group of Lizards</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>>Missing key<</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>>Missing key<</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>>Missing key<</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>>Missing key<</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>>Missing key<</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>Fishmen Ritual Site</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>Sabotage</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>Royal Outpost</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>The Generous Envoy</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>Under the Queen's Eye</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>Forsaken Gods Temple</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>Dangerous Lands</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>Forbidden Lands</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>Shattered Obelisk</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>>Missing key<</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>Overheating</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>Vassal Tax</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>Sacred Flame Rituals</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>Land Tax</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>Fertilizer</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>Fertilizer</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>Quick Planting</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>Fertilizer</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>Slow Planting</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>Slow Planting</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>Slow Planting</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>Slow Planting</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>Slow Planting</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>Bread Peels</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>Reinforced Axes</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>Rotting Wood</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>Flavour Enhancer</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>Builder's Pack</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>Lightweight Wood</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>Light Timber</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>Harpy Clan Support</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>Lizards Clan Support</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>High Hygiene</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>Sweet Aroma</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>Armed to the Teeth</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>Full Goblets</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>Fallen Beavers</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>Fallen Beavers</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>Fallen Beavers</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>Fallen Beavers</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>Fallen Harpy Scientists</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>Fallen Harpy Scientists</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>Fallen Harpy Scientists</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>Fallen Harpy Scientists</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>Fallen Humans</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>Fallen Humans</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>Fallen Humans</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>Fallen Humans</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>Fallen Lizards</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>Fallen Lizards</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>Fallen Lizards</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>Fallen Lizards</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>>Missing key<</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>>Missing key<</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>Wild Growth</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>Barrel Schematics</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>Barrel Schematics</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>Biscuit Recipes</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>Biscuit Recipes</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>Rain Collector Filter</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>Seasonal Crops</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>Seasonal Crops</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>Seasonal Crops</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>Seasonal Crops</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>Forge Trip Hammer</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>Crimson Rainfall</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>Worms after the Rain</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>Trade Pack Instructions</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>Trade Pack Instructions</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>Better Packaging</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>>Missing key<</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>>Missing key<</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>>Missing key<</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>Acid Rain</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>Rich Branches</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>Corrosive Rainfall</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>Involuntary Sacrifice</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>Involuntary Sacrifice</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>Viceroy's Survival Guide</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>Viceroy's Survival Guide</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>Contaminated Food</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>Contaminated Food</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>Contaminated Food</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>Contaminated Food</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>Advanced Fuel</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>Advanced Fuel</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>>Missing key<</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>Metallurgic Proficiency</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>>Missing key<</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>Metallurgic Proficiency</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>>Missing key<</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>Quick Deliveries</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>Rot from the Sky</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>Quaking Bog</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>Camps Speed</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>No cooking utensils </td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>Metallurgic Experts</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>>Missing key<</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>>Missing key<</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>>Missing key<</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>>Missing key<</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>>Missing key<</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>>Missing key<</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>Sacrifice Sea Marrow</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>Procrastination</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>Decaying Food</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>Decaying Food</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>Decaying Food</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>Decaying Food</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>Hungry Mistworm</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>Hungry Mistworm</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>Hungry Mistworm</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>Hungry Mistworm</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>Thieving Fishmen</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>Thieving Fishmen</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>Thieving Fishmen</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>Thieving Fishmen</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>Decay</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>Alchemist's Hut</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>Apothecary</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>Artisan</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>Bakery</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>Bath House</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>Beaver House</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>Big Shelter</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>Brewery</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>Brick Oven</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>Brickyard</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>Butcher</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>Carpenter</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>Cellar</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>Clan Hall</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>Clay Pit</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>Rain Collector</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>Cookhouse</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>Cooperage</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>Crude Workstation</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>Druid's Hut</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>Explorers' Lodge</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>Homestead</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>Field Kitchen</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>Finesmith</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>Foragers' Camp</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>Forum</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>Furnace</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>Granary</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>Greenhouse</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>Grill</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>Grove</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>Guild House</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>Harvesters' Camp</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>Ancient Hearth</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>Herb Garden</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>Herbalists' Camp</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>Human House</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>Kiln</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>Leatherworker</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>Library</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>Lizard House</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>Lumber Mill</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>Makeshift Post</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>Manufactory</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>Market</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>Mine</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>Monastery</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>Plantation</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>Press</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>Provisioner</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>Rain Mill</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>Rainpunk Foundry</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>Ranch</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>Scavengers' Camp</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>Scribe</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>Clothier</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>Shelter</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>Small Farm</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>Smelter</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>Smithy</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>Smokehouse</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>Stamping Mill</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>Stonecutters' Camp</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>Storage</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>Supplier</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>Tavern</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>Teadoctor</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>Temple</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>Tinctury</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>Tinkerer</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>Toolshop</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>Trading Post</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>Trappers' Camp</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>Weaver</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>Woodcutters' Camp</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>Workshop</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>Converted Harmony Spirit Altar</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>Converted Rain Totem</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>Converted Totem of Denial</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>Tamed Stormbird</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>Termite Nest</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>Queen's Grace</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>Generous Donation</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>Queen's Grace</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>Queen's Grace</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>Queen's Grace</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>>Missing key<</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>Cleanup Duty</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>Cleanup Duty</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>Cleanup Duty</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>>Missing key<</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>Queen's Wrath</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>Queen's Wrath</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>>Missing key<</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>Sparkdew Crystals</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>Disgrace</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>>Missing key<</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>>Missing key<</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>Irresponsible Archaeology</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>Irresponsible Archaeology</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>Irresponsible Archaeology</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>Irresponsible Archaeology</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>Beacon</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>Vassal Tax</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>Important Matters</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>Less is more</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>Stingy Archivist</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>Effect_LowerBlueprintsRerollCost_Name</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>Expensive Lottery</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>Effect_ResilienceDrop_Name</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>>Missing key<</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>>Missing key<</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>>Missing key<</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>>Missing key<</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>Warm Welcome</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>Aura of Despair</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>>Missing key<</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>>Missing key<</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>>Missing key<</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>>Missing key<</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>Fiery Wrath</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>>Missing key<</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>Fiery Wrath</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>>Missing key<</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>>Missing key<</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>>Missing key<</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>Weather Anomaly</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>>Missing key<</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>>Missing key<</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>>Missing key<</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>>Missing key<</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>>Missing key<</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>>Missing key<</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>>Missing key<</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>Crumbling Seal</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>Statue of the Forefathers</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>Restrictions</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>The Other Settlement</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>Decay</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>Life from Beneath</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>>Missing key<</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>Death and Decay</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>Gift of the Woodlands</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>Direful Blight</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>Sinister Blight</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>Hard Times</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>Unfavorable Weather</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>Prestigious Expedition</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>Unwelcoming Region</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>Bandit Camp</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>Bandit Camp</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>>Missing key<</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>>Missing key<</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>>Missing key<</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>>Missing key<</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>Guild House</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>Clear Skies</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>>Missing key<</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>Infamous Viceroy</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>Ruined Armory</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>>Missing key<</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>Guild of Traders or Thieves?</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>Amber Curse</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>>Missing key<</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>>Missing key<</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>>Missing key<</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>>Missing key<</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>>Missing key<</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>>Missing key<</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>Tight Packaging</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>>Missing key<</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>>Missing key<</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>>Missing key<</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>>Missing key<</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>>Missing key<</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>>Missing key<</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>Stonewood Infestation</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>Petrification</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>Petrification</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>Petrification</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>Petrification</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>>Missing key<</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>>Missing key<</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>>Missing key<</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>>Missing key<</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>Death from Beyond</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>>Missing key<</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>Voice of the Sealed Ones</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>Curse of the Forefathers</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>Curse of the Forefathers</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>>Missing key<</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>>Missing key<</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>Overtime</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>>Missing key<</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>Curse of Weakness</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>Muddy Ground</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>Sturdy Boots</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>Sturdy Boots</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>Summoned Smuggler (Stormforged)</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>>Missing key<</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>>Missing key<</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>>Missing key<</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>Flame Amulets</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>Rotting Wood</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>>Missing key<</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>>Missing key<</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>>Missing key<</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>>Missing key<</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>>Missing key<</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>>Missing key<</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>>Missing key<</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>>Missing key<</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>>Missing key<</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>>Missing key<</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>>Missing key<</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>>Missing key<</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>>Missing key<</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>>Missing key<</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>>Missing key<</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>>Missing key<</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>>Missing key<</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>>Missing key<</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>>Missing key<</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>>Missing key<</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>>Missing key<</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>>Missing key<</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>>Missing key<</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>>Missing key<</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>>Missing key<</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>>Missing key<</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>>Missing key<</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>>Missing key<</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>>Missing key<</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>>Missing key<</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>>Missing key<</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>>Missing key<</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>>Missing key<</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>>Missing key<</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>>Missing key<</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>>Missing key<</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>>Missing key<</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>>Missing key<</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>>Missing key<</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>>Missing key<</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>>Missing key<</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>>Missing key<</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>>Missing key<</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>>Missing key<</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>>Missing key<</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>>Missing key<</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>>Missing key<</td>
+<td>unknown</td>
+</tr>
+<tr>
+<td>>Missing key<</td>
+<td>unknown</td>
+</tr>
+</table>
+</main></body></html>
