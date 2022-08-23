@@ -278,6 +278,23 @@ footer {
 
 }
 
+.effects-table h4 {
+    font-size: 100%
+}
+
 .biome-reward {
     margin-left: 16px;
 }
+
+.effect-source-container {
+    margin-top: 8px;
+}
+
+.effect-source-cell {
+    width: 100%;
+}
+
+.effect-description-cell {
+    padding-bottom: 60px;
+}
+

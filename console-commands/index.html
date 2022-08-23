@@ -1,0 +1,557 @@
+<html><head>
+                <meta charset="UTF-8">
+                <meta name="viewport" content="width=device-width, initial-scale=1.0">
+                <title>AgainstTheStormpedia</title>
+                <link rel="stylesheet" href="/data-wiki/simple.min.css">
+                <link rel="stylesheet" href="/data-wiki/common.css">
+                <script>
+                    var constructionRates = new Map([["8_Ascension_V", 0.5],
+["9_Ascension_VI", 0.5],
+["10_Ascension_VII", 0.5],
+["11_Ascension_VIII", 0.5],
+["12_Ascension_IX", 0.5],
+["13_Ascension_X", 0.5],
+["14_Ascension_XI", 0.5],
+["15_Ascension_XII", 0.5],
+["16_Ascension_XIII", 0.5],
+["17_Ascension_XIV", 0.5],
+["18_Ascension_XV", 0.5],
+["19_Ascension_XVI", 0.5],
+["20_Ascension_XVII", 0.5],
+["21_Ascension_XVIII", 0.5],
+["22_Ascension_XIX", 0.5],
+["23_Ascension_XX", 0.5]]);
+                    var relicWorkRates = new Map([["11_Ascension_VIII", -0.33],
+["12_Ascension_IX", -0.33],
+["13_Ascension_X", -0.33],
+["14_Ascension_XI", -0.33],
+["15_Ascension_XII", -0.33],
+["16_Ascension_XIII", -0.33],
+["17_Ascension_XIV", -0.33],
+["18_Ascension_XV", -0.33],
+["19_Ascension_XVI", -0.33],
+["20_Ascension_XVII", -0.33],
+["21_Ascension_XVIII", -0.33],
+["22_Ascension_XIX", -0.33],
+["23_Ascension_XX", -0.33]]);
+                </script>
+                <script src="/data-wiki/common.js"></script>
+            </head><body>
+            <header> 
+                <nav>
+                    <a href="/data-wiki/buildings">Buildings</a>
+                    <a href="/data-wiki/goods">Goods</a>
+                    <a href="/data-wiki/orders">Orders</a>
+                    <a href="/data-wiki/relics">Glade Events</a>
+                    <a href="/data-wiki/cornerstones">Cornerstones</a>
+                    <a href="/data-wiki/biomes">Biomes</a>
+                    <a href="/data-wiki/upgrades">Upgrades</a>
+                    <a href="/data-wiki/effects">Effects</a>
+                    <a href="/data-wiki/console-commands">Commands</a>
+                </nav>
+                 <nav>
+                    <span>Game Version: Early Access v0.31.3</span>
+                    <span>Scale costs for difficulty:</span>
+                    <select id="difficulty-select">
+                        <option value="0_Normal">Normal</option>
+<option value="1_Hard">Hard</option>
+<option value="2_Very_Hard">Very Hard</option>
+<option value="3_Impossible">Impossible</option>
+<option value="4_Ascension_I">Prestige 1</option>
+<option value="5_Ascension_II">Prestige 2</option>
+<option value="6_Ascension_III">Prestige 3</option>
+<option value="7_Ascension_IV">Prestige 4</option>
+<option value="8_Ascension_V">Prestige 5</option>
+<option value="9_Ascension_VI">Prestige 6</option>
+<option value="10_Ascension_VII">Prestige 7</option>
+<option value="11_Ascension_VIII">Prestige 8</option>
+<option value="12_Ascension_IX">Prestige 9</option>
+<option value="13_Ascension_X">Prestige 10</option>
+<option value="14_Ascension_XI">Prestige 11</option>
+<option value="15_Ascension_XII">Prestige 12</option>
+<option value="16_Ascension_XIII">Prestige 13</option>
+<option value="17_Ascension_XIV">Prestige 14</option>
+<option value="18_Ascension_XV">Prestige 15</option>
+<option value="19_Ascension_XVI">Prestige 16</option>
+<option value="20_Ascension_XVII">Prestige 17</option>
+<option value="21_Ascension_XVIII">Prestige 18</option>
+<option value="22_Ascension_XIX">Prestige 19</option>
+<option value="23_Ascension_XX">Prestige 20</option>
+                    </select>
+                </nav>
+                 </header><main>
+            <div class="console-commands-container">
+<table class="console-commands-table">
+<tr><th>Command</th><th>Arguments</th><th>Method called</th></tr>
+<tr>
+<td>blight.add</td>
+<td>amount :float</td>
+<td>BlightRuntimeTools.AddBlight</td>
+</tr>
+<tr>
+<td>build.debugBiome</td>
+<td>biomeName :string</td>
+<td>BuildDataRuntimeTools.SetDebugBiome</td>
+</tr>
+<tr>
+<td>build.debugMap</td>
+<td>mapName :string</td>
+<td>BuildDataRuntimeTools.SetDebugMap</td>
+</tr>
+<tr>
+<td>build.debugDifficulty</td>
+<td>difficultyIndex :int</td>
+<td>BuildDataRuntimeTools.SetDebugBiome</td>
+</tr>
+<tr>
+<td>build.clearDebugs</td>
+<td></td>
+<td>BuildDataRuntimeTools.ClearDebugs</td>
+</tr>
+<tr>
+<td>building.unlock</td>
+<td>name :string</td>
+<td>BuildingsRuntimeTools.Unlock</td>
+</tr>
+<tr>
+<td>building.lock</td>
+<td>name :string</td>
+<td>BuildingsRuntimeTools.Lock</td>
+</tr>
+<tr>
+<td>building.testRolls</td>
+<td>games :int, unlockAll :bool</td>
+<td>BuildingsRuntimeTools.TestRolls</td>
+</tr>
+<tr>
+<td>debug</td>
+<td></td>
+<td>DebugModesRuntimeTools.DebugeMode</td>
+</tr>
+<tr>
+<td>effect.list</td>
+<td></td>
+<td>EffectsRuntimeTools.ListRewards</td>
+</tr>
+<tr>
+<td>effect.add</td>
+<td>name :string</td>
+<td>EffectsRuntimeTools.AddReward</td>
+</tr>
+<tr>
+<td>effect.remove</td>
+<td>name :string</td>
+<td>EffectsRuntimeTools.RemoveReward</td>
+</tr>
+<tr>
+<td>effect.randomPerks</td>
+<td>amount :int</td>
+<td>EffectsRuntimeTools.AddRandomResolveEffect</td>
+</tr>
+<tr>
+<td>effect.allHooked</td>
+<td></td>
+<td>EffectsRuntimeTools.AddAllHookedEffects</td>
+</tr>
+<tr>
+<td>effect.cornerstones</td>
+<td></td>
+<td>EffectsRuntimeTools.CreateRandomCornerstones</td>
+</tr>
+<tr>
+<td>effect.canBeDrawn</td>
+<td>name :string</td>
+<td>EffectsRuntimeTools.CanBeDrawn</td>
+</tr>
+<tr>
+<td>game.win</td>
+<td></td>
+<td>GameplayRuntimeTools.WinGame</td>
+</tr>
+<tr>
+<td>game.loose</td>
+<td></td>
+<td>GameplayRuntimeTools.LooseGame</td>
+</tr>
+<tr>
+<td>game.save</td>
+<td></td>
+<td>GameplayRuntimeTools.SaveGame</td>
+</tr>
+<tr>
+<td>good</td>
+<td>goodName :string</td>
+<td>GoodsRuntimeTools.GetGoodAmount</td>
+</tr>
+<tr>
+<td>good.add</td>
+<td>goodName :string, amount :int</td>
+<td>GoodsRuntimeTools.AddGood</td>
+</tr>
+<tr>
+<td>good.remove</td>
+<td>goodName :string, amount :int</td>
+<td>GoodsRuntimeTools.RemoveGood</td>
+</tr>
+<tr>
+<td>good.addAll</td>
+<td></td>
+<td>GoodsRuntimeTools.AddAllGoods</td>
+</tr>
+<tr>
+<td>good.removeAll</td>
+<td></td>
+<td>GoodsRuntimeTools.RemoveAllGoods</td>
+</tr>
+<tr>
+<td>good.normalizeAll</td>
+<td></td>
+<td>GoodsRuntimeTools.NormalizeAllGoods</td>
+</tr>
+<tr>
+<td>good.list</td>
+<td></td>
+<td>GoodsRuntimeTools.ListGoods</td>
+</tr>
+<tr>
+<td>hostility.add</td>
+<td>amount :int</td>
+<td>HostilityRuntimeTools.AddHostility</td>
+</tr>
+<tr>
+<td>meta.level</td>
+<td>level :int</td>
+<td>MetaRuntimeTools.SetLevel</td>
+</tr>
+<tr>
+<td>meta.diff</td>
+<td>index :int</td>
+<td>MetaRuntimeTools.SetFinishedDifficulty</td>
+</tr>
+<tr>
+<td>meta.exp</td>
+<td>exp :int</td>
+<td>MetaRuntimeTools.SetExp</td>
+</tr>
+<tr>
+<td>meta.distance</td>
+<td></td>
+<td>MetaRuntimeTools.GetDistance</td>
+</tr>
+<tr>
+<td>meta.addReward</td>
+<td>metaReward :string</td>
+<td>MetaRuntimeTools.GrantMetaReward</td>
+</tr>
+<tr>
+<td>meta.addAll</td>
+<td>onlyMeta :bool</td>
+<td>MetaRuntimeTools.UnlockEverything</td>
+</tr>
+<tr>
+<td>meta.addAllDecorations</td>
+<td></td>
+<td>MetaRuntimeTools.UnlockDecorations</td>
+</tr>
+<tr>
+<td>order.list</td>
+<td></td>
+<td>OrdersRuntimeTools.ListOrders</td>
+</tr>
+<tr>
+<td>order.add</td>
+<td>name :string</td>
+<td>OrdersRuntimeTools.AddOrder</td>
+</tr>
+<tr>
+<td>order.remove</td>
+<td>name :string</td>
+<td>OrdersRuntimeTools.RemoveOrder</td>
+</tr>
+<tr>
+<td>rec</td>
+<td></td>
+<td>RecordingRuntimeTools.Rec</td>
+</tr>
+<tr>
+<td>rec</td>
+<td>isOn :bool</td>
+<td>RecordingRuntimeTools.Rec</td>
+</tr>
+<tr>
+<td>rec.reset</td>
+<td></td>
+<td>RecordingRuntimeTools.ResetCamera</td>
+</tr>
+<tr>
+<td>rec.timeLapse.orbit</td>
+<td>offsetX :float, offsetY :float, offsetZ :float, orbitSpeed :float</td>
+<td>RecordingRuntimeTools.StartOrbitTimeLapse</td>
+</tr>
+<tr>
+<td>rec.timeLapse.orbitArc</td>
+<td></td>
+<td>RecordingRuntimeTools.StartOrbitArcTimeLapse</td>
+</tr>
+<tr>
+<td>rec.timeLapse.orbitArc</td>
+<td>offsetX :float, offsetY :float, offsetZ :float, orbitSpeed :float, zoomSpeed :float</td>
+<td>RecordingRuntimeTools.StartOrbitArcTimeLapse</td>
+</tr>
+<tr>
+<td>rec.timeLapse.zoom</td>
+<td></td>
+<td>RecordingRuntimeTools.StartZoomTimeLapse</td>
+</tr>
+<tr>
+<td>rec.timeLapse.zoom</td>
+<td>yaw :float, pitch :float, initialHeight :float, speed :float</td>
+<td>RecordingRuntimeTools.StartZoomTimeLapse</td>
+</tr>
+<tr>
+<td>reputation.add</td>
+<td>amount :float</td>
+<td>ReputationRuntimeTools.AddReputation</td>
+</tr>
+<tr>
+<td>reputationPenalty.add</td>
+<td>amount :float</td>
+<td>ReputationRuntimeTools.AddReputationPenalty</td>
+</tr>
+<tr>
+<td>resolve.change</td>
+<td>amount :float</td>
+<td>ResolveRuntimeTools.ChangeResolve</td>
+</tr>
+<tr>
+<td>resolve.change</td>
+<td>race :string, amount :float</td>
+<td>ResolveRuntimeTools.ChangeResolve</td>
+</tr>
+<tr>
+<td>resolveEffect.add</td>
+<td>name :string</td>
+<td>ResolveRuntimeTools.AddResolveEffect</td>
+</tr>
+<tr>
+<td>resolveEffect.random</td>
+<td>amount :int</td>
+<td>ResolveRuntimeTools.AddRandomResolveEffect</td>
+</tr>
+<tr>
+<td>resolveEffect.remove</td>
+<td>name :string</td>
+<td>ResolveRuntimeTools.RemoveResolveEffect</td>
+</tr>
+<tr>
+<td>resolveEffect.add</td>
+<td>name :string, race :string</td>
+<td>ResolveRuntimeTools.AddRaceResolveEffect</td>
+</tr>
+<tr>
+<td>resolveEffect.remove</td>
+<td>name :string, race :string</td>
+<td>ResolveRuntimeTools.RemoveRaceResolveEffect</td>
+</tr>
+<tr>
+<td>resolveEffect.list</td>
+<td></td>
+<td>ResolveRuntimeTools.ListEffects</td>
+</tr>
+<tr>
+<td>save.clearAll</td>
+<td></td>
+<td>SavesRuntimeTools.ClearAll</td>
+</tr>
+<tr>
+<td>save.clearPrefs</td>
+<td></td>
+<td>SavesRuntimeTools.ClearPrefs</td>
+</tr>
+<tr>
+<td>settings.trees.shadowsCast</td>
+<td>value :bool</td>
+<td>SettingsRuntimeTools.OptimalTreesCast</td>
+</tr>
+<tr>
+<td>settings.trees.shadowsReceive</td>
+<td>value :bool</td>
+<td>SettingsRuntimeTools.OptimalTreesReceive</td>
+</tr>
+<tr>
+<td>music.next</td>
+<td></td>
+<td>SounndRuntimeTools.PlayNextMusic</td>
+</tr>
+<tr>
+<td>ambient.next</td>
+<td></td>
+<td>SounndRuntimeTools.PlayNextAmbient</td>
+</tr>
+<tr>
+<td>time</td>
+<td></td>
+<td>TimeRuntimeTools.GetGameTime</td>
+</tr>
+<tr>
+<td>time.readable</td>
+<td></td>
+<td>TimeRuntimeTools.GetReadableTime</td>
+</tr>
+<tr>
+<td>time.real</td>
+<td></td>
+<td>TimeRuntimeTools.GetReadableUnscaledTime</td>
+</tr>
+<tr>
+<td>time.add</td>
+<td>sec :float</td>
+<td>TimeRuntimeTools.AddTime</td>
+</tr>
+<tr>
+<td>time.remove</td>
+<td>sec :float</td>
+<td>TimeRuntimeTools.RemoveTime</td>
+</tr>
+<tr>
+<td>season</td>
+<td></td>
+<td>TimeRuntimeTools.GetSeason</td>
+</tr>
+<tr>
+<td>season</td>
+<td>season :string</td>
+<td>TimeRuntimeTools.SetSeason</td>
+</tr>
+<tr>
+<td>season.next</td>
+<td></td>
+<td>TimeRuntimeTools.SetNextSeason</td>
+</tr>
+<tr>
+<td>season.quarter</td>
+<td></td>
+<td>TimeRuntimeTools.GetSeasonQuarter</td>
+</tr>
+<tr>
+<td>season.quarter</td>
+<td>quarter :string</td>
+<td>TimeRuntimeTools.SetSeasonQuarter</td>
+</tr>
+<tr>
+<td>season.quarter.next</td>
+<td></td>
+<td>TimeRuntimeTools.SetNextSeasonQuarter</td>
+</tr>
+<tr>
+<td>trader.list</td>
+<td></td>
+<td>TraderRuntimeTools.ListTraders</td>
+</tr>
+<tr>
+<td>trader.arrive</td>
+<td></td>
+<td>TraderRuntimeTools.ForceTraderArrival</td>
+</tr>
+<tr>
+<td>trader.arrive</td>
+<td>name :string</td>
+<td>TraderRuntimeTools.ForceTraderArrival</td>
+</tr>
+<tr>
+<td>trader.leave</td>
+<td></td>
+<td>TraderRuntimeTools.ForceTraderDeparture</td>
+</tr>
+<tr>
+<td>trader.cityScore</td>
+<td></td>
+<td>TraderRuntimeTools.GetCityScore</td>
+</tr>
+<tr>
+<td>villager.list</td>
+<td></td>
+<td>VillagerRuntimeTools.ListVillagers</td>
+</tr>
+<tr>
+<td>villager.spawn</td>
+<td>race :string, amount :int</td>
+<td>VillagerRuntimeTools.Spawn</td>
+</tr>
+<tr>
+<td>villager.leave</td>
+<td>race :string, amount :int</td>
+<td>VillagerRuntimeTools.ForceToLeave</td>
+</tr>
+<tr>
+<td>villager.kill</td>
+<td>amount :int</td>
+<td>VillagerRuntimeTools.KillVillagers</td>
+</tr>
+<tr>
+<td>villager.killByIds</td>
+<td>ids :Int32[]</td>
+<td>VillagerRuntimeTools.KillVillagersByIds</td>
+</tr>
+<tr>
+<td>villager.killByProf</td>
+<td>profession :string, amount :int</td>
+<td>VillagerRuntimeTools.KillVillagersByProfession</td>
+</tr>
+<tr>
+<td>villager.fillAll</td>
+<td></td>
+<td>VillagerRuntimeTools.FillAllRaces</td>
+</tr>
+<tr>
+<td>vperk.list</td>
+<td></td>
+<td>VillagersPerksTools.ListRewards</td>
+</tr>
+<tr>
+<td>vperk.add</td>
+<td>name :string</td>
+<td>VillagersPerksTools.AddPerkToRandomVillager</td>
+</tr>
+<tr>
+<td>vperk.add</td>
+<td>name :string, villagerId :int</td>
+<td>VillagersPerksTools.AddPerkToVillagerById</td>
+</tr>
+<tr>
+<td>vperk.random</td>
+<td></td>
+<td>VillagersPerksTools.AddRandomPerkToRandomVillager</td>
+</tr>
+<tr>
+<td>worldMap.addMetaCurrency</td>
+<td>name :string, amount :int</td>
+<td>WorldMapRuntimeTools.AddResources</td>
+</tr>
+<tr>
+<td>worldMap.addAllMC</td>
+<td></td>
+<td>WorldMapRuntimeTools.AddAllResources</td>
+</tr>
+<tr>
+<td>worldMap.finish</td>
+<td></td>
+<td>WorldMapRuntimeTools.Finish</td>
+</tr>
+<tr>
+<td>worldMap.randomizeEmbark</td>
+<td></td>
+<td>WorldMapRuntimeTools.RandomizeEmbark</td>
+</tr>
+<tr>
+<td>worldMap.spawnChest</td>
+<td>x :int, y :int, z :int</td>
+<td>WorldMapRuntimeTools.SpawnChest</td>
+</tr>
+<tr>
+<td>worldMap.spawnTown</td>
+<td>x :int, y :int, z :int, faction :string</td>
+<td>WorldMapRuntimeTools.SpawnTown</td>
+</tr>
+</table>
+</div></main></body></html>
