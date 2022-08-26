@@ -84,474 +84,718 @@
 <table class="console-commands-table">
 <tr><th>Command</th><th>Arguments</th><th>Method called</th></tr>
 <tr>
+<td>ambient.next</td>
+<td></td>
+<td>SounndRuntimeTools.PlayNextAmbient</td>
+</tr>
+
+<tr>
 <td>blight.add</td>
 <td>amount :float</td>
 <td>BlightRuntimeTools.AddBlight</td>
 </tr>
-<tr>
-<td>build.debugBiome</td>
-<td>biomeName :string</td>
-<td>BuildDataRuntimeTools.SetDebugBiome</td>
-</tr>
-<tr>
-<td>build.debugMap</td>
-<td>mapName :string</td>
-<td>BuildDataRuntimeTools.SetDebugMap</td>
-</tr>
-<tr>
-<td>build.debugDifficulty</td>
-<td>difficultyIndex :int</td>
-<td>BuildDataRuntimeTools.SetDebugBiome</td>
-</tr>
+
 <tr>
 <td>build.clearDebugs</td>
 <td></td>
 <td>BuildDataRuntimeTools.ClearDebugs</td>
 </tr>
+
 <tr>
-<td>building.unlock</td>
-<td>name :string</td>
-<td>BuildingsRuntimeTools.Unlock</td>
+<td>build.debugBiome</td>
+<td>biomeName :string</td>
+<td>BuildDataRuntimeTools.SetDebugBiome</td>
 </tr>
+
+<tr>
+<td>build.debugDifficulty</td>
+<td>difficultyIndex :int</td>
+<td>BuildDataRuntimeTools.SetDebugBiome</td>
+</tr>
+
+<tr>
+<td>build.debugMap</td>
+<td>mapName :string</td>
+<td>BuildDataRuntimeTools.SetDebugMap</td>
+</tr>
+
 <tr>
 <td>building.lock</td>
 <td>name :string</td>
 <td>BuildingsRuntimeTools.Lock</td>
 </tr>
+
 <tr>
 <td>building.testRolls</td>
 <td>games :int, unlockAll :bool</td>
 <td>BuildingsRuntimeTools.TestRolls</td>
 </tr>
+
+<tr>
+<td>building.unlock</td>
+<td>name :string</td>
+<td>BuildingsRuntimeTools.Unlock</td>
+</tr>
+
 <tr>
 <td>debug</td>
 <td></td>
 <td>DebugModesRuntimeTools.DebugeMode</td>
 </tr>
+
 <tr>
-<td>effect.list</td>
-<td></td>
-<td>EffectsRuntimeTools.ListRewards</td>
+<td>debug.construction</td>
+<td>value :bool</td>
+<td>DebugModesRuntimeTools.Construction</td>
 </tr>
+
+<tr>
+<td>debug.daily</td>
+<td>value :bool</td>
+<td>DebugModesRuntimeTools.Daily</td>
+</tr>
+
+<tr>
+<td>debug.goals</td>
+<td>value :bool</td>
+<td>DebugModesRuntimeTools.Goals</td>
+</tr>
+
+<tr>
+<td>debug.naturalResources</td>
+<td>value :bool</td>
+<td>DebugModesRuntimeTools.NaturalResources</td>
+</tr>
+
+<tr>
+<td>debug.orders</td>
+<td>value :bool</td>
+<td>DebugModesRuntimeTools.Orders</td>
+</tr>
+
+<tr>
+<td>debug.relics</td>
+<td>value :bool</td>
+<td>DebugModesRuntimeTools.Relics</td>
+</tr>
+
+<tr>
+<td>debug.seasons</td>
+<td>value :bool</td>
+<td>DebugModesRuntimeTools.Seasons</td>
+</tr>
+
+<tr>
+<td>debug.worldMap</td>
+<td>value :bool</td>
+<td>DebugModesRuntimeTools.WorldMap</td>
+</tr>
+
 <tr>
 <td>effect.add</td>
 <td>name :string</td>
 <td>EffectsRuntimeTools.AddReward</td>
 </tr>
-<tr>
-<td>effect.remove</td>
-<td>name :string</td>
-<td>EffectsRuntimeTools.RemoveReward</td>
-</tr>
-<tr>
-<td>effect.randomPerks</td>
-<td>amount :int</td>
-<td>EffectsRuntimeTools.AddRandomResolveEffect</td>
-</tr>
+
 <tr>
 <td>effect.allHooked</td>
 <td></td>
 <td>EffectsRuntimeTools.AddAllHookedEffects</td>
 </tr>
-<tr>
-<td>effect.cornerstones</td>
-<td></td>
-<td>EffectsRuntimeTools.CreateRandomCornerstones</td>
-</tr>
+
 <tr>
 <td>effect.canBeDrawn</td>
 <td>name :string</td>
 <td>EffectsRuntimeTools.CanBeDrawn</td>
 </tr>
+
 <tr>
-<td>game.win</td>
+<td>effect.cornerstones</td>
 <td></td>
-<td>GameplayRuntimeTools.WinGame</td>
+<td>EffectsRuntimeTools.CreateRandomCornerstones</td>
 </tr>
+
+<tr>
+<td>effect.list</td>
+<td></td>
+<td>EffectsRuntimeTools.ListRewards</td>
+</tr>
+
+<tr>
+<td>effect.randomPerks</td>
+<td>amount :int</td>
+<td>EffectsRuntimeTools.AddRandomResolveEffect</td>
+</tr>
+
+<tr>
+<td>effect.remove</td>
+<td>name :string</td>
+<td>EffectsRuntimeTools.RemoveReward</td>
+</tr>
+
 <tr>
 <td>game.loose</td>
 <td></td>
 <td>GameplayRuntimeTools.LooseGame</td>
 </tr>
+
 <tr>
 <td>game.save</td>
 <td></td>
 <td>GameplayRuntimeTools.SaveGame</td>
 </tr>
+
+<tr>
+<td>game.win</td>
+<td></td>
+<td>GameplayRuntimeTools.WinGame</td>
+</tr>
+
 <tr>
 <td>good</td>
 <td>goodName :string</td>
 <td>GoodsRuntimeTools.GetGoodAmount</td>
 </tr>
+
 <tr>
 <td>good.add</td>
 <td>goodName :string, amount :int</td>
 <td>GoodsRuntimeTools.AddGood</td>
 </tr>
-<tr>
-<td>good.remove</td>
-<td>goodName :string, amount :int</td>
-<td>GoodsRuntimeTools.RemoveGood</td>
-</tr>
+
 <tr>
 <td>good.addAll</td>
 <td></td>
 <td>GoodsRuntimeTools.AddAllGoods</td>
 </tr>
-<tr>
-<td>good.removeAll</td>
-<td></td>
-<td>GoodsRuntimeTools.RemoveAllGoods</td>
-</tr>
-<tr>
-<td>good.normalizeAll</td>
-<td></td>
-<td>GoodsRuntimeTools.NormalizeAllGoods</td>
-</tr>
+
 <tr>
 <td>good.list</td>
 <td></td>
 <td>GoodsRuntimeTools.ListGoods</td>
 </tr>
+
+<tr>
+<td>good.normalizeAll</td>
+<td></td>
+<td>GoodsRuntimeTools.NormalizeAllGoods</td>
+</tr>
+
+<tr>
+<td>good.remove</td>
+<td>goodName :string, amount :int</td>
+<td>GoodsRuntimeTools.RemoveGood</td>
+</tr>
+
+<tr>
+<td>good.removeAll</td>
+<td></td>
+<td>GoodsRuntimeTools.RemoveAllGoods</td>
+</tr>
+
 <tr>
 <td>hostility.add</td>
 <td>amount :int</td>
 <td>HostilityRuntimeTools.AddHostility</td>
 </tr>
-<tr>
-<td>meta.level</td>
-<td>level :int</td>
-<td>MetaRuntimeTools.SetLevel</td>
-</tr>
-<tr>
-<td>meta.diff</td>
-<td>index :int</td>
-<td>MetaRuntimeTools.SetFinishedDifficulty</td>
-</tr>
-<tr>
-<td>meta.exp</td>
-<td>exp :int</td>
-<td>MetaRuntimeTools.SetExp</td>
-</tr>
-<tr>
-<td>meta.distance</td>
-<td></td>
-<td>MetaRuntimeTools.GetDistance</td>
-</tr>
-<tr>
-<td>meta.addReward</td>
-<td>metaReward :string</td>
-<td>MetaRuntimeTools.GrantMetaReward</td>
-</tr>
+
 <tr>
 <td>meta.addAll</td>
 <td>onlyMeta :bool</td>
 <td>MetaRuntimeTools.UnlockEverything</td>
 </tr>
+
 <tr>
 <td>meta.addAllDecorations</td>
 <td></td>
 <td>MetaRuntimeTools.UnlockDecorations</td>
 </tr>
+
 <tr>
-<td>order.list</td>
+<td>meta.addReward</td>
+<td>metaReward :string</td>
+<td>MetaRuntimeTools.GrantMetaReward</td>
+</tr>
+
+<tr>
+<td>meta.diff</td>
+<td>index :int</td>
+<td>MetaRuntimeTools.SetFinishedDifficulty</td>
+</tr>
+
+<tr>
+<td>meta.distance</td>
 <td></td>
-<td>OrdersRuntimeTools.ListOrders</td>
+<td>MetaRuntimeTools.GetDistance</td>
 </tr>
+
 <tr>
-<td>order.add</td>
-<td>name :string</td>
-<td>OrdersRuntimeTools.AddOrder</td>
+<td>meta.exp</td>
+<td>exp :int</td>
+<td>MetaRuntimeTools.SetExp</td>
 </tr>
+
 <tr>
-<td>order.remove</td>
-<td>name :string</td>
-<td>OrdersRuntimeTools.RemoveOrder</td>
+<td>meta.level</td>
+<td>level :int</td>
+<td>MetaRuntimeTools.SetLevel</td>
 </tr>
-<tr>
-<td>rec</td>
-<td></td>
-<td>RecordingRuntimeTools.Rec</td>
-</tr>
-<tr>
-<td>rec</td>
-<td>isOn :bool</td>
-<td>RecordingRuntimeTools.Rec</td>
-</tr>
-<tr>
-<td>rec.reset</td>
-<td></td>
-<td>RecordingRuntimeTools.ResetCamera</td>
-</tr>
-<tr>
-<td>rec.timeLapse.orbit</td>
-<td>offsetX :float, offsetY :float, offsetZ :float, orbitSpeed :float</td>
-<td>RecordingRuntimeTools.StartOrbitTimeLapse</td>
-</tr>
-<tr>
-<td>rec.timeLapse.orbitArc</td>
-<td></td>
-<td>RecordingRuntimeTools.StartOrbitArcTimeLapse</td>
-</tr>
-<tr>
-<td>rec.timeLapse.orbitArc</td>
-<td>offsetX :float, offsetY :float, offsetZ :float, orbitSpeed :float, zoomSpeed :float</td>
-<td>RecordingRuntimeTools.StartOrbitArcTimeLapse</td>
-</tr>
-<tr>
-<td>rec.timeLapse.zoom</td>
-<td></td>
-<td>RecordingRuntimeTools.StartZoomTimeLapse</td>
-</tr>
-<tr>
-<td>rec.timeLapse.zoom</td>
-<td>yaw :float, pitch :float, initialHeight :float, speed :float</td>
-<td>RecordingRuntimeTools.StartZoomTimeLapse</td>
-</tr>
-<tr>
-<td>reputation.add</td>
-<td>amount :float</td>
-<td>ReputationRuntimeTools.AddReputation</td>
-</tr>
-<tr>
-<td>reputationPenalty.add</td>
-<td>amount :float</td>
-<td>ReputationRuntimeTools.AddReputationPenalty</td>
-</tr>
-<tr>
-<td>resolve.change</td>
-<td>amount :float</td>
-<td>ResolveRuntimeTools.ChangeResolve</td>
-</tr>
-<tr>
-<td>resolve.change</td>
-<td>race :string, amount :float</td>
-<td>ResolveRuntimeTools.ChangeResolve</td>
-</tr>
-<tr>
-<td>resolveEffect.add</td>
-<td>name :string</td>
-<td>ResolveRuntimeTools.AddResolveEffect</td>
-</tr>
-<tr>
-<td>resolveEffect.random</td>
-<td>amount :int</td>
-<td>ResolveRuntimeTools.AddRandomResolveEffect</td>
-</tr>
-<tr>
-<td>resolveEffect.remove</td>
-<td>name :string</td>
-<td>ResolveRuntimeTools.RemoveResolveEffect</td>
-</tr>
-<tr>
-<td>resolveEffect.add</td>
-<td>name :string, race :string</td>
-<td>ResolveRuntimeTools.AddRaceResolveEffect</td>
-</tr>
-<tr>
-<td>resolveEffect.remove</td>
-<td>name :string, race :string</td>
-<td>ResolveRuntimeTools.RemoveRaceResolveEffect</td>
-</tr>
-<tr>
-<td>resolveEffect.list</td>
-<td></td>
-<td>ResolveRuntimeTools.ListEffects</td>
-</tr>
-<tr>
-<td>save.clearAll</td>
-<td></td>
-<td>SavesRuntimeTools.ClearAll</td>
-</tr>
-<tr>
-<td>save.clearPrefs</td>
-<td></td>
-<td>SavesRuntimeTools.ClearPrefs</td>
-</tr>
-<tr>
-<td>settings.trees.shadowsCast</td>
-<td>value :bool</td>
-<td>SettingsRuntimeTools.OptimalTreesCast</td>
-</tr>
-<tr>
-<td>settings.trees.shadowsReceive</td>
-<td>value :bool</td>
-<td>SettingsRuntimeTools.OptimalTreesReceive</td>
-</tr>
+
 <tr>
 <td>music.next</td>
 <td></td>
 <td>SounndRuntimeTools.PlayNextMusic</td>
 </tr>
+
 <tr>
-<td>ambient.next</td>
+<td>order.add</td>
+<td>name :string</td>
+<td>OrdersRuntimeTools.AddOrder</td>
+</tr>
+
+<tr>
+<td>order.list</td>
 <td></td>
-<td>SounndRuntimeTools.PlayNextAmbient</td>
+<td>OrdersRuntimeTools.ListOrders</td>
 </tr>
+
 <tr>
-<td>time</td>
+<td>order.remove</td>
+<td>name :string</td>
+<td>OrdersRuntimeTools.RemoveOrder</td>
+</tr>
+
+<tr>
+<td>rec</td>
 <td></td>
-<td>TimeRuntimeTools.GetGameTime</td>
+<td>RecordingRuntimeTools.Rec</td>
 </tr>
+
 <tr>
-<td>time.readable</td>
+<td>rec</td>
+<td>isOn :bool</td>
+<td>RecordingRuntimeTools.Rec</td>
+</tr>
+
+<tr>
+<td>rec.allUI</td>
+<td>value :bool</td>
+<td>RecordingRuntimeTools.RenderAllUI</td>
+</tr>
+
+<tr>
+<td>rec.animIgnoreTime</td>
+<td>value :bool</td>
+<td>RecordingRuntimeTools.TweenUpdateMode</td>
+</tr>
+
+<tr>
+<td>rec.cursor</td>
+<td>value :bool</td>
+<td>RecordingRuntimeTools.CursorVisible</td>
+</tr>
+
+<tr>
+<td>rec.fly</td>
+<td>value :bool</td>
+<td>RecordingRuntimeTools.Fly</td>
+</tr>
+
+<tr>
+<td>rec.hud</td>
+<td>value :bool</td>
+<td>RecordingRuntimeTools.EnableHUD</td>
+</tr>
+
+<tr>
+<td>rec.inGamePointer</td>
+<td>value :bool</td>
+<td>RecordingRuntimeTools.InGamePointerActive</td>
+</tr>
+
+<tr>
+<td>rec.pad</td>
+<td>value :bool</td>
+<td>RecordingRuntimeTools.ControllerSupport</td>
+</tr>
+
+<tr>
+<td>rec.pad.moveSpeed</td>
+<td>value :float</td>
+<td>RecordingRuntimeTools.ControllerMovememntSpeed</td>
+</tr>
+
+<tr>
+<td>rec.pad.rotSpeed</td>
+<td>value :float</td>
+<td>RecordingRuntimeTools.ControllerRotationSpeed</td>
+</tr>
+
+<tr>
+<td>rec.reset</td>
 <td></td>
-<td>TimeRuntimeTools.GetReadableTime</td>
+<td>RecordingRuntimeTools.ResetCamera</td>
 </tr>
+
 <tr>
-<td>time.real</td>
+<td>rec.timeLapse.orbit</td>
+<td>offsetX :float, offsetY :float, offsetZ :float, orbitSpeed :float</td>
+<td>RecordingRuntimeTools.StartOrbitTimeLapse</td>
+</tr>
+
+<tr>
+<td>rec.timeLapse.orbitArc</td>
 <td></td>
-<td>TimeRuntimeTools.GetReadableUnscaledTime</td>
+<td>RecordingRuntimeTools.StartOrbitArcTimeLapse</td>
 </tr>
+
 <tr>
-<td>time.add</td>
-<td>sec :float</td>
-<td>TimeRuntimeTools.AddTime</td>
+<td>rec.timeLapse.orbitArc</td>
+<td>offsetX :float, offsetY :float, offsetZ :float, orbitSpeed :float, zoomSpeed :float</td>
+<td>RecordingRuntimeTools.StartOrbitArcTimeLapse</td>
 </tr>
+
 <tr>
-<td>time.remove</td>
-<td>sec :float</td>
-<td>TimeRuntimeTools.RemoveTime</td>
+<td>rec.timeLapse.zoom</td>
+<td></td>
+<td>RecordingRuntimeTools.StartZoomTimeLapse</td>
 </tr>
+
+<tr>
+<td>rec.timeLapse.zoom</td>
+<td>yaw :float, pitch :float, initialHeight :float, speed :float</td>
+<td>RecordingRuntimeTools.StartZoomTimeLapse</td>
+</tr>
+
+<tr>
+<td>rec.tooltips</td>
+<td>value :bool</td>
+<td>RecordingRuntimeTools.EnableTooltips</td>
+</tr>
+
+<tr>
+<td>rec.vsync</td>
+<td>value :bool</td>
+<td>RecordingRuntimeTools.VSync</td>
+</tr>
+
+<tr>
+<td>rec.worldTooltips</td>
+<td>value :bool</td>
+<td>RecordingRuntimeTools.EnableWorldTooltips</td>
+</tr>
+
+<tr>
+<td>rec.worldUI</td>
+<td>value :bool</td>
+<td>RecordingRuntimeTools.EnableWorldUI</td>
+</tr>
+
+<tr>
+<td>reputation.add</td>
+<td>amount :float</td>
+<td>ReputationRuntimeTools.AddReputation</td>
+</tr>
+
+<tr>
+<td>reputationPenalty.add</td>
+<td>amount :float</td>
+<td>ReputationRuntimeTools.AddReputationPenalty</td>
+</tr>
+
+<tr>
+<td>resolve.change</td>
+<td>amount :float</td>
+<td>ResolveRuntimeTools.ChangeResolve</td>
+</tr>
+
+<tr>
+<td>resolve.change</td>
+<td>race :string, amount :float</td>
+<td>ResolveRuntimeTools.ChangeResolve</td>
+</tr>
+
+<tr>
+<td>resolveEffect.add</td>
+<td>name :string</td>
+<td>ResolveRuntimeTools.AddResolveEffect</td>
+</tr>
+
+<tr>
+<td>resolveEffect.add</td>
+<td>name :string, race :string</td>
+<td>ResolveRuntimeTools.AddRaceResolveEffect</td>
+</tr>
+
+<tr>
+<td>resolveEffect.list</td>
+<td></td>
+<td>ResolveRuntimeTools.ListEffects</td>
+</tr>
+
+<tr>
+<td>resolveEffect.random</td>
+<td>amount :int</td>
+<td>ResolveRuntimeTools.AddRandomResolveEffect</td>
+</tr>
+
+<tr>
+<td>resolveEffect.remove</td>
+<td>name :string</td>
+<td>ResolveRuntimeTools.RemoveResolveEffect</td>
+</tr>
+
+<tr>
+<td>resolveEffect.remove</td>
+<td>name :string, race :string</td>
+<td>ResolveRuntimeTools.RemoveRaceResolveEffect</td>
+</tr>
+
+<tr>
+<td>save.clearAll</td>
+<td></td>
+<td>SavesRuntimeTools.ClearAll</td>
+</tr>
+
+<tr>
+<td>save.clearPrefs</td>
+<td></td>
+<td>SavesRuntimeTools.ClearPrefs</td>
+</tr>
+
 <tr>
 <td>season</td>
 <td></td>
 <td>TimeRuntimeTools.GetSeason</td>
 </tr>
+
 <tr>
 <td>season</td>
 <td>season :string</td>
 <td>TimeRuntimeTools.SetSeason</td>
 </tr>
+
 <tr>
 <td>season.next</td>
 <td></td>
 <td>TimeRuntimeTools.SetNextSeason</td>
 </tr>
+
 <tr>
 <td>season.quarter</td>
 <td></td>
 <td>TimeRuntimeTools.GetSeasonQuarter</td>
 </tr>
+
 <tr>
 <td>season.quarter</td>
 <td>quarter :string</td>
 <td>TimeRuntimeTools.SetSeasonQuarter</td>
 </tr>
+
 <tr>
 <td>season.quarter.next</td>
 <td></td>
 <td>TimeRuntimeTools.SetNextSeasonQuarter</td>
 </tr>
+
 <tr>
-<td>trader.list</td>
-<td></td>
-<td>TraderRuntimeTools.ListTraders</td>
+<td>settings.aa</td>
+<td>value :int</td>
+<td>SettingsRuntimeTools.AntyAliasing</td>
 </tr>
+
+<tr>
+<td>settings.pp</td>
+<td>value :bool</td>
+<td>SettingsRuntimeTools.PostProcess</td>
+</tr>
+
+<tr>
+<td>settings.shadows</td>
+<td>value :bool</td>
+<td>SettingsRuntimeTools.Shadows</td>
+</tr>
+
+<tr>
+<td>settings.shadows_alt</td>
+<td>value :bool</td>
+<td>SettingsRuntimeTools.ShadowsAlt</td>
+</tr>
+
+<tr>
+<td>settings.trees.shadowsCast</td>
+<td>value :bool</td>
+<td>SettingsRuntimeTools.OptimalTreesCast</td>
+</tr>
+
+<tr>
+<td>settings.trees.shadowsReceive</td>
+<td>value :bool</td>
+<td>SettingsRuntimeTools.OptimalTreesReceive</td>
+</tr>
+
+<tr>
+<td>time</td>
+<td></td>
+<td>TimeRuntimeTools.GetGameTime</td>
+</tr>
+
+<tr>
+<td>time.add</td>
+<td>sec :float</td>
+<td>TimeRuntimeTools.AddTime</td>
+</tr>
+
+<tr>
+<td>time.readable</td>
+<td></td>
+<td>TimeRuntimeTools.GetReadableTime</td>
+</tr>
+
+<tr>
+<td>time.real</td>
+<td></td>
+<td>TimeRuntimeTools.GetReadableUnscaledTime</td>
+</tr>
+
+<tr>
+<td>time.remove</td>
+<td>sec :float</td>
+<td>TimeRuntimeTools.RemoveTime</td>
+</tr>
+
 <tr>
 <td>trader.arrive</td>
 <td></td>
 <td>TraderRuntimeTools.ForceTraderArrival</td>
 </tr>
+
 <tr>
 <td>trader.arrive</td>
 <td>name :string</td>
 <td>TraderRuntimeTools.ForceTraderArrival</td>
 </tr>
-<tr>
-<td>trader.leave</td>
-<td></td>
-<td>TraderRuntimeTools.ForceTraderDeparture</td>
-</tr>
+
 <tr>
 <td>trader.cityScore</td>
 <td></td>
 <td>TraderRuntimeTools.GetCityScore</td>
 </tr>
+
 <tr>
-<td>villager.list</td>
+<td>trader.leave</td>
 <td></td>
-<td>VillagerRuntimeTools.ListVillagers</td>
+<td>TraderRuntimeTools.ForceTraderDeparture</td>
 </tr>
+
 <tr>
-<td>villager.spawn</td>
-<td>race :string, amount :int</td>
-<td>VillagerRuntimeTools.Spawn</td>
+<td>trader.list</td>
+<td></td>
+<td>TraderRuntimeTools.ListTraders</td>
 </tr>
-<tr>
-<td>villager.leave</td>
-<td>race :string, amount :int</td>
-<td>VillagerRuntimeTools.ForceToLeave</td>
-</tr>
-<tr>
-<td>villager.kill</td>
-<td>amount :int</td>
-<td>VillagerRuntimeTools.KillVillagers</td>
-</tr>
-<tr>
-<td>villager.killByIds</td>
-<td>ids :Int32[]</td>
-<td>VillagerRuntimeTools.KillVillagersByIds</td>
-</tr>
-<tr>
-<td>villager.killByProf</td>
-<td>profession :string, amount :int</td>
-<td>VillagerRuntimeTools.KillVillagersByProfession</td>
-</tr>
+
 <tr>
 <td>villager.fillAll</td>
 <td></td>
 <td>VillagerRuntimeTools.FillAllRaces</td>
 </tr>
+
 <tr>
-<td>vperk.list</td>
-<td></td>
-<td>VillagersPerksTools.ListRewards</td>
+<td>villager.kill</td>
+<td>amount :int</td>
+<td>VillagerRuntimeTools.KillVillagers</td>
 </tr>
+
+<tr>
+<td>villager.killByIds</td>
+<td>ids :Int32[]</td>
+<td>VillagerRuntimeTools.KillVillagersByIds</td>
+</tr>
+
+<tr>
+<td>villager.killByProf</td>
+<td>profession :string, amount :int</td>
+<td>VillagerRuntimeTools.KillVillagersByProfession</td>
+</tr>
+
+<tr>
+<td>villager.leave</td>
+<td>race :string, amount :int</td>
+<td>VillagerRuntimeTools.ForceToLeave</td>
+</tr>
+
+<tr>
+<td>villager.list</td>
+<td></td>
+<td>VillagerRuntimeTools.ListVillagers</td>
+</tr>
+
+<tr>
+<td>villager.spawn</td>
+<td>race :string, amount :int</td>
+<td>VillagerRuntimeTools.Spawn</td>
+</tr>
+
 <tr>
 <td>vperk.add</td>
 <td>name :string</td>
 <td>VillagersPerksTools.AddPerkToRandomVillager</td>
 </tr>
+
 <tr>
 <td>vperk.add</td>
 <td>name :string, villagerId :int</td>
 <td>VillagersPerksTools.AddPerkToVillagerById</td>
 </tr>
+
+<tr>
+<td>vperk.list</td>
+<td></td>
+<td>VillagersPerksTools.ListRewards</td>
+</tr>
+
 <tr>
 <td>vperk.random</td>
 <td></td>
 <td>VillagersPerksTools.AddRandomPerkToRandomVillager</td>
 </tr>
-<tr>
-<td>worldMap.addMetaCurrency</td>
-<td>name :string, amount :int</td>
-<td>WorldMapRuntimeTools.AddResources</td>
-</tr>
+
 <tr>
 <td>worldMap.addAllMC</td>
 <td></td>
 <td>WorldMapRuntimeTools.AddAllResources</td>
 </tr>
+
+<tr>
+<td>worldMap.addMetaCurrency</td>
+<td>name :string, amount :int</td>
+<td>WorldMapRuntimeTools.AddResources</td>
+</tr>
+
 <tr>
 <td>worldMap.finish</td>
 <td></td>
 <td>WorldMapRuntimeTools.Finish</td>
 </tr>
+
 <tr>
 <td>worldMap.randomizeEmbark</td>
 <td></td>
 <td>WorldMapRuntimeTools.RandomizeEmbark</td>
 </tr>
+
 <tr>
 <td>worldMap.spawnChest</td>
 <td>x :int, y :int, z :int</td>
 <td>WorldMapRuntimeTools.SpawnChest</td>
 </tr>
+
 <tr>
 <td>worldMap.spawnTown</td>
 <td>x :int, y :int, z :int, faction :string</td>
 <td>WorldMapRuntimeTools.SpawnTown</td>
 </tr>
+
 </table>
 </div></main></body></html>
