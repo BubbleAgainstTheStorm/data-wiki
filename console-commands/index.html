@@ -50,14 +50,14 @@
                     <a href="/data-wiki/console-commands">Commands</a>
                 </nav>
                  <nav>
-                    <span>Wiki Updated: 13/Sep/22</span>
-                    <span>Game Version: Early Access v0.32.4</span>
+                    <span>Wiki Updated: 16/Nov/22</span>
+                    <span>Game Version: Early Access v0.37.3</span>
                     <span>Scale costs for difficulty:</span>
                     <select id="difficulty-select">
-                        <option value="0_Normal">Normal</option>
-<option value="1_Hard">Hard</option>
-<option value="2_Very_Hard">Very Hard</option>
-<option value="3_Impossible">Impossible</option>
+                        <option value="0_Normal">Settler</option>
+<option value="1_Hard">Pioneer</option>
+<option value="2_Very_Hard">Veteran</option>
+<option value="3_Impossible">Viceroy</option>
 <option value="4_Ascension_I">Prestige 1</option>
 <option value="5_Ascension_II">Prestige 2</option>
 <option value="6_Ascension_III">Prestige 3</option>
@@ -212,7 +212,7 @@
 
 <tr>
 <td>effect.cornerstones</td>
-<td></td>
+<td>year :int</td>
 <td>EffectsRuntimeTools.CreateRandomCornerstones</td>
 </tr>
 
@@ -337,9 +337,21 @@
 </tr>
 
 <tr>
+<td>meta.isBuildingUnlocked</td>
+<td>name :string</td>
+<td>MetaRuntimeTools.IsBuildingUnlocked</td>
+</tr>
+
+<tr>
 <td>meta.level</td>
 <td>level :int</td>
 <td>MetaRuntimeTools.SetLevel</td>
+</tr>
+
+<tr>
+<td>meta.level</td>
+<td></td>
+<td>MetaRuntimeTools.GetLevel</td>
 </tr>
 
 <tr>
@@ -430,6 +442,12 @@
 <td>rec.pad.rotSpeed</td>
 <td>value :float</td>
 <td>RecordingRuntimeTools.ControllerRotationSpeed</td>
+</tr>
+
+<tr>
+<td>rec.pad.zoomSpeed</td>
+<td>value :float</td>
+<td>RecordingRuntimeTools.ControllerZoomSpeed</td>
 </tr>
 
 <tr>
